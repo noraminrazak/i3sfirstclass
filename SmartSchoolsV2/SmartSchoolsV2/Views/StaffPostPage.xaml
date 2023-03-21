@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs;assembly=SmartSchoolsV2"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources" 
+             x:Class="SmartSchoolsV2.Views.StaffPostPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblPost" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" x:Name="lblSchoolName" FontSize="Body" FontFamily="{StaticResource RobotoRegular}" 
+                           TextColor="Black" HorizontalTextAlignment="Center" IsVisible="false" Margin="20,20,20,10"/>
+                    <Grid Grid.Row="0" x:Name="lblGroupGrid" IsVisible="false" Margin="20,20,20,10" HorizontalOptions="CenterAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" FontFamily="{StaticResource RobotoMedium}" TextColor="Black" 
+                           sk:Skeleton.IsBusy="{Binding IsBusy}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                                                HorizontalTextAlignment="End" VerticalOptions="Center" FontSize="Body" x:Name="lblSchoolName2"/>
+                        <Image Grid.Column="1" Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage"
+                                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Grid.Column="2" FontFamily="{StaticResource RobotoMedium}" x:Name="lblGroupName" 
+                           sk:Skeleton.IsBusy="{Binding IsBusy}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+													FontSize="Body" TextColor="Black" VerticalOptions="Center" 
+													HorizontalTextAlignment="Start" />
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Frame CornerRadius="20"  x:Name="imgFrame" Margin="20,0,20,10" IsVisible="False"
+                                    IsClippedToBounds="True" Padding="0">
+                            <ffimageloading:CachedImage x:Name="imagePhoto" Aspect="AspectFill" Scale="1.0" HeightRequest="300"
+                                                HorizontalOptions="Fill" VerticalOptions="Fill" CacheType="None" 
+                                                        DownsampleToViewSize="True" >
+                            </ffimageloading:CachedImage>
+                        </Frame>
+                        <ImageButton Source="close_btn" HorizontalOptions="End" VerticalOptions="Start" Margin="0,-10,5,0"
+                                     HeightRequest="30" WidthRequest="30" IsVisible="false" x:Name="btnRemove" Clicked="OnRemoveClicked"/>
+                    </Grid>
+                    <Label Grid.Row="2" x:Name="lblFileSize" FontSize="Small" FontFamily="{StaticResource RobotoRegular}" 
+                           HorizontalTextAlignment="Center" VerticalOptions="Center" />
+                    <Grid Grid.Row="3" HorizontalOptions="Center" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Grid.Column="0" Source="btn_gallery" HeightRequest="45" WidthRequest="45" 
+                                     BackgroundColor="Transparent" Clicked="OnPickPhotoClicked"/>
+                        <ImageButton Grid.Column="1" Source="btn_photo" HeightRequest="45" WidthRequest="45" 
+                                     BackgroundColor="Transparent" Clicked="OnTakePhotoClicked"/>
+                    </Grid>
+                    <!--Message-->
+                    <Label  Grid.Row="4"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.MessageText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEditor Grid.Row="5" Margin="20,0,20,10" AutoSize="TextChanges" x:Name="txtMessage"
+                            FontFamily="{StaticResource RobotoRegular}" FontSize="Default" Placeholder="{x:Static resource:AppResources.EnterMessageHereText}">
+                        <customs:CustomEditor.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeSentence</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEditor.Keyboard>
+                    </customs:CustomEditor>
+                    <!-- date from -->
+                    <Label  Grid.Row="6"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.DisplayDateFromText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry Keyboard="Text" Grid.Row="7" IsReadOnly="True" 
+                            x:Name="txtDateFrom" Focused="StartCallFrom" Placeholder="{x:Static resource:AppResources.SelectDateFromText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                    <DatePicker x:Name="datePickerFrom" IsVisible="false" DateSelected="OnFromDateSelected"/>
+                    <!-- date to -->
+                    <Label  Grid.Row="8"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.DisplayDateToText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry Keyboard="Text" Grid.Row="9" 
+                            x:Name="txtDateTo" Focused="StartCallTo" Placeholder="{x:Static resource:AppResources.SelectDateToText}"
+                            Margin="20,0,10,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                    <DatePicker x:Name="datePickerTo" IsVisible="false" DateSelected="OnToDateSelected"/>
+                    <Grid Grid.Row="10" HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button FontSize="Body" TextTransform="None" 
+                            x:Name="btnClear" Clicked="OnClearClicked"
+                        Margin="20,20,5,50" Grid.Column="0"
+                        BackgroundColor="Red"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.ClearText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="White" />
+                        <Button FontSize="Body" TextTransform="None" 
+                            x:Name="btnSubmit" Clicked="OnSubmitClicked"
+                        Margin="5,20,20,50" Grid.Column="1"
+                        BackgroundColor="#ff0266"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.SubmitText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="White" />
+                    </Grid>
+
+                </Grid>
+            </ScrollView>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

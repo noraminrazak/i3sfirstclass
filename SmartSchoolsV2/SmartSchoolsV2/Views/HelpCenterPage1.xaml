@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.HelpCenterPage1"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.HelpCenterText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <StackLayout>
+                <ListView HasUnevenRows="True" ItemSelected="OnNameSelected" x:Name="lvHelpCenter"
+                          IsPullToRefreshEnabled="False" Margin="0,35,0,0" SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="30,15,30,15" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding Name}" TextColor="Black" FontFamily="{StaticResource RobotoRegular}" 
+                                           FontSize="Body" HorizontalOptions="FillAndExpand"/>
+                                    <Image Source="ic_right_arrow.png" Aspect="AspectFit" HeightRequest="15" WidthRequest="15" 
+                                           VerticalOptions="Center" HorizontalOptions="End"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

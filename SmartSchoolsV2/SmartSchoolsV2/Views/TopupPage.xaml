@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs;assembly=SmartSchoolsV2"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.TopupPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.TopupText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+            <StackLayout Grid.Column="1" HorizontalOptions="EndAndExpand" Orientation="Horizontal" Padding="5" >
+                <Grid>
+                    <Label FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf021;" x:Name="imgTransfer" Padding="5,5,20,5" 
+                           VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="#ffd612" />
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True" HasShadow="False">
+            <StackLayout Padding="20,15,20,15" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <BoxView Grid.Row="0" Grid.ColumnSpan="3"/>
+                    <Label Grid.ColumnSpan="3"
+                        Grid.Row="1" Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.PreferredAmountText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid Grid.Row="2" Grid.ColumnSpan="3">
+                        <customs:CurrencyEntry Keyboard="Numeric" 
+                             Placeholder="0" x:Name="txtAmount" TextChanged="OnAmountTextChanged"
+                            Margin="20,0,20,0" FontFamily="{StaticResource RobotoMedium}" FontSize="Large"
+                            BackgroundColor="Transparent"/>
+                        <Label Margin="20,0,10,16"
+                        HorizontalOptions="Start"
+                        TextColor="Black" FontSize="Large"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="RM" FontFamily="{StaticResource RobotoMedium}" FontSize="Large"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid >
+                    <Label Grid.ColumnSpan="3"
+                        Grid.Row="3"
+                        HorizontalOptions="Center"
+                        TextColor="Black" FontSize="Small"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.MinimumTopupText}" FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                    <Button FontSize="Medium" TextTransform="None" Grid.Row="4" Grid.Column="0"
+                         x:Name="btn20" Clicked="On20Clicked" BorderColor="#ff0266" BorderWidth="2"
+                        Margin="20,20,10,10"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="20" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+                    <Button FontSize="Medium" TextTransform="None" Grid.Row="4" Grid.Column="1"
+                         x:Name="btn50" Clicked="On50Clicked" BorderColor="#ff0266" BorderWidth="2"
+                        Margin="10,20,10,10"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="50" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+                    <Button FontSize="Medium" TextTransform="None" Grid.Row="4" Grid.Column="2"
+                         x:Name="btn100" Clicked="On100Clicked" BorderColor="#ff0266" BorderWidth="2"
+                        Margin="10,20,20,10"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="100" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+                    <Button FontSize="Medium" TextTransform="None" Grid.Row="5" Grid.Column="0"
+                         x:Name="btn150" Clicked="On150Clicked" BorderColor="#ff0266" BorderWidth="2"
+                        Margin="20,10,10,10"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="150" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+                    <Button FontSize="Medium" TextTransform="None" Grid.Row="5" Grid.Column="1"
+                         x:Name="btn200" Clicked="On200Clicked" BorderColor="#ff0266" BorderWidth="2"
+                        Margin="10,10,10,10"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="200" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+                    <Button FontSize="Medium" TextTransform="None" Grid.Row="5" Grid.Column="2"
+                         x:Name="btn250" Clicked="On250Clicked" BorderColor="#ff0266" BorderWidth="2"
+                        Margin="10,10,20,10"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="250" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+
+                    <Button FontSize="Body" TextTransform="None" Grid.Row="6"
+                         x:Name="btnTopup" Clicked="OnTopupClicked" Grid.ColumnSpan="3"
+                        Margin="20,40,20,10"
+                        BackgroundColor="#ff0266"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.TopupButtonText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="White" />
+                </Grid>
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="SmartSchoolsV2.Views.NotificationPage2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblSubject" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                          Orientation="Vertical">
+                <Frame CornerRadius="20" x:Name="imgFrame"  HasShadow="False"
+                                    IsVisible="False" IsClippedToBounds="True" Padding="0" >
+                    <ffimageloading:CachedImage x:Name="imagePhoto" Aspect="AspectFill" Scale="1.0" HeightRequest="300"
+                                                HorizontalOptions="Fill" VerticalOptions="Fill"  />
+                </Frame>
+                <StackLayout Margin="20,20,20,50">
+                    <Label x:Name="lblMessage" FontFamily="{StaticResource RobotoRegular}" TextColor="Black" />
+                    <Label x:Name="lblNotify" IsVisible="False">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.RegisterAgreeText}" TextColor="Black"
+                                              FontFamily="{StaticResource RobotoRegular}" x:Name="lblNotifyMessage"/>
+                                <Span Text="{x:Static resource:AppResources.TermsConditionsText}" x:Name="lblNotifyLink"
+                          TextColor="Blue" FontFamily="{StaticResource RobotoRegular}" FontAttributes="Bold"
+                          TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding TapCommand}" x:Name="lblNotifyParam"/>
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

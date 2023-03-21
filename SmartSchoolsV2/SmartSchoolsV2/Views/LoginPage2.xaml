@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls;assembly=SmartSchoolsV2"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.LoginPage2"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,0,1,0.5" AbsoluteLayout.LayoutFlags="All">
+            <ffimageloading:CachedImage Source="ic_logo.png" Aspect="AspectFit" 
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                BitmapOptimizations="True" HeightRequest="60" WidthRequest="190"/>
+        </StackLayout>
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <!--<ScrollView>-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0"/>
+                <Grid Grid.Row="1">
+                    <controls:FloatingLabelInput Keyboard="Text" VerticalOptions="Center"
+             Title="{x:Static resource:AppResources.PasswordText}" x:Name="txtPswd"
+            Margin="20,20,20,0" IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
+            BackgroundColor="Transparent"/>
+                    <ImageButton VerticalOptions="Center"
+                     Margin="0,15,30,0" BackgroundColor="Transparent"
+                     HeightRequest="30"
+                     HorizontalOptions="End"
+                     Source="ic_eye_hide">
+                        <ImageButton.Triggers>
+                            <EventTrigger Event="Clicked">
+                                <customs:ShowPasswordTriggerAction ShowIcon="ic_eye"
+                                                                    HideIcon="ic_eye_hide"
+                                                                    x:Name="ShowPasswordActualTrigger"/>
+                            </EventTrigger>
+                        </ImageButton.Triggers>
+                    </ImageButton>
+                </Grid>
+                <Button FontSize="Medium" TextTransform="None"
+            Margin="20,20,20,10" x:Name="btnNext2" Clicked="OnNextClicked"
+            Grid.Row="2" 
+            BackgroundColor="#ff0266"
+            CornerRadius="15"
+            Text="{x:Static resource:AppResources.LoginButtonText}" FontFamily="{StaticResource RobotoRegular}"
+            TextColor="white" />
+
+                <Label 
+            Grid.Row="3" Margin="10"
+            HorizontalOptions="Center"
+            TextColor="Black" FontSize="Small"
+            VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.ForgotPasswordText}" FontSize="Small" FontFamily="{StaticResource RobotoBold}" TextDecorations="Underline">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapForgot}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}"
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

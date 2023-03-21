@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             x:Class="SmartSchoolsV2.Views.AddStudentPage3"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls;assembly=SmartSchoolsV2"
+             xmlns:effects="clr-namespace:SmartSchoolsV2.Effects;assembly=SmartSchoolsV2"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs;assembly=SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.VerifyStudentText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False" >
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Orientation="Vertical"
+                     AbsoluteLayout.LayoutBounds="1,0,1,0.4" AbsoluteLayout.LayoutFlags="All">
+                <BoxView HeightRequest="20" />
+                <plugin:CircleImage Source="{Binding Image}" Aspect="AspectFill" IsVisible="False"
+                                  x:Name="userImg" Grid.Column="0" Margin="20,15,10,10"
+                                  sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                              sk:Skeleton.BackgroundColor="LightGoldenrodYellow">
+                    <plugin:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">95</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.WidthRequest>
+                    <plugin:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">95</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.HeightRequest>
+                </plugin:CircleImage>
+                <StackLayout x:Name="userInitial" IsVisible="False">
+                    <controls:InitialsView Name="{Binding Text, Source={x:Reference lblFullName}}" 
+                                sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow">
+                        <controls:InitialsView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">95</On>
+                            </OnPlatform>
+                        </controls:InitialsView.WidthRequest>
+                        <controls:InitialsView.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">95</On>
+                            </OnPlatform>
+                        </controls:InitialsView.HeightRequest>
+                    </controls:InitialsView>
+                </StackLayout>
+                <Label Margin="0,0,0,10"
+            HorizontalOptions="Center"
+            TextColor="#0080ff" FontSize="Medium"
+            VerticalOptions="End">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span FontFamily="{StaticResource RobotoMedium}" FontSize="Medium" x:Name="lblFullName"
+                              sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                          sk:Skeleton.BackgroundColor="LightGoldenrodYellow"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Margin="0,0,0,10"
+            HorizontalOptions="Center"
+            TextColor="Black" FontSize="Medium"
+            VerticalOptions="End">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="lblSchoolName" FontFamily="{StaticResource RobotoRegular}" FontSize="Medium" 
+                              sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                          sk:Skeleton.BackgroundColor="LightGoldenrodYellow"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label x:Name="lblClass" IsVisible="false"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.ClassNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <StackLayout>
+                    <customs:CustomEntry Keyboard="Text" IsVisible="false"
+                             Placeholder="{x:Static resource:AppResources.SelectClassNameText}" x:Name="txtClass"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" IsReadOnly="True" InputTransparent="True"/>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="StartCall" >
+                        </TapGestureRecognizer>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+
+                <Image x:Name="imgTick2" Source="tick2" IsAnimationPlaying="False" HeightRequest="100" WidthRequest="200" 
+                       IsVisible="false"/>
+                <Label x:Name="lblVerify" IsVisible="false"
+                        Margin="22,0,20,0" HorizontalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        TextColor="#14d790" FontSize="Medium"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.VerificationSuccessText}" FontFamily="{StaticResource RobotoMedium}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label x:Name="lbl4digit"
+                        Margin="22,0,20,0" HorizontalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        TextColor="Black" FontSize="Small"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.PleaseEnterLast4DigitText}" FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Grid Margin="20,10,20,10" HorizontalOptions="CenterAndExpand" x:Name="grid4digit">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+                    <customs:XEntry Grid.Row="0" Grid.Column="0" x:Name="txtNum1" HorizontalTextAlignment="Center" MaxLength="1"
+                                    BorderColor="Black" BorderWidth="2" BackgroundColor="Transparent" IsPassword="True"
+                                    FontSize="Large" FontFamily="{StaticResource RobotoMedium}" TextChanged="Num1_TextChanged"/>
+
+                    <customs:XEntry Grid.Row="0" Grid.Column="1" x:Name="txtNum2" HorizontalTextAlignment="Center" MaxLength="1"
+                                    BorderColor="Black" BorderWidth="2" BackgroundColor="Transparent" IsPassword="True"
+                                    FontSize="Large" FontFamily="{StaticResource RobotoMedium}" TextChanged="Num2_TextChanged" />
+
+                    <customs:XEntry Grid.Row="0" Grid.Column="2" x:Name="txtNum3" HorizontalTextAlignment="Center" MaxLength="1"
+                                    BorderColor="Black" BorderWidth="2" BackgroundColor="Transparent" IsPassword="True"
+                                    FontSize="Large" FontFamily="{StaticResource RobotoMedium}" TextChanged="Num3_TextChanged"/>
+
+                    <customs:XEntry Grid.Row="0" Grid.Column="3" x:Name="txtNum4" HorizontalTextAlignment="Center" MaxLength="1"
+                                    BorderColor="Black" BorderWidth="2" BackgroundColor="Transparent" IsPassword="True"
+                                    FontSize="Large" FontFamily="{StaticResource RobotoMedium}" TextChanged="Num4_TextChanged"/> 
+
+                </Grid>
+                <Button FontSize="Body" TextTransform="None"
+                     x:Name="btnVerify" Clicked="OnVerifyClicked"
+                    Margin="20,20,20,10" IsEnabled="False"
+                    BackgroundColor="#ff0266"
+                    CornerRadius="15"
+                    Text="{x:Static resource:AppResources.VerifyStudentText}" FontFamily="{StaticResource RobotoRegular}"
+                    TextColor="White" />
+                <Button FontSize="Body" TextTransform="None" IsVisible="false"
+                     x:Name="btnAdd" Clicked="OnAddClicked"
+                    Margin="20,20,20,10"
+                    BackgroundColor="#ff0266"
+                    CornerRadius="15"
+                    Text="{x:Static resource:AppResources.AddStudentText}" FontFamily="{StaticResource RobotoRegular}"
+                    TextColor="White" />
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

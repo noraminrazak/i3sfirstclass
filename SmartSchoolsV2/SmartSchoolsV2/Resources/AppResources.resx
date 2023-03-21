@@ -1,0 +1,1822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbsentText" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="AccountClosureText" xml:space="preserve">
+    <value>i-3s account closure</value>
+  </data>
+  <data name="AccountStatus" xml:space="preserve">
+    <value>Account status</value>
+  </data>
+  <data name="AccountStatusText" xml:space="preserve">
+    <value>Account Status</value>
+  </data>
+  <data name="AddAttachmentText" xml:space="preserve">
+    <value>Add attachment +</value>
+  </data>
+  <data name="AddNewMemberText" xml:space="preserve">
+    <value>Add New Member</value>
+  </data>
+  <data name="AddNutritionText" xml:space="preserve">
+    <value>Add Nutrition</value>
+  </data>
+  <data name="AddOrderDetailText" xml:space="preserve">
+    <value>Add Order Detail </value>
+  </data>
+  <data name="AddressRequiredText" xml:space="preserve">
+    <value>Address is required.</value>
+  </data>
+  <data name="AddStudentText" xml:space="preserve">
+    <value>Add Student</value>
+  </data>
+  <data name="AddToCartText" xml:space="preserve">
+    <value>Add to cart</value>
+  </data>
+  <data name="AllText" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AlreadyHaveAccountText" xml:space="preserve">
+    <value>Already have an account? </value>
+  </data>
+  <data name="AmountLessThanTopupText" xml:space="preserve">
+    <value>Entered amount less than minimum topup amount.</value>
+  </data>
+  <data name="AmountLessThanTransferText" xml:space="preserve">
+    <value>Entered amount less than minimum transfer amount.</value>
+  </data>
+  <data name="AmountText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="AssistantHeadText" xml:space="preserve">
+    <value>Assistant Head</value>
+  </data>
+  <data name="AttendanceReportText" xml:space="preserve">
+    <value>Attendance Report</value>
+  </data>
+  <data name="AttendanceText" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="AverageCompositionText" xml:space="preserve">
+    <value>Average Composition</value>
+  </data>
+  <data name="BackdateNotAllowedText" xml:space="preserve">
+    <value>Backdating is not allowed for online orders</value>
+  </data>
+  <data name="BackgroundText" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="BadRequestText" xml:space="preserve">
+    <value>400 - Bad Request</value>
+  </data>
+  <data name="BalanceText" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="BgColorText" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="BlackText" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="BlueText" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="BookstoreText" xml:space="preserve">
+    <value>Bookstore</value>
+  </data>
+  <data name="BrownText" xml:space="preserve">
+    <value>Brown</value>
+  </data>
+  <data name="BulletinText" xml:space="preserve">
+    <value>Bulletin</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CannotSendMessageNowText" xml:space="preserve">
+    <value>You cannot send message at this time. Messaging time is between 7am to 7pm only.</value>
+  </data>
+  <data name="CanteenText" xml:space="preserve">
+    <value>Canteen</value>
+  </data>
+  <data name="CantTopupAccStatusText" xml:space="preserve">
+    <value>You cannot proceed with topup. Please check your account status on the Help center menu for more information.</value>
+  </data>
+  <data name="CantTopupKYCStatusText" xml:space="preserve">
+    <value>You cannot proceed with topup. Please check your account status (KYC Status) on the Help center menu for more information.</value>
+  </data>
+  <data name="CardDailyLimitRequiredText" xml:space="preserve">
+    <value>Daily card limit amount is required.</value>
+  </data>
+  <data name="CardDailyLimitText" xml:space="preserve">
+    <value>Card daily limit</value>
+  </data>
+  <data name="CardNoRequiredText" xml:space="preserve">
+    <value>Card number is required.</value>
+  </data>
+  <data name="CardNotAssignedText" xml:space="preserve">
+    <value>Card has not been assigned.</value>
+  </data>
+  <data name="CardNumberText" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+  <data name="CardPINNotMatchText" xml:space="preserve">
+    <value>Card PIN not match.</value>
+  </data>
+  <data name="CardPINRequiredText" xml:space="preserve">
+    <value>Card PIN required.</value>
+  </data>
+  <data name="CardReason3Text" xml:space="preserve">
+    <value>Card lost or stolen.</value>
+  </data>
+  <data name="CardReason4Text" xml:space="preserve">
+    <value>Faulty card.</value>
+  </data>
+  <data name="CardReason6Text" xml:space="preserve">
+    <value>To return the temporary card and activate the replacement card.</value>
+  </data>
+  <data name="CardReplacementText" xml:space="preserve">
+    <value>Card replacement</value>
+  </data>
+  <data name="CardStatus2Text" xml:space="preserve">
+    <value>Your card will be deactivated immediately. Please issue a card replacement after you send the report lost card in order to keep your account active. Your account balance will sync up with your temporary or new replacement card.</value>
+  </data>
+  <data name="CardStatus5Text" xml:space="preserve">
+    <value>Please proceed with card replacement.</value>
+  </data>
+  <data name="CardStatusText" xml:space="preserve">
+    <value>Card Status</value>
+  </data>
+  <data name="CategoryDescText" xml:space="preserve">
+    <value>Category Description</value>
+  </data>
+  <data name="CategoryNameRequired" xml:space="preserve">
+    <value>Category name is required.</value>
+  </data>
+  <data name="CategoryNameText" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="ChangeCardPINText" xml:space="preserve">
+    <value>Change card PIN</value>
+  </data>
+  <data name="ChangePasswordText" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ChannelText" xml:space="preserve">
+    <value>Channel </value>
+  </data>
+  <data name="CheckInternetText" xml:space="preserve">
+    <value>Please check your internet connection.</value>
+  </data>
+  <data name="CheckoutText" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="CityRequiredText" xml:space="preserve">
+    <value>City is required.</value>
+  </data>
+  <data name="CityText" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ClassInfoText" xml:space="preserve">
+    <value>Class Information</value>
+  </data>
+  <data name="ClassNameRequired" xml:space="preserve">
+    <value>Class name is required.</value>
+  </data>
+  <data name="ClassNameText" xml:space="preserve">
+    <value>Class Name</value>
+  </data>
+  <data name="ClassNotSpecifiedText" xml:space="preserve">
+    <value>Class not specified</value>
+  </data>
+  <data name="ClassTeacherExistText" xml:space="preserve">
+    <value> is the current class teacher for </value>
+  </data>
+  <data name="ClassTeacherText" xml:space="preserve">
+    <value>Class Teacher</value>
+  </data>
+  <data name="ClassText" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="ClearText" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="ClickToOpenBrowserText" xml:space="preserve">
+    <value>Click on the button below to open result page on a website.</value>
+  </data>
+  <data name="ClickToStartMessageText" xml:space="preserve">
+    <value>Click on the bottom left button to start messaging.</value>
+  </data>
+  <data name="CloseText" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ClubText" xml:space="preserve">
+    <value>Club</value>
+  </data>
+  <data name="ColorPickerTitleBgText" xml:space="preserve">
+    <value>Select Background Color</value>
+  </data>
+  <data name="ColorPickerTitleTextText" xml:space="preserve">
+    <value>Select Text Color</value>
+  </data>
+  <data name="CompanyNameText" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="ComplaintFormText" xml:space="preserve">
+    <value>Complaint form</value>
+  </data>
+  <data name="ComplyBNMText" xml:space="preserve">
+    <value>Complying to Bank Negara Malaysia's regulations, you are required to complete Customer Due Diligence process to activate your eWallet account.</value>
+  </data>
+  <data name="ConfirmCardPINText" xml:space="preserve">
+    <value>Confirm card PIN</value>
+  </data>
+  <data name="ConfirmDeleteText" xml:space="preserve">
+    <value>Confirm delete</value>
+  </data>
+  <data name="ConfirmNewPasswordRequiredText" xml:space="preserve">
+    <value>Confirm new password is required.</value>
+  </data>
+  <data name="ConfirmNewPasswordText" xml:space="preserve">
+    <value>Confirm new password</value>
+  </data>
+  <data name="ConfirmPasswordText" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>Yes, Confirm</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="ContinueButtonText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="ContinueOrderText" xml:space="preserve">
+    <value>Continue order</value>
+  </data>
+  <data name="CooperativeText" xml:space="preserve">
+    <value>Cooperative</value>
+  </data>
+  <data name="CountryCodeText" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="CountryRequiredText" xml:space="preserve">
+    <value>Country is required.</value>
+  </data>
+  <data name="CountryText" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CreateAttendanceText" xml:space="preserve">
+    <value>Create Attendance</value>
+  </data>
+  <data name="CreateNewClubText" xml:space="preserve">
+    <value>Create new club</value>
+  </data>
+  <data name="CreatePasswordHere" xml:space="preserve">
+    <value>Create Password</value>
+  </data>
+  <data name="CurrentOrderDiscardText" xml:space="preserve">
+    <value>Your current order will be discarded from your cart. Click 'Yes' if you want to continue with this order.</value>
+  </data>
+  <data name="CustDueDiligenceText" xml:space="preserve">
+    <value>Customer due diligence</value>
+  </data>
+  <data name="DailyLimitText" xml:space="preserve">
+    <value>Daily limit : </value>
+  </data>
+  <data name="DailySpendingMessageText" xml:space="preserve">
+    <value>Your card will have daily spending limit of RM 200.00, if you set the preferred amount to RM 0.00</value>
+  </data>
+  <data name="DateOfBirthText" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="DateSalesMethodText" xml:space="preserve">
+    <value>Date / Sales Method</value>
+  </data>
+  <data name="DateText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateTimeText" xml:space="preserve">
+    <value>Date / Time</value>
+  </data>
+  <data name="DeleteConfirmText" xml:space="preserve">
+    <value>Please re-confirm your request to delete your account. Once deleted, your e-wallet account will also be deleted from i-3s system within 7 working days. We will inform you via email on steps to recover your unutilised credit.  </value>
+  </data>
+  <data name="DeleteMyAccountText" xml:space="preserve">
+    <value>Delete my account</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeliveredText" xml:space="preserve">
+    <value>Delivered</value>
+  </data>
+  <data name="DeliveryBtnText" xml:space="preserve">
+    <value>Delivery</value>
+  </data>
+  <data name="DeliveryDateRequiredText" xml:space="preserve">
+    <value>Order date is required</value>
+  </data>
+  <data name="DeliveryDateText" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="DeliveryDetailText" xml:space="preserve">
+    <value>Order Details</value>
+  </data>
+  <data name="DeliveryLocationRequiredText" xml:space="preserve">
+    <value>Delivery location is required.</value>
+  </data>
+  <data name="DeliveryLocationText" xml:space="preserve">
+    <value>Delivery Location (within school)</value>
+  </data>
+  <data name="DeliveryOnText" xml:space="preserve">
+    <value>Delivery on </value>
+  </data>
+  <data name="DepositFromOthersBankText1" xml:space="preserve">
+    <value>Deposit from other's bank account or company is</value>
+  </data>
+  <data name="DepositFromOthersBankText2" xml:space="preserve">
+    <value>and may take up to</value>
+  </data>
+  <data name="DepositFromOthersBankText3" xml:space="preserve">
+    <value>to refund. RM5 admin fee to refund back sender bank account.</value>
+  </data>
+  <data name="DepositFromOwnBankText" xml:space="preserve">
+    <value>Deposit from your own bank account only</value>
+  </data>
+  <data name="DescriptionRequiredText" xml:space="preserve">
+    <value>Description is required.</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DetailText" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="DidNotReceivedOTPText" xml:space="preserve">
+    <value>Didn't received an OTP?</value>
+  </data>
+  <data name="DisplayDateFromText" xml:space="preserve">
+    <value>Display Date From</value>
+  </data>
+  <data name="DisplayDateGreaterText" xml:space="preserve">
+    <value>Display Date To must be greater than Display Date From</value>
+  </data>
+  <data name="DisplayDateToRequiredText" xml:space="preserve">
+    <value>Display date to is required.</value>
+  </data>
+  <data name="DisplayDateToText" xml:space="preserve">
+    <value>Display Date To</value>
+  </data>
+  <data name="DOBRequiredText" xml:space="preserve">
+    <value>Date of birth is required.</value>
+  </data>
+  <data name="DocumentVerifyMessageText" xml:space="preserve">
+    <value>Please proceed with new customer verification to activate your eWallet account for topup and funds transfer purposes.</value>
+  </data>
+  <data name="DocumentVerifyText" xml:space="preserve">
+    <value>Document verification</value>
+  </data>
+  <data name="DoneText" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="DontHaveAccountText" xml:space="preserve">
+    <value>Don't have an account? </value>
+  </data>
+  <data name="DownloadOrderText" xml:space="preserve">
+    <value>Download Order</value>
+  </data>
+  <data name="DownloadStaffAttendanceForText" xml:space="preserve">
+    <value>Download staffs attendance report for shift_code session for MMM_yyyy</value>
+  </data>
+  <data name="DownloadStudentAttendanceForText" xml:space="preserve">
+    <value>Download students attendance report for class_name for MMM_yyyy</value>
+  </data>
+  <data name="DownloadText" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DoYouReallyWantStudentText" xml:space="preserve">
+    <value>Do you really want </value>
+  </data>
+  <data name="DoYouReallyWantText" xml:space="preserve">
+    <value>Do you really want </value>
+  </data>
+  <data name="DoYouReallyWantToAddText" xml:space="preserve">
+    <value>Do you really want to add </value>
+  </data>
+  <data name="DoYouReallyWantToCreateText" xml:space="preserve">
+    <value>Do you really want to create attendance for </value>
+  </data>
+  <data name="DoYouReallyWantToDeleteText" xml:space="preserve">
+    <value>Do you really want to delete </value>
+  </data>
+  <data name="DoYouReallyWantToEnrollText" xml:space="preserve">
+    <value>Do you really want to enroll </value>
+  </data>
+  <data name="DoYouReallyWantToHandoverText" xml:space="preserve">
+    <value>Do you really want to handover this club to </value>
+  </data>
+  <data name="DoYouReallyWantToJoinChannelText" xml:space="preserve">
+    <value>Do you really want to join this channel?</value>
+  </data>
+  <data name="DoYouReallyWantToJoinText" xml:space="preserve">
+    <value>Do you really want to join </value>
+  </data>
+  <data name="DoYouReallyWantToLeaveText" xml:space="preserve">
+    <value>Do you really want to leave </value>
+  </data>
+  <data name="DoYouReallyWantToRemoveOrderText" xml:space="preserve">
+    <value>Do you really want to remove your order </value>
+  </data>
+  <data name="DoYouReallyWantToRemoveText" xml:space="preserve">
+    <value>Do you really want to remove </value>
+  </data>
+  <data name="EditBulletinText" xml:space="preserve">
+    <value>Edit Bulletin</value>
+  </data>
+  <data name="EditNutritionText" xml:space="preserve">
+    <value>Edit Nutrition</value>
+  </data>
+  <data name="EditProductCategoryText" xml:space="preserve">
+    <value>Edit Product Category</value>
+  </data>
+  <data name="EditProductText" xml:space="preserve">
+    <value>Edit Product</value>
+  </data>
+  <data name="EditProfileText" xml:space="preserve">
+    <value>Edit profile</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EmailRequiredText" xml:space="preserve">
+    <value>Email is required.</value>
+  </data>
+  <data name="EmailText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmployerNameRequiredText" xml:space="preserve">
+    <value>Employer name is required.</value>
+  </data>
+  <data name="EmployerNameText" xml:space="preserve">
+    <value>Employer Name</value>
+  </data>
+  <data name="EnrollmentConfirmText" xml:space="preserve">
+    <value>Enrollment confirmation</value>
+  </data>
+  <data name="EnrollStudentClassText" xml:space="preserve">
+    <value>Enroll student into class</value>
+  </data>
+  <data name="EnterAddressText" xml:space="preserve">
+    <value>Enter address here</value>
+  </data>
+  <data name="EnterAverageCompositionText" xml:space="preserve">
+    <value>Enter average composition here</value>
+  </data>
+  <data name="EnterCardDailyLimitText" xml:space="preserve">
+    <value>Enter card daily limit amount</value>
+  </data>
+  <data name="EnterCardNumberText" xml:space="preserve">
+    <value>Enter card number here</value>
+  </data>
+  <data name="EnterCardStatusText" xml:space="preserve">
+    <value>Enter card status here</value>
+  </data>
+  <data name="EnterCategoryDescHereText" xml:space="preserve">
+    <value>Enter category description here</value>
+  </data>
+  <data name="EnterCategoryNameHereText" xml:space="preserve">
+    <value>Enter category name here</value>
+  </data>
+  <data name="EnterCityText" xml:space="preserve">
+    <value>Enter city here</value>
+  </data>
+  <data name="EnterConfirmNewPasswordText" xml:space="preserve">
+    <value>Re-enter new password here</value>
+  </data>
+  <data name="EnterDeliveryLocationText" xml:space="preserve">
+    <value>Enter delivery location</value>
+  </data>
+  <data name="EnteredAmountCannotLessText" xml:space="preserve">
+    <value>Entered amount cannot less than 0.</value>
+  </data>
+  <data name="EnteredAmountMoreThanText" xml:space="preserve">
+    <value>Entered amount more than maximum daily limit.</value>
+  </data>
+  <data name="EnterEmailText" xml:space="preserve">
+    <value>Enter email here</value>
+  </data>
+  <data name="EnterEmployerName" xml:space="preserve">
+    <value>Enter employer name here</value>
+  </data>
+  <data name="EnterFullNameText" xml:space="preserve">
+    <value>Enter full name here</value>
+  </data>
+  <data name="EnterIDNoText" xml:space="preserve">
+    <value>Enter identification card number here</value>
+  </data>
+  <data name="EnterIngredientText" xml:space="preserve">
+    <value>Enter ingredient here</value>
+  </data>
+  <data name="EnterMessageHereText" xml:space="preserve">
+    <value>Enter message here text</value>
+  </data>
+  <data name="EnterMobileNoText" xml:space="preserve">
+    <value>Enter mobile number here</value>
+  </data>
+  <data name="EnterMotherNameText" xml:space="preserve">
+    <value>Enter mother name here</value>
+  </data>
+  <data name="EnterNewCardNumberText" xml:space="preserve">
+    <value>Enter new card number here</value>
+  </data>
+  <data name="EnterNewPasswordText" xml:space="preserve">
+    <value>Enter new password here</value>
+  </data>
+  <data name="EnterNumberOnlyText" xml:space="preserve">
+    <value>Please enter numbers only.</value>
+  </data>
+  <data name="EnterNutritionText" xml:space="preserve">
+    <value>Enter nutrition here</value>
+  </data>
+  <data name="EnterPassportNoText" xml:space="preserve">
+    <value>Enter passport number here</value>
+  </data>
+  <data name="EnterPerServingText" xml:space="preserve">
+    <value>Enter per serving here</value>
+  </data>
+  <data name="EnterPostcodeHere" xml:space="preserve">
+    <value>Enter postcode here</value>
+  </data>
+  <data name="EnterProductCategoryHereText" xml:space="preserve">
+    <value>Enter product category here</value>
+  </data>
+  <data name="EnterProductCodeText" xml:space="preserve">
+    <value>Enter product code here</value>
+  </data>
+  <data name="EnterProductDescHereText" xml:space="preserve">
+    <value>Enter product description here</value>
+  </data>
+  <data name="EnterProductDescText" xml:space="preserve">
+    <value>Enter product description here</value>
+  </data>
+  <data name="EnterProductNameText" xml:space="preserve">
+    <value>Enter product name here</value>
+  </data>
+  <data name="EnterProductSKUText" xml:space="preserve">
+    <value>Enter product SKU here</value>
+  </data>
+  <data name="EnterProvinceText" xml:space="preserve">
+    <value>Enter province here</value>
+  </data>
+  <data name="EnterServingSizeText" xml:space="preserve">
+    <value>Enter serving size here</value>
+  </data>
+  <data name="ErrorUploadImageText" xml:space="preserve">
+    <value>An error occurred during uploading. Please try again.</value>
+  </data>
+  <data name="ErrorWhileSavingFileText" xml:space="preserve">
+    <value>Error while saving the file.</value>
+  </data>
+  <data name="EveryDayText" xml:space="preserve">
+    <value>Every day</value>
+  </data>
+  <data name="EWalletFunctionText" xml:space="preserve">
+    <value>eWallet function is not available at this moment. We will keep you informed on any further update.</value>
+  </data>
+  <data name="eWalletText" xml:space="preserve">
+    <value>eWallet</value>
+  </data>
+  <data name="FAQText" xml:space="preserve">
+    <value>FAQ</value>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="FeedbackTypeRequiredText" xml:space="preserve">
+    <value>Feedback Type is required.</value>
+  </data>
+  <data name="FeedbackTypeText" xml:space="preserve">
+    <value>Feedback Type</value>
+  </data>
+  <data name="FileSaveSuccessText" xml:space="preserve">
+    <value>File saved succesfully.</value>
+  </data>
+  <data name="ForbiddenText" xml:space="preserve">
+    <value>403 - Forbidden</value>
+  </data>
+  <data name="ForgotPasswordText" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="ForText" xml:space="preserve">
+    <value>For</value>
+  </data>
+  <data name="FourteenBizDaysText" xml:space="preserve">
+    <value> 14 business days </value>
+  </data>
+  <data name="FridayText" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="FullNameRequiredText" xml:space="preserve">
+    <value>Full name is required.</value>
+  </data>
+  <data name="FullNameText" xml:space="preserve">
+    <value>Full Name (As in MyKad / Passport)</value>
+  </data>
+  <data name="GreenText" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="GreyText" xml:space="preserve">
+    <value>Grey</value>
+  </data>
+  <data name="GuardianInfoText" xml:space="preserve">
+    <value>Guardian Information</value>
+  </data>
+  <data name="HalfdayText" xml:space="preserve">
+    <value>Half Day</value>
+  </data>
+  <data name="HandoverText_" xml:space="preserve">
+    <value>Handover </value>
+  </data>
+  <data name="HeadmasterText" xml:space="preserve">
+    <value>Headmaster</value>
+  </data>
+  <data name="HelpCenterText" xml:space="preserve">
+    <value>Help center</value>
+  </data>
+  <data name="HomeAddressText" xml:space="preserve">
+    <value>Home Address</value>
+  </data>
+  <data name="i3seWalletText" xml:space="preserve">
+    <value>i3s eWallet</value>
+  </data>
+  <data name="ICNoText" xml:space="preserve">
+    <value>Identification Card Number</value>
+  </data>
+  <data name="IDDocTypeText" xml:space="preserve">
+    <value>Identification Document Type</value>
+  </data>
+  <data name="IDImageRequiredText" xml:space="preserve">
+    <value>IC photo is required.</value>
+  </data>
+  <data name="IDNoText" xml:space="preserve">
+    <value>MyKad / Passport Number</value>
+  </data>
+  <data name="IDTypeRequiredText" xml:space="preserve">
+    <value>Identification type is required.</value>
+  </data>
+  <data name="IDTypeText" xml:space="preserve">
+    <value>Identification Type</value>
+  </data>
+  <data name="IngredientText" xml:space="preserve">
+    <value>Ingredient</value>
+  </data>
+  <data name="InternalServerErrorText" xml:space="preserve">
+    <value>500 - Internal Server Error</value>
+  </data>
+  <data name="InvalidImageText" xml:space="preserve">
+    <value>Invalid image. Please try again.</value>
+  </data>
+  <data name="ItemsText" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="IWillDepositFromMyOwnAccText" xml:space="preserve">
+    <value>I will deposit from my own bank account.</value>
+  </data>
+  <data name="JoinClassAsText" xml:space="preserve">
+    <value>Join the class as?</value>
+  </data>
+  <data name="JoinClassText" xml:space="preserve">
+    <value>Join class?</value>
+  </data>
+  <data name="JoinClubText" xml:space="preserve">
+    <value>Join club</value>
+  </data>
+  <data name="JoinExistingText" xml:space="preserve">
+    <value>Join existing club</value>
+  </data>
+  <data name="KYCStatusText" xml:space="preserve">
+    <value>KYC Status</value>
+  </data>
+  <data name="Last4DigitRequiredText" xml:space="preserve">
+    <value>Last 4 digit is required.</value>
+  </data>
+  <data name="LateInText" xml:space="preserve">
+    <value>Late In</value>
+  </data>
+  <data name="LeaveClassMenutext" xml:space="preserve">
+    <value>Leave class</value>
+  </data>
+  <data name="LeaveClassText" xml:space="preserve">
+    <value>Leave class?</value>
+  </data>
+  <data name="LeaveClubMenuText" xml:space="preserve">
+    <value>Leave club</value>
+  </data>
+  <data name="LeaveClubText" xml:space="preserve">
+    <value>Leave club?</value>
+  </data>
+  <data name="LeaveReviewText" xml:space="preserve">
+    <value>Leave a review</value>
+  </data>
+  <data name="LoginButtonText" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginToChannelNowText" xml:space="preserve">
+    <value> Login to channel now?</value>
+  </data>
+  <data name="LogoutMessageText" xml:space="preserve">
+    <value>Do you really want to logout?</value>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MarketingFlagText" xml:space="preserve">
+    <value>I would like to receive marketings emails.</value>
+  </data>
+  <data name="MemberText" xml:space="preserve">
+    <value> Members</value>
+  </data>
+  <data name="MerchantDetailText" xml:space="preserve">
+    <value>Merchant Details</value>
+  </data>
+  <data name="MerchantNameText" xml:space="preserve">
+    <value>Merchant Name</value>
+  </data>
+  <data name="MerchantText" xml:space="preserve">
+    <value>Merchant</value>
+  </data>
+  <data name="MerchantTypeRequiredText" xml:space="preserve">
+    <value>Merchant type is required.</value>
+  </data>
+  <data name="MerchantTypeText" xml:space="preserve">
+    <value>Merchant Type</value>
+  </data>
+  <data name="MessageRequiredText" xml:space="preserve">
+    <value>Message is required.</value>
+  </data>
+  <data name="MessageText" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MinimumTopupText" xml:space="preserve">
+    <value>Minimum topup amount is RM 20.00</value>
+  </data>
+  <data name="MinimumTransferText" xml:space="preserve">
+    <value>Minimum transfer amount is RM 1.00</value>
+  </data>
+  <data name="MobileNoRequiredText" xml:space="preserve">
+    <value>Mobile number is required.</value>
+  </data>
+  <data name="MobileNoText" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="MondayText" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="MotherNameRequiredText" xml:space="preserve">
+    <value>Mother name is required.</value>
+  </data>
+  <data name="MotherNameText" xml:space="preserve">
+    <value>Mother Name</value>
+  </data>
+  <data name="MPayIdText" xml:space="preserve">
+    <value>MPay ID</value>
+  </data>
+  <data name="MyCardText" xml:space="preserve">
+    <value>My card</value>
+  </data>
+  <data name="MyKadPassportNoRequiredText" xml:space="preserve">
+    <value>MyKad / Passport number is required.</value>
+  </data>
+  <data name="MyKadText" xml:space="preserve">
+    <value>MyKad</value>
+  </data>
+  <data name="MyTicketsText" xml:space="preserve">
+    <value>My Tickets</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NationalityRequiredText" xml:space="preserve">
+    <value>Nationality is required.</value>
+  </data>
+  <data name="NationalityText" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="NewBulletinText" xml:space="preserve">
+    <value>New Bulletin</value>
+  </data>
+  <data name="NewCardNoRequiredText" xml:space="preserve">
+    <value>New card number is required.</value>
+  </data>
+  <data name="NewCardNoText" xml:space="preserve">
+    <value>New Card Number</value>
+  </data>
+  <data name="NewCardPINText" xml:space="preserve">
+    <value>Change card PIN</value>
+  </data>
+  <data name="NewClubNameRequired" xml:space="preserve">
+    <value>New club name is required.</value>
+  </data>
+  <data name="NewCustVerifyText" xml:space="preserve">
+    <value>New customer verification</value>
+  </data>
+  <data name="NewPasswordRequiredText" xml:space="preserve">
+    <value>New password is required.</value>
+  </data>
+  <data name="NewPasswordText" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="NewProductCategoryText" xml:space="preserve">
+    <value>New Product Category</value>
+  </data>
+  <data name="NewProductText" xml:space="preserve">
+    <value>New Product</value>
+  </data>
+  <data name="NextButtonText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NoCameraText" xml:space="preserve">
+    <value>No camera available.</value>
+  </data>
+  <data name="NoLimitText" xml:space="preserve">
+    <value>NO LIMIT</value>
+  </data>
+  <data name="NoRecordForSelectedDateText" xml:space="preserve">
+    <value>No records for selected date</value>
+  </data>
+  <data name="NoRecordFoundText" xml:space="preserve">
+    <value>No records found</value>
+  </data>
+  <data name="NotAllowedText" xml:space="preserve">
+    <value> not allowed </value>
+  </data>
+  <data name="NotFoundText" xml:space="preserve">
+    <value>404 - Not Found</value>
+  </data>
+  <data name="NotifyText" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="NutritionText" xml:space="preserve">
+    <value>Nutrition</value>
+  </data>
+  <data name="OccupationRequiredText" xml:space="preserve">
+    <value>Occupation is required.</value>
+  </data>
+  <data name="OccupationText" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="OnlineBankingText" xml:space="preserve">
+    <value>Online Banking</value>
+  </data>
+  <data name="OnlineOrderText" xml:space="preserve">
+    <value>Online ordering</value>
+  </data>
+  <data name="OpenBrowserText" xml:space="preserve">
+    <value>Open Website</value>
+  </data>
+  <data name="OpenText" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="OperatorTypeRequiredText" xml:space="preserve">
+    <value>Operator Type is required.</value>
+  </data>
+  <data name="OperatorTypeText" xml:space="preserve">
+    <value>Operator Type</value>
+  </data>
+  <data name="OrangeText" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="OrderForText" xml:space="preserve">
+    <value>Order for </value>
+  </data>
+  <data name="OrderForWeekendText" xml:space="preserve">
+    <value>Do you really want to order for weekend?</value>
+  </data>
+  <data name="OrderHistoryText" xml:space="preserve">
+    <value>Order History</value>
+  </data>
+  <data name="OrderMustBefore7Text" xml:space="preserve">
+    <value>Online orders must be placed before 7:00 AM on the same date</value>
+  </data>
+  <data name="OrderNoText" xml:space="preserve">
+    <value>Order #</value>
+  </data>
+  <data name="OrderReceivedText" xml:space="preserve">
+    <value>Order received</value>
+  </data>
+  <data name="OrderReportText" xml:space="preserve">
+    <value>Order Report</value>
+  </data>
+  <data name="OrderStatusDeliveredText" xml:space="preserve">
+    <value>Order Status : Delivered</value>
+  </data>
+  <data name="OrderStatusPreparingText" xml:space="preserve">
+    <value>Order Status : Preparing</value>
+  </data>
+  <data name="OrderTimingAlreadyPastText" xml:space="preserve">
+    <value>Your selected time has already past.</value>
+  </data>
+  <data name="OrderTimingRequiredText" xml:space="preserve">
+    <value>Order timing is required.</value>
+  </data>
+  <data name="OrderTimingText" xml:space="preserve">
+    <value>Order Timing</value>
+  </data>
+  <data name="OrText" xml:space="preserve">
+    <value> or </value>
+  </data>
+  <data name="OTPRequiredText" xml:space="preserve">
+    <value>OTP is required.</value>
+  </data>
+  <data name="OutingText" xml:space="preserve">
+    <value>Outing</value>
+  </data>
+  <data name="ParentFullNameText" xml:space="preserve">
+    <value>Parent / Guardian Full Name (As in MyKad / Passport)</value>
+  </data>
+  <data name="ParentNameText" xml:space="preserve">
+    <value>Parent Name</value>
+  </data>
+  <data name="ParentText" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="PassportNoText" xml:space="preserve">
+    <value>Passport Number</value>
+  </data>
+  <data name="PassportText" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="PasswordIncorrectText" xml:space="preserve">
+    <value>Incorrect password.</value>
+  </data>
+  <data name="PasswordMatchText" xml:space="preserve">
+    <value>Password match</value>
+  </data>
+  <data name="PasswordNotMatchText" xml:space="preserve">
+    <value>Password not match.</value>
+  </data>
+  <data name="PasswordRequiredText" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="PasswordRuleMetText" xml:space="preserve">
+    <value>Password rules need to be met.</value>
+  </data>
+  <data name="PasswordRuleText" xml:space="preserve">
+    <value>Use at least 8 characters and a mix of capital and lower case letters and numbers with no special character in it</value>
+  </data>
+  <data name="PasswordText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PaymentByText" xml:space="preserve">
+    <value>Payment By</value>
+  </data>
+  <data name="PaymentFromText" xml:space="preserve">
+    <value>Payment from</value>
+  </data>
+  <data name="PaymentMethodText" xml:space="preserve">
+    <value>Payment Method</value>
+  </data>
+  <data name="PaymentModeText" xml:space="preserve">
+    <value>Payment Mode : </value>
+  </data>
+  <data name="PaymentText" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="PaymentToText" xml:space="preserve">
+    <value>Payment to </value>
+  </data>
+  <data name="PayoutText" xml:space="preserve">
+    <value>Payout</value>
+  </data>
+  <data name="PendingText" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="PermissionGalleryText" xml:space="preserve">
+    <value>Permission not granted to gallery.</value>
+  </data>
+  <data name="PerServingText" xml:space="preserve">
+    <value>Per Serving</value>
+  </data>
+  <data name="PhoneDialerNotSupportText" xml:space="preserve">
+    <value>Phone dialer is not supported on this device.</value>
+  </data>
+  <data name="PickAndUploadText" xml:space="preserve">
+    <value>Pick and upload</value>
+  </data>
+  <data name="PinkText" xml:space="preserve">
+    <value>Pink</value>
+  </data>
+  <data name="PlaceOrderText" xml:space="preserve">
+    <value>Place Order</value>
+  </data>
+  <data name="PleaseAddSomethingText" xml:space="preserve">
+    <value>Click here to start order</value>
+  </data>
+  <data name="PleaseAgreeText" xml:space="preserve">
+    <value>Please tick at the box and agree to continue.</value>
+  </data>
+  <data name="PleaseCompleteKYCText" xml:space="preserve">
+    <value>Please complete our document verification process before commencing with credit topup.</value>
+  </data>
+  <data name="PleaseConfirmCardPINText" xml:space="preserve">
+    <value>Please confirm your card PIN number</value>
+  </data>
+  <data name="PleaseContactSupportText" xml:space="preserve">
+    <value> Please contact MP@y customer support at 1-700-81-6729 (MPAY) for further assistance.</value>
+  </data>
+  <data name="PleaseContactText" xml:space="preserve">
+    <value>Please contact our administrator to request for your account closure at </value>
+  </data>
+  <data name="PleaseContactText2" xml:space="preserve">
+    <value> and state the following details:</value>
+  </data>
+  <data name="PleaseContactText3" xml:space="preserve">
+    <value>1. Full name</value>
+  </data>
+  <data name="PleaseContactText4" xml:space="preserve">
+    <value>2. IC/passport number</value>
+  </data>
+  <data name="PleaseContactText5" xml:space="preserve">
+    <value>3. Bank name and account number</value>
+  </data>
+  <data name="PleaseEnterCardPINText" xml:space="preserve">
+    <value>Please enter your card PIN number</value>
+  </data>
+  <data name="PleaseEnterLast4DigitText" xml:space="preserve">
+    <value>Please enter last 4 digit Student Identification / Passport Number</value>
+  </data>
+  <data name="PleaseEnterMoreCharText" xml:space="preserve">
+    <value>Please enter more than 2 characters</value>
+  </data>
+  <data name="PleaseEnterNewClubNameText" xml:space="preserve">
+    <value>Please enter new club name below</value>
+  </data>
+  <data name="PleaseEnterNoOnlytext" xml:space="preserve">
+    <value>Please enter numbers only.</value>
+  </data>
+  <data name="PleaseEnterOTPText" xml:space="preserve">
+    <value>Please enter the OTP sent to your mobile number</value>
+  </data>
+  <data name="PleaseSelectDifferClassText" xml:space="preserve">
+    <value>Please select different class to update.</value>
+  </data>
+  <data name="PleaseSelectDifferShiftText" xml:space="preserve">
+    <value>Please select different working shift to update.</value>
+  </data>
+  <data name="PleaseSelectLanguageText" xml:space="preserve">
+    <value>Please select your language</value>
+  </data>
+  <data name="PleaseSelectPaymentMethodText" xml:space="preserve">
+    <value>Please select your payment method first.</value>
+  </data>
+  <data name="PleaseSelectText" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="PleaseUpdateText" xml:space="preserve">
+    <value>A new version of the application is available. Please click below to update to the latest version.</value>
+  </data>
+  <data name="PostcodeRequiredText" xml:space="preserve">
+    <value>Postcode is required.</value>
+  </data>
+  <data name="PostcodeText" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="POSTerminalMenuColorText" xml:space="preserve">
+    <value>POS Terminal Menu Color</value>
+  </data>
+  <data name="POSText" xml:space="preserve">
+    <value>POS</value>
+  </data>
+  <data name="PreferredAmountText" xml:space="preserve">
+    <value>Enter your preferred amount</value>
+  </data>
+  <data name="PreparingText" xml:space="preserve">
+    <value>Preparing</value>
+  </data>
+  <data name="PresentText" xml:space="preserve">
+    <value>Present</value>
+  </data>
+  <data name="ProductCodeText" xml:space="preserve">
+    <value>Product Code</value>
+  </data>
+  <data name="ProductDescText" xml:space="preserve">
+    <value>Product Description</value>
+  </data>
+  <data name="ProductNameRequiredText" xml:space="preserve">
+    <value>Product name is required.</value>
+  </data>
+  <data name="ProductNameText" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="ProductSKURequiredText" xml:space="preserve">
+    <value>Product SKU is required.</value>
+  </data>
+  <data name="ProductSKUText" xml:space="preserve">
+    <value>Product SKU</value>
+  </data>
+  <data name="ProductStockKeepingUnitText" xml:space="preserve">
+    <value>Product stock-keeping unit (SKU)</value>
+  </data>
+  <data name="ProductText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ProvidedDayRequiredText" xml:space="preserve">
+    <value>Provided day is required.</value>
+  </data>
+  <data name="ProvidedDayText" xml:space="preserve">
+    <value>Provided day</value>
+  </data>
+  <data name="PurchaseText" xml:space="preserve">
+    <value>Purchased</value>
+  </data>
+  <data name="PurpleText" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="QuantityText" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="RaceText" xml:space="preserve">
+    <value>Race</value>
+  </data>
+  <data name="ReceiptText" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="ReceivedFromEWallet" xml:space="preserve">
+    <value>Received from eWallet</value>
+  </data>
+  <data name="ReceivedFromText" xml:space="preserve">
+    <value>Received from </value>
+  </data>
+  <data name="RecordText" xml:space="preserve">
+    <value> record(s) found</value>
+  </data>
+  <data name="RedeemByText" xml:space="preserve">
+    <value>Redeem by</value>
+  </data>
+  <data name="RedeemFromText" xml:space="preserve">
+    <value>Redeem from </value>
+  </data>
+  <data name="RedeemText" xml:space="preserve">
+    <value>Redemption</value>
+  </data>
+  <data name="RedText" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="ReferenceNoText" xml:space="preserve">
+    <value>Reference Number</value>
+  </data>
+  <data name="RegisterAgreeText" xml:space="preserve">
+    <value>By registering an account, I declare to have read and agree to the </value>
+  </data>
+  <data name="RegisterButtonText" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="RegisterNotAvailableText" xml:space="preserve">
+    <value>Registration is not open at the momment.</value>
+  </data>
+  <data name="RegisterNowText" xml:space="preserve">
+    <value>Register Now</value>
+  </data>
+  <data name="RegisterOnlyText" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RegisterParentText" xml:space="preserve">
+    <value>Registration (Parent / Guardian only)</value>
+  </data>
+  <data name="RegisterText" xml:space="preserve">
+    <value>Registration (Staff only)</value>
+  </data>
+  <data name="RememberMeText" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="RemoveStaffMenuText" xml:space="preserve">
+    <value>Remove Staff</value>
+  </data>
+  <data name="RemoveStudentMenuText" xml:space="preserve">
+    <value>Remove Student</value>
+  </data>
+  <data name="ReplaceCardText" xml:space="preserve">
+    <value>Replace Card</value>
+  </data>
+  <data name="ReplacementForText" xml:space="preserve">
+    <value>Replacement for?</value>
+  </data>
+  <data name="ReportByRequiredText" xml:space="preserve">
+    <value>Report for is required.</value>
+  </data>
+  <data name="ReportByText" xml:space="preserve">
+    <value>Report for</value>
+  </data>
+  <data name="ReportIssueText" xml:space="preserve">
+    <value>Report an issue</value>
+  </data>
+  <data name="ReportLostCardText" xml:space="preserve">
+    <value>Report lost card</value>
+  </data>
+  <data name="ReportLostForText" xml:space="preserve">
+    <value>Report lost for?</value>
+  </data>
+  <data name="RequestNewPasswordText" xml:space="preserve">
+    <value>Request New Password</value>
+  </data>
+  <data name="RequestTimeoutText" xml:space="preserve">
+    <value>408 - Request Timeout</value>
+  </data>
+  <data name="RequiredText" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="ResendOTPText" xml:space="preserve">
+    <value> Resend OTP</value>
+  </data>
+  <data name="ResubmitDocumentText" xml:space="preserve">
+    <value>Document resubmission</value>
+  </data>
+  <data name="ResubmitText" xml:space="preserve">
+    <value>Resubmit</value>
+  </data>
+  <data name="ResultText" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="SalesText" xml:space="preserve">
+    <value>Sales</value>
+  </data>
+  <data name="SaturdayText" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="SaveButtonText" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SchoolAdminText" xml:space="preserve">
+    <value>School Admin</value>
+  </data>
+  <data name="SchoolNameRequiredText" xml:space="preserve">
+    <value>School name is required.</value>
+  </data>
+  <data name="SchoolNameText" xml:space="preserve">
+    <value>School Name</value>
+  </data>
+  <data name="Schooltext" xml:space="preserve">
+    <value>School</value>
+  </data>
+  <data name="SearchHereText" xml:space="preserve">
+    <value>Search here...</value>
+  </data>
+  <data name="SelectCityText" xml:space="preserve">
+    <value>Select city</value>
+  </data>
+  <data name="SelectClassNameText" xml:space="preserve">
+    <value>Select class name</value>
+  </data>
+  <data name="SelectClubText" xml:space="preserve">
+    <value>Select club</value>
+  </data>
+  <data name="SelectCompanyNameText" xml:space="preserve">
+    <value>Select company name</value>
+  </data>
+  <data name="SelectCountryCodeText" xml:space="preserve">
+    <value>Select country code</value>
+  </data>
+  <data name="SelectCountryText" xml:space="preserve">
+    <value>Select country</value>
+  </data>
+  <data name="SelectDateFromText" xml:space="preserve">
+    <value>Select date from</value>
+  </data>
+  <data name="SelectDateToText" xml:space="preserve">
+    <value>Select date to</value>
+  </data>
+  <data name="SelectDeliveryDateText" xml:space="preserve">
+    <value>Select order date</value>
+  </data>
+  <data name="SelectDOBText" xml:space="preserve">
+    <value>Select date of birth</value>
+  </data>
+  <data name="SelectFeedbackTypeText" xml:space="preserve">
+    <value>Select FeedBack Type</value>
+  </data>
+  <data name="SelectIDDocTypeText" xml:space="preserve">
+    <value>Select identification document type</value>
+  </data>
+  <data name="SelectIDTypeText" xml:space="preserve">
+    <value>Select identification type</value>
+  </data>
+  <data name="SelectLanguageText" xml:space="preserve">
+    <value>Select your language</value>
+  </data>
+  <data name="SelectMerchantTypeText" xml:space="preserve">
+    <value>Select merchant type</value>
+  </data>
+  <data name="SelectNationalityText" xml:space="preserve">
+    <value>Select nationality</value>
+  </data>
+  <data name="SelectOccupationText" xml:space="preserve">
+    <value>Select occupation</value>
+  </data>
+  <data name="SelectOperatorTypeText" xml:space="preserve">
+    <value>Select operator type</value>
+  </data>
+  <data name="SelectOrderTimingText" xml:space="preserve">
+    <value>Select order timing</value>
+  </data>
+  <data name="SelectProductCategoryText" xml:space="preserve">
+    <value>Select product category</value>
+  </data>
+  <data name="SelectRaceText" xml:space="preserve">
+    <value>Select race</value>
+  </data>
+  <data name="SelectReasonForAbsentText" xml:space="preserve">
+    <value>Select reason for absent</value>
+  </data>
+  <data name="SelectReasonForReplacementOptionText" xml:space="preserve">
+    <value>Please select your reason for card replacement from the options below:</value>
+  </data>
+  <data name="SelectReasonForReplacementText" xml:space="preserve">
+    <value>Please select yor reason for card replacement.</value>
+  </data>
+  <data name="SelectSchoolText" xml:space="preserve">
+    <value>Select school</value>
+  </data>
+  <data name="SelectStaffText" xml:space="preserve">
+    <value>Select staff</value>
+  </data>
+  <data name="SelectStateText" xml:space="preserve">
+    <value>Select state</value>
+  </data>
+  <data name="SelectStudentText" xml:space="preserve">
+    <value>Select student</value>
+  </data>
+  <data name="SelectUserRoleText" xml:space="preserve">
+    <value>Select user role</value>
+  </data>
+  <data name="SelectWorkingShiftText" xml:space="preserve">
+    <value>Select working shift</value>
+  </data>
+  <data name="SelectYourRoleText" xml:space="preserve">
+    <value>Select your role</value>
+  </data>
+  <data name="SelfieImageRequiredText" xml:space="preserve">
+    <value>IC &amp; selfie photo is required.</value>
+  </data>
+  <data name="SendReportButtonText" xml:space="preserve">
+    <value>Send Report</value>
+  </data>
+  <data name="ServiceChargeText" xml:space="preserve">
+    <value>Service Charge @ </value>
+  </data>
+  <data name="ServiceMethodRequiredText" xml:space="preserve">
+    <value>Service method is required.</value>
+  </data>
+  <data name="ServiceUnavailableText" xml:space="preserve">
+    <value>503 - Service Unavailable</value>
+  </data>
+  <data name="ServingSizeText" xml:space="preserve">
+    <value>Serving Size</value>
+  </data>
+  <data name="SessionExpiredMessageText" xml:space="preserve">
+    <value>Your session has expired. Please login again.</value>
+  </data>
+  <data name="SessionExpiredText" xml:space="preserve">
+    <value>Session Expired</value>
+  </data>
+  <data name="SetDailyLimitText" xml:space="preserve">
+    <value>Set Daily Limit</value>
+  </data>
+  <data name="SettlementText" xml:space="preserve">
+    <value>Settlement</value>
+  </data>
+  <data name="ShoppingCartText" xml:space="preserve">
+    <value>Shopping Cart</value>
+  </data>
+  <data name="ShowingText" xml:space="preserve">
+    <value>Showing </value>
+  </data>
+  <data name="SoldByText" xml:space="preserve">
+    <value>Sold by </value>
+  </data>
+  <data name="SomethingWrongText" xml:space="preserve">
+    <value>Something went wrong. Please try again.</value>
+  </data>
+  <data name="SorryText" xml:space="preserve">
+    <value>Sorry</value>
+  </data>
+  <data name="SpaceStaffText" xml:space="preserve">
+    <value> Staff</value>
+  </data>
+  <data name="SpaceStudentText" xml:space="preserve">
+    <value> Students</value>
+  </data>
+  <data name="SpecialMenuText" xml:space="preserve">
+    <value>Staff Menu</value>
+  </data>
+  <data name="StaffNameRequiredText" xml:space="preserve">
+    <value>Staff name is required.</value>
+  </data>
+  <data name="StaffNameText" xml:space="preserve">
+    <value>Staff Name</value>
+  </data>
+  <data name="StaffProfileText" xml:space="preserve">
+    <value>Staff Profile</value>
+  </data>
+  <data name="StaffText" xml:space="preserve">
+    <value>Staff</value>
+  </data>
+  <data name="StateRequiredText" xml:space="preserve">
+    <value>State is required.</value>
+  </data>
+  <data name="StateText" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StatusUpdateText" xml:space="preserve">
+    <value>Status Update</value>
+  </data>
+  <data name="StoreText" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="StreetAddressText" xml:space="preserve">
+    <value>Street Address</value>
+  </data>
+  <data name="StudentCardText" xml:space="preserve">
+    <value>Student card</value>
+  </data>
+  <data name="StudentNameRequiredText" xml:space="preserve">
+    <value>Student name is required.</value>
+  </data>
+  <data name="StudentNameText" xml:space="preserve">
+    <value>Student Name</value>
+  </data>
+  <data name="StudentProfileText" xml:space="preserve">
+    <value>Student Profile</value>
+  </data>
+  <data name="StudentText" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="SubjectRequiredText" xml:space="preserve">
+    <value>Subject is required.</value>
+  </data>
+  <data name="SubjectTeacherText" xml:space="preserve">
+    <value>Subject Teacher</value>
+  </data>
+  <data name="SubjectText" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SubmitText" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SubmitTicketText" xml:space="preserve">
+    <value>Submit a ticket</value>
+  </data>
+  <data name="SubTotalDotNoSpaceText" xml:space="preserve">
+    <value>SubTotal :</value>
+  </data>
+  <data name="SubtotalDotText" xml:space="preserve">
+    <value>SubTotal : </value>
+  </data>
+  <data name="SubtotalText" xml:space="preserve">
+    <value>SubTotal</value>
+  </data>
+  <data name="SuccessOrderCannotDeleteText" xml:space="preserve">
+    <value>Successful orders cannot be deleted for records.</value>
+  </data>
+  <data name="SundayText" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="SwitchRoleText" xml:space="preserve">
+    <value>Switch role</value>
+  </data>
+  <data name="TakeAwayBtnText" xml:space="preserve">
+    <value>Self Pick-up</value>
+  </data>
+  <data name="TakeIDUploadText" xml:space="preserve">
+    <value>Take a photo of your IC</value>
+  </data>
+  <data name="TakePhotoUploadText" xml:space="preserve">
+    <value>Take photo and upload</value>
+  </data>
+  <data name="TakeSelfieUploadText" xml:space="preserve">
+    <value>Take a photo of your IC &amp; selfie</value>
+  </data>
+  <data name="TeacherText" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="TeacherWardenText" xml:space="preserve">
+    <value>Teacher / Warden</value>
+  </data>
+  <data name="TermsConditionsText" xml:space="preserve">
+    <value>Terms &amp; Conditions</value>
+  </data>
+  <data name="TextColorText" xml:space="preserve">
+    <value>Text Color</value>
+  </data>
+  <data name="TextText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="ThankYouText" xml:space="preserve">
+    <value>Thank You</value>
+  </data>
+  <data name="ThursdayText" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="ToLeaveText" xml:space="preserve">
+    <value> to leave </value>
+  </data>
+  <data name="TopupButtonText" xml:space="preserve">
+    <value>Topup eWallet</value>
+  </data>
+  <data name="TopupEWalletText" xml:space="preserve">
+    <value>Topup eWallet</value>
+  </data>
+  <data name="TopupModeText" xml:space="preserve">
+    <value>Topup via FPX</value>
+  </data>
+  <data name="TopupText" xml:space="preserve">
+    <value>Topup</value>
+  </data>
+  <data name="TopupToText" xml:space="preserve">
+    <value>Topup to </value>
+  </data>
+  <data name="TotalAmountText" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="TotalDotText" xml:space="preserve">
+    <value>Total : </value>
+  </data>
+  <data name="TotalForText" xml:space="preserve">
+    <value>Total for </value>
+  </data>
+  <data name="TotalText" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TransactionTypeText" xml:space="preserve">
+    <value>Transaction Type</value>
+  </data>
+  <data name="TransferEWalletText" xml:space="preserve">
+    <value>Transfer eWallet</value>
+  </data>
+  <data name="TransferText" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="TransferToEWallet" xml:space="preserve">
+    <value>Transfer to eWallet</value>
+  </data>
+  <data name="TransferToText" xml:space="preserve">
+    <value>Transfer to </value>
+  </data>
+  <data name="TransHistoryText" xml:space="preserve">
+    <value>Transaction History</value>
+  </data>
+  <data name="TuesdayText" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="TurdyText" xml:space="preserve">
+    <value>Turdy</value>
+  </data>
+  <data name="UnauthorizedText" xml:space="preserve">
+    <value>401 - Unauthorized</value>
+  </data>
+  <data name="UnderDevelopmentText" xml:space="preserve">
+    <value>Under development. Please come back again soon!</value>
+  </data>
+  <data name="UnitPriceRequiredText" xml:space="preserve">
+    <value>Unit price is required.</value>
+  </data>
+  <data name="UnitPriceText" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="UpdateAvailableText" xml:space="preserve">
+    <value>Update Available</value>
+  </data>
+  <data name="UpdateButtonText" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UploadFailedtext" xml:space="preserve">
+    <value>Upload failed!</value>
+  </data>
+  <data name="UploadIDImageText" xml:space="preserve">
+    <value>Upload your MyKad / Passport photo. Please use landscape mode to ensure that the information on your MyKad / Passport is clear and visible. (Maximum file size : 1.5MB)</value>
+  </data>
+  <data name="UploadingText" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="UploadSelfieImageText" xml:space="preserve">
+    <value>Upload selfie photo of yourself holding your MyKad / Passport. Please use landscape mode to ensure that the information on your MyKad / Passport is clear and visible. (Maximum file size : 1.5MB)</value>
+  </data>
+  <data name="UsernameInfoText" xml:space="preserve">
+    <value>Please enter the Username (MyKad / Passport number) and click Next.</value>
+  </data>
+  <data name="UsernameRequiredText" xml:space="preserve">
+    <value>Username is required.</value>
+  </data>
+  <data name="UsernameText" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="UserRaceRequiredText" xml:space="preserve">
+    <value>User race is required.</value>
+  </data>
+  <data name="UserRoleRequiredText" xml:space="preserve">
+    <value>User role is required.</value>
+  </data>
+  <data name="UserRoleText" xml:space="preserve">
+    <value>User role</value>
+  </data>
+  <data name="VerificationFailedText" xml:space="preserve">
+    <value>Verification Failed! Please try again.</value>
+  </data>
+  <data name="VerificationSuccessText" xml:space="preserve">
+    <value>Verification Success! One more step to go.
+Please wait...</value>
+  </data>
+  <data name="VerifyAccountText" xml:space="preserve">
+    <value>Verify Account</value>
+  </data>
+  <data name="VerifyStudentText" xml:space="preserve">
+    <value>Verify Student</value>
+  </data>
+  <data name="WednesdayText" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="WhiteText" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="WorkingSessionNotSpecifiedText" xml:space="preserve">
+    <value>Working session not specified</value>
+  </data>
+  <data name="WorkingShiftRequiredText" xml:space="preserve">
+    <value>Working shift is required.</value>
+  </data>
+  <data name="WorkingShiftText" xml:space="preserve">
+    <value>Working Shift</value>
+  </data>
+  <data name="YellowText" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="YesterdayText" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="YouHaveBeenLogoutText" xml:space="preserve">
+    <value>You have been logout from your current session. Multiple device login attempts were detected. Please change your password to keep your account safe.</value>
+  </data>
+  <data name="YourCartIsEmptyText" xml:space="preserve">
+    <value>Unfortunately, Your Cart is Empty</value>
+  </data>
+  <data name="_FromText_" xml:space="preserve">
+    <value> out of  </value>
+  </data>
+  <data name="_NameIsRequiredText" xml:space="preserve">
+    <value> name is required.</value>
+  </data>
+  <data name="_OrderTextComma_" xml:space="preserve">
+    <value> Order(s), </value>
+  </data>
+  <data name="_OrderText_" xml:space="preserve">
+    <value> Order(s)</value>
+  </data>
+  <data name="_ProductText" xml:space="preserve">
+    <value> Product(s)</value>
+  </data>
+  <data name="_RedeemText" xml:space="preserve">
+    <value> Redemption(s)</value>
+  </data>
+  <data name="_SalesText" xml:space="preserve">
+    <value> Sales</value>
+  </data>
+  <data name="_ToJoinText_" xml:space="preserve">
+    <value> to join </value>
+  </data>
+  <data name="_ToThisClassText" xml:space="preserve">
+    <value> into this class?</value>
+  </data>
+  <data name="_ToThisClubText" xml:space="preserve">
+    <value> into this club?</value>
+  </data>
+</root>

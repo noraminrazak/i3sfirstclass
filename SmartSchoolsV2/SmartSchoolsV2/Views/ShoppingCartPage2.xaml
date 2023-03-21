@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             x:Class="SmartSchoolsV2.Views.ShoppingCartPage2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lvOrderHistory" HasUnevenRows="true" SeparatorVisibility="Default" 
+					    IsPullToRefreshEnabled="False"  CachingStrategy="RecycleElement"
+				        IsRefreshing="{Binding IsBusy, Mode=TwoWay}" ItemSelected="OnOrderSelected"
+                        sk:Skeleton.IsParent="True"
+	                    sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems Mode="Reveal" >
+                                        <SwipeItem Text="{x:Static resource:AppResources.DeleteText}"
+                                                       CommandParameter="{Binding Source={x:Reference lvOrderHistory}, Path=BindingContext}"
+                                                       BackgroundColor="Red" 
+                                                       Invoked ="Delete_Invoked">
+                                        </SwipeItem>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                <SwipeView.Content>
+                                    <StackLayout Padding="20,10,20,10" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding transaction_method}" Grid.Column="0" TextColor="Black" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="Start"  x:Name="lblCreateBy" FontSize="Small" sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow" LineBreakMode="TailTruncation"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                            <Label Text="{Binding total_amount}" Grid.Column="1" TextColor="{Binding amount_color}" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="End" VerticalTextAlignment="Start" FontSize="Small" sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                            <Label Text="{Binding order_status}" Grid.Row="1" FontSize="12" HorizontalTextAlignment="Start"
+                                                TextColor="{Binding status_color}" Grid.Column="0" FontFamily="{StaticResource RobotoRegular}" 
+                                                sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                                                HorizontalOptions="FillAndExpand"></Label>
+                                            <Label Text="{Binding create_at}" Grid.Row="1" FontSize="12" HorizontalTextAlignment="End"
+                                                TextColor="Gray" Grid.Column="1" FontFamily="{StaticResource RobotoRegular}" sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                                                HorizontalOptions="FillAndExpand"></Label>
+                                        </Grid>
+                                    </StackLayout>
+                                </SwipeView.Content>
+                            </SwipeView>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+      </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

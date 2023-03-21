@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSchoolsV2.Controls.CalendarEvent2">
+    <StackLayout Orientation="Horizontal"
+        Padding="0,0,0,0"
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand">
+            <Label FontAttributes="None" FontSize="Body" HorizontalTextAlignment="Start">
+                <Label.FormattedText>
+                    <FormattedString>
+                    <Span Text="{Binding Description}" FontFamily="Roboto-Regular" TextColor="Black" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        <Label FontAttributes="None" FontSize="Body" HorizontalTextAlignment="End" >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{Binding Total}" FontFamily="Roboto-Regular" TextColor="Black"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+</ContentView>

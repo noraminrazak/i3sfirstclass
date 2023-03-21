@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             xmlns:local="clr-namespace:SmartSchoolsV2" 
+             x:Class="SmartSchoolsV2.Views.EditProfilePage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.EditProfileText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Orientation="Vertical"
+                     AbsoluteLayout.LayoutBounds="1,0,1,0.25" AbsoluteLayout.LayoutFlags="All">
+            <Grid HorizontalOptions="Center"  VerticalOptions="CenterAndExpand" Margin="20,0,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Column="0" Source="btn_gallery" HeightRequest="45" WidthRequest="45" 
+                                     BackgroundColor="Transparent" Clicked="OnPickPhotoClicked" 
+                             VerticalOptions="Center" HorizontalOptions="End"/>
+                <!--<plugin:CircleImage Grid.Column="1" Aspect="AspectFill" IsVisible="False"
+                                  x:Name="imagePhoto" Margin="20,0,20,0" VerticalOptions="Center"
+                                  sk:Skeleton.IsBusy="{Binding IsBusy}" HorizontalOptions="Center"
+                                  sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                              sk:Skeleton.BackgroundColor="LightGoldenrodYellow">
+                    <plugin:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">95</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.WidthRequest>
+                    <plugin:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">95</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.HeightRequest>
+                </plugin:CircleImage>-->
+                <ffimageloading:CachedImage x:Name="imagePhoto" Grid.Column="1" Aspect="AspectFill" IsVisible="False"
+                                            Scale="1.0" HeightRequest="95" WidthRequest="95" DownsampleToViewSize="true"
+                                            HorizontalOptions="Center" VerticalOptions="Center" Margin="20,0,20,0">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:CircleTransformation/>
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+                <StackLayout x:Name="userInitial" Grid.Column="1" IsVisible="True" BackgroundColor="Transparent" Margin="20,0,20,0">
+                    <controls:InitialsView Name="{Binding Text, Source={x:Reference txtFullName}}" 
+                                sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                                     sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow">
+                        <controls:InitialsView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">95</On>
+                            </OnPlatform>
+                        </controls:InitialsView.WidthRequest>
+                        <controls:InitialsView.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">95</On>
+                            </OnPlatform>
+                        </controls:InitialsView.HeightRequest>
+                    </controls:InitialsView>
+                </StackLayout>
+                <ImageButton Grid.Column="1" Source="close_btn" HorizontalOptions="Center" VerticalOptions="End" Margin="0,0,0,-15"
+                                     HeightRequest="30" WidthRequest="30" IsVisible="true" x:Name="btnRemove" Clicked="OnRemoveClicked"/>
+                <ImageButton Grid.Column="2" Source="btn_photo" HeightRequest="45" WidthRequest="45" 
+                                     BackgroundColor="Transparent" Clicked="OnTakePhotoClicked"
+                             VerticalOptions="Center" HorizontalOptions="Start"/>
+            </Grid>
+        </StackLayout>
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,0.75" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <ScrollView>
+                <StackLayout Orientation="Vertical">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Grid.Row="0" BackgroundColor="Transparent" HeightRequest="20"/>
+                        <!-- full name -->
+                        <Label  Grid.Row="1"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.FullNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Keyboard="Text" Grid.Row="2" IsEnabled="false"
+                            x:Name="txtFullName" IsReadOnly="True" Placeholder="{x:Static resource:AppResources.EnterFullNameText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                        <!-- ID Doc Type -->
+                        <Label  Grid.Row="3" 
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.IDDocTypeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="4">
+                            <customs:CustomEntry Keyboard="Text" InputTransparent="True" IsEnabled="false"
+                            x:Name="txtIDDocType" Placeholder="{x:Static resource:AppResources.SelectIDDocTypeText}" IsReadOnly="True"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="StartCall1" >
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!-- ID Number -->
+                        <Label  Grid.Row="5" 
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.IDNoText}" x:Name="lblIDNo"
+                                          FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Keyboard="Text" Grid.Row="6" IsEnabled="false"
+                            x:Name="txtIDNo" IsReadOnly="True" Placeholder="{x:Static resource:AppResources.EnterIDNoText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                        <!-- DoB -->
+                        <Label  Grid.Row="7" 
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.DateOfBirthText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Keyboard="Text" Grid.Row="8" IsEnabled="false"
+                            x:Name="txtDoB" Focused="StartCall" Placeholder="{x:Static resource:AppResources.SelectDOBText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                        <DatePicker x:Name="datePicker" IsVisible="false" DateSelected="OnDoBDateSelected"/>
+                        <!-- Race -->
+                        <Label  Grid.Row="9" IsEnabled="false"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.RaceText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="10">
+                            <customs:CustomEntry Keyboard="Text" IsReadOnly="True" InputTransparent="True" IsEnabled="false"
+                            x:Name="txtUserRace" Placeholder="{x:Static resource:AppResources.SelectRaceText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="StartCall2" >
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!-- Mobile number -->
+                        <Label  Grid.Row="11"
+                        Margin="22,0,20,-4"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.CountryCodeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Grid Grid.Row="12">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="100" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <customs:CustomEntry Keyboard="Numeric" Grid.Column="0" HorizontalTextAlignment="Center"
+                                    x:Name="txtCountryCode" Placeholder="{x:Static resource:AppResources.CountryCodeText}"
+                                    Margin="20,0,5,10" Focused="StartCall1" Text="+60" IsReadOnly="True" HeightRequest="{OnPlatform iOS=45, Android=45, UWP=55}"
+                                    BackgroundColor="Transparent"/>
+                                <controls:FloatingLabelInput Keyboard="Numeric" Grid.Column="1"
+                                x:Name="txtMobileNo" Title="{x:Static resource:AppResources.MobileNoText}"
+                                Margin="0,0,20,10"
+                                BackgroundColor="Transparent"/>
+                            </Grid>
+                        </Grid>
+                        <!-- Email -->
+                        <Label  Grid.Row="13"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.EmailText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Grid.Row="14"
+                            x:Name="txtEmail" Keyboard="Email" Placeholder="{x:Static resource:AppResources.EnterEmailText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                        <!--address-->
+                        <Label  Grid.Row="15"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.StreetAddressText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEditor Grid.Row="16" Margin="20,0,20,10" AutoSize="TextChanges" x:Name="txtAddress"
+                            FontFamily="{StaticResource RobotoRegular}" FontSize="Default" Placeholder="{x:Static resource:AppResources.EnterAddressText}" >
+                            <customs:CustomEditor.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </customs:CustomEditor.Keyboard>
+                        </customs:CustomEditor>
+                        <!-- code -->
+                        <Label  Grid.Row="17"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.PostcodeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Keyboard="Numeric" Grid.Row="18"
+                            x:Name="txtPostcode" Placeholder="{x:Static resource:AppResources.EnterPostcodeHere}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                        <!-- state -->
+                        <Label Grid.Row="19"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.StateText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="20">
+                            <customs:CustomEntry Keyboard="Text"
+                             Placeholder="{x:Static resource:AppResources.SelectStateText}" x:Name="txtState" 
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" IsReadOnly="True" InputTransparent="True"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="StartCallState" >
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!-- city -->
+                        <Label  Grid.Row="21"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.CityText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="22">
+                            <customs:CustomEntry Keyboard="Text"
+                             Placeholder="{x:Static resource:AppResources.SelectCityText}" x:Name="txtCity" 
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" IsReadOnly="True" InputTransparent="True" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="StartCallCity" >
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout >
+                        <!-- country -->
+                        <Label Grid.Row="23"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.CountryText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="24">
+                            <customs:CustomEntry Keyboard="Text"
+                             Placeholder="{x:Static resource:AppResources.SelectCountryText}" x:Name="txtCountry" 
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" IsReadOnly="True" InputTransparent="True"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="StartCallCountry" >
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!-- mother name -->
+                        <Label  Grid.Row="25"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.MotherNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Grid.Row="26" 
+                            x:Name="txtMotherName"  IsEnabled="False"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+                            <customs:CustomEntry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>CapitalizeCharacter</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </customs:CustomEntry.Keyboard>
+                        </customs:CustomEntry>
+                        <!-- occupation -->
+                        <Label  Grid.Row="27"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.OccupationText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="28">
+                            <customs:CustomEntry Keyboard="Text"
+                             Placeholder="{x:Static resource:AppResources.SelectOccupationText}" x:Name="txtOccupation" 
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" IsReadOnly="True" InputTransparent="True"/>
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="StartCallOccupation" >
+                                </TapGestureRecognizer>
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                        <!-- employer name -->
+                        <Label  Grid.Row="29"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.EmployerNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Grid.Row="30" 
+                            x:Name="txtEmployerName" 
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+                            <customs:CustomEntry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>CapitalizeCharacter</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </customs:CustomEntry.Keyboard>
+                        </customs:CustomEntry>
+                        <!-- button -->
+                        <Button FontSize="Body" TextTransform="None" Grid.Row="31"
+                            x:Name="btnSave" Clicked="OnSaveClicked"
+                        Margin="20,20,20,50"
+                        BackgroundColor="#ff0266"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.SaveButtonText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="White" />
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

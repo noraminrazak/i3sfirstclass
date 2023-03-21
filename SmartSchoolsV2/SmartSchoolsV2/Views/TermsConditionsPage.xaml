@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.TermsConditionsPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.TermsConditionsText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <StackLayout>
+                <ProgressBar  Progress="0.2" IsVisible="false" HorizontalOptions="FillAndExpand" x:Name="activity_indicator" ProgressColor="#ffd612" />
+                <WebView x:Name="webview2" Margin="0,0,0,30" VerticalOptions="FillAndExpand" Navigating="OnNavigating" Navigated="OnNavigated" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls;assembly=SmartSchoolsV2"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs;assembly=SmartSchoolsV2"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="true"
+             x:Class="SmartSchoolsV2.Views.MessagePage">
+    <!--navigation-->
+        <NavigationPage.TitleView>
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <plugin:CircleImage Source="{Binding Image}" Aspect="AspectFill" IsVisible="False"
+                                  x:Name="userImg" Grid.Column="0" Margin="0,5,10,5" 
+                                    sk:Skeleton.IsBusy="{Binding IsBusy}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="LightGoldenrodYellow">
+                    <plugin:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">45</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.WidthRequest>
+                    <plugin:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">45</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.HeightRequest>
+                </plugin:CircleImage>
+                <StackLayout x:Name="userInitial" IsVisible="True" Grid.Column="0" Margin="0,05,10,5" BackgroundColor="Transparent">
+                    <controls:InitialsView  sk:Skeleton.IsBusy="{Binding IsBusy}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                               Name="{Binding Text, Source={x:Reference lblTopTitle}}" >
+                        <controls:InitialsView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">45</On>
+                                <!--<On Platform="WinPhone">75</On>-->
+                            </OnPlatform>
+                        </controls:InitialsView.WidthRequest>
+                        <controls:InitialsView.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">45</On>
+                                <!--<On Platform="WinPhone">75</On>-->
+                            </OnPlatform>
+                        </controls:InitialsView.HeightRequest>
+                    </controls:InitialsView>
+                </StackLayout>
+            <StackLayout Grid.Column="1" HorizontalOptions="StartAndExpand" Orientation="Vertical"
+                          VerticalOptions="CenterAndExpand" Margin="0,0,20,0">
+                <Label FontFamily="{StaticResource RobotoMedium}" x:Name="lblTopTitle"
+                               VerticalOptions="End" HorizontalOptions="Start" TextColor="White" FontSize="Small" LineBreakMode="TailTruncation"/>
+                <Label FontFamily="{StaticResource RobotoRegular}" x:Name="lblBottomTitle"
+                               VerticalOptions="Start" HorizontalOptions="Start" TextColor="White" FontSize="Small"/>
+            </StackLayout>
+        </Grid>
+        </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            <!--chat-->
+            <StackLayout Grid.Row="0" BackgroundColor="#d8d2ca" VerticalOptions="FillAndExpand">
+                <ListView x:Name="ChatList" VerticalOptions="FillAndExpand"
+                      ItemsSource="{Binding ChatMessages}" 
+                      HasUnevenRows="True" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:SessionCell>
+                                <StackLayout Margin="{Binding IsYourMessage, Converter={StaticResource BoolToPositionMessage}}"
+                                         HorizontalOptions="FillAndExpand"
+                                         VerticalOptions="FillAndExpand" 
+                                          Orientation="Horizontal">
+
+                                    <ffimageloading:CachedImage IsVisible="{Binding IsYourMessage, Converter={StaticResource InverseBoolConverter}}"
+                                                   VerticalOptions="Start"
+                                                   Source="{Binding SenderPhotoUrl}" Aspect="AspectFit" HeightRequest="35" >
+                                        <ffimageloading:CachedImage.Transformations>
+                                            <!--<transformations:GrayscaleTransformation />-->
+                                            <transformations:CircleTransformation />
+                                        </ffimageloading:CachedImage.Transformations>
+                                    </ffimageloading:CachedImage>
+                                    <StackLayout BackgroundColor="{Binding IsYourMessage, Converter={StaticResource BoolToColorMessage}}" 
+                                             HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="FillAndExpand" 
+                                             Padding="10,5,10,5"
+                                             Orientation="Vertical">
+
+                                        <Grid HorizontalOptions="FillAndExpand">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Label FontSize="12" TextColor="#0080ff" Grid.Row="0" IsVisible="{Binding IsYourMessage, Converter={StaticResource InverseBoolConverter}}"
+                                       HorizontalOptions="Start" FontFamily="{StaticResource RobotoRegular}"
+                                       Text="{Binding SenderName}" LineBreakMode="TailTruncation"/>
+                                            <Label IsVisible="{Binding IsYourMessage, Converter={ StaticResource NullToBoolConverter}}" Grid.Row="1"
+                                    Text="{Binding Message}" FontFamily="{StaticResource RobotoRegular}" FontSize="Body" TextColor="Black"/>
+
+                                            <ffimageloading:CachedImage Source="{Binding photo_url}"
+                                       Aspect="AspectFit" WidthRequest="200" Grid.Row="1"
+                                       HorizontalOptions="CenterAndExpand"
+                                    IsVisible="{Binding IsYourMessage, Converter={ StaticResource NullToBoolConverter}}" />
+                                            <Label FontSize="10" TextColor="Gray" Grid.Row="2" VerticalOptions="Start"
+                                       HorizontalOptions="End" FontFamily="{StaticResource RobotoRegular}"
+                                       Text="{Binding SentAt}" />
+                                        </Grid>
+                                    </StackLayout>
+                                    <ffimageloading:CachedImage IsVisible="{Binding IsYourMessage}" VerticalOptions="Start"
+                                                   Source="{Binding ReceiverPhotoUrl}" Aspect="AspectFit" HeightRequest="35" >
+                                        <ffimageloading:CachedImage.Transformations>
+                                            <!--<transformations:GrayscaleTransformation />-->
+                                            <transformations:CircleTransformation />
+                                        </ffimageloading:CachedImage.Transformations>
+                                    </ffimageloading:CachedImage>
+
+                                </StackLayout>
+                            </controls:SessionCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <!--loading-->
+            <Grid Grid.Row="0" IsVisible="{Binding IsBusy}"
+              BackgroundColor="#7CFFFFFF" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+                HorizontalOptions="Center" VerticalOptions="Center"/>
+        </Grid>
+            <!--input-->
+            <Grid x:Name="InputGrid" Grid.Row="1" Padding="10" 
+                  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*" />
+                    <!--<ColumnDefinition Width="1*" />-->
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <!--<Entry x:Name="EntryChat" Grid.Row="1" Grid.Column="0" 
+                   FontSize="12" VerticalOptions="FillAndExpand"
+                   Text="{Binding NewMessageText}">
+                <Entry.Behaviors>
+                    <behaviors:OnComplatedBehavior CompleteCommand="{Binding AddMessageCommand}" />
+                </Entry.Behaviors>
+                <Entry.BackgroundColor>
+                    <OnPlatform x:TypeArguments="Color" Android="White" iOS="#F6F6F6" />
+                </Entry.BackgroundColor>
+            </Entry>-->
+                <customs:ExtendedEditor Grid.Row="0" Grid.Column="0" Keyboard="Chat" TextColor="Black" Text="{Binding NewMessageText}" x:Name="EntryChat"
+                                        HasRoundedCorner="True" HorizontalOptions="FillAndExpand"
+                                        IsExpandable="True" VerticalOptions="FillAndExpand" Placeholder="Enter message here.." 
+                                        ><!--CompleteCommand="{Binding AddMessageCommand}"-->
+                </customs:ExtendedEditor>
+                <!--<Image Grid.Row="0" Grid.Column="1" x:Name="btnAttach" HorizontalOptions="End"
+                   Source="attach" Aspect="AspectFit" WidthRequest="45" VerticalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AttachFileCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>-->
+                <!--<Image Grid.Row="1" Grid.Column="2" x:Name="btnCamera"
+                   Source="camera" Aspect="AspectFit" WidthRequest="30" VerticalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding AttachPhotoCommand}" />
+                </Image.GestureRecognizers>
+            </Image>-->
+                <Image Grid.Row="0" Grid.Column="1" HorizontalOptions="End" x:Name="btnSend"
+                   Source="send_btn.png" Aspect="AspectFit" WidthRequest="45" HeightRequest="45" VerticalOptions="Center">
+                    <!--<Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding AddMessageCommand}" />
+                    </Image.GestureRecognizers>-->
+                </Image>
+            </Grid>
+        </StackLayout>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

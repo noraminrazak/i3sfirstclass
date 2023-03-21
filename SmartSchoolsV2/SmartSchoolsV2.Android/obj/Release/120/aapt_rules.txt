@@ -1,0 +1,209 @@
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:37
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:38
+-keep class androidx.core.content.FileProvider { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:75
+-keep class com.emerging.smartschool.MainActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:158
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:162
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:161
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:106
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:157
+-keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:155
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:154
+-keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:147
+-keep class com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:131
+-keep class com.google.firebase.auth.internal.GenericIdpActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:139
+-keep class com.google.firebase.auth.internal.RecaptchaActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:108
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:41
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:42
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:126
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:107
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:59
+-keep class crc64055b1f0e677d6f31.MyFirebaseIdService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:64
+-keep class crc64055b1f0e677d6f31.MyFirebaseMessagingService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:82
+-keep class crc642043a551ca61a084.MainActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:37
+-keep class crc642043a551ca61a084.MainApplication { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:83
+-keep class crc642043a551ca61a084.PickFileActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:84
+-keep class crc642043a551ca61a084.SplashActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:94
+-keep class crc64396a3fe5f8138e3f.KeepAliveService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:103
+-keep class crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:93
+-keep class crc646957603ea1820544.MediaPickerActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:69
+-keep class crc6494e14b9856016c30.PNFirebaseMessagingService { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:91
+-keep class crc6494e14b9856016c30.PushNotificationActionReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:92
+-keep class crc6494e14b9856016c30.PushNotificationDeletedReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:95
+-keep class crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:97
+-keep class crc64a0e0a82d0db9a07d.ConnectivityBroadcastReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:96
+-keep class crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:98
+-keep class crc64a0e0a82d0db9a07d.IntermediateActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:102
+-keep class crc64a0e0a82d0db9a07d.WebAuthenticatorIntermediateActivity { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:90
+-keep class crc64cea48322b3427ae9.ConnectivityChangeBroadcastReceiver { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:104
+-keep class mono.MonoRuntimeProvider { <init>(); }
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\android\arm64-v8a\AndroidManifest.xml:99
+-keep class xamarin.essentials.fileProvider { <init>(); }
+# Referenced at res/layout/abc_alert_dialog_button_bar_material.xml:43
+# Referenced at res/layout/abc_alert_dialog_material.xml:52
+# Referenced at res/layout/abc_alert_dialog_title_material.xml:57
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at res/layout/abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at res/layout/abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at res/layout/abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at res/layout/abc_cascading_menu_item_layout.xml:20
+# Referenced at res/layout/abc_list_menu_item_layout.xml:17
+# Referenced at res/layout/abc_popup_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at res/layout/abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at res/layout/abc_action_mode_bar.xml:19
+# Referenced at res/layout/abc_screen_toolbar.xml:43
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at res/layout/abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at res/layout/abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at res/layout/abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at res/layout/abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at res/layout/abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at res/layout/abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at res/layout/abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at res/layout/abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at res/layout/abc_dialog_title_material.xml:22
+# Referenced at res/layout/abc_screen_simple.xml:17
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at res/layout/abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at res/layout/abc_screen_toolbar.xml:36
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\fallbacktoolbardonotuse.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\rootlayout.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\shellcontent.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\res\layout\toolbar.xml:1
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at res/layout/abc_screen_simple.xml:25
+# Referenced at res/layout/abc_screen_simple_overlay_action_mode.xml:32
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at res/layout/browser_actions_context_menu_page.xml:17
+-keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(...); }
+
+# Referenced at res/layout/design_bottom_sheet_dialog.xml:26
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\flyoutcontent.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\rootlayout.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\shellcontent.xml:1
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at res/layout/abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at res/layout/mr_volume_control.xml:45
+-keep class androidx.mediarouter.app.MediaRouteExpandCollapseButton { <init>(...); }
+
+# Referenced at res/layout/mr_cast_group_volume_item.xml:42
+# Referenced at res/layout/mr_cast_route_item.xml:66
+# Referenced at res/layout/mr_controller_volume_item.xml:47
+# Referenced at res/layout/mr_volume_control.xml:36
+-keep class androidx.mediarouter.app.MediaRouteVolumeSlider { <init>(...); }
+
+# Referenced at res/layout/mr_controller_material_dialog_b.xml:91
+-keep class androidx.mediarouter.app.OverlayListView { <init>(...); }
+
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\flyoutcontent.xml:1
+# Referenced at res/layout/mr_cast_dialog.xml:23
+# Referenced at res/layout/mr_picker_dialog.xml:36
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(...); }
+
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\flyoutcontent.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\rootlayout.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\shellcontent.xml:1
+-keep class com.google.android.material.appbar.AppBarLayout { <init>(...); }
+
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\bottomtablayout.xml:1
+-keep class com.google.android.material.bottomnavigation.BottomNavigationView { <init>(...); }
+
+# Referenced at res/layout/design_bottom_navigation_item.xml:27
+-keep class com.google.android.material.internal.BaselineLayout { <init>(...); }
+
+# Referenced at res/layout/design_text_input_password_icon.xml:18
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(...); }
+
+# Referenced at res/layout/design_navigation_item.xml:17
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at res/layout/design_navigation_menu.xml:17
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at res/layout/design_layout_snackbar.xml:18
+# Referenced at res/layout/mtrl_layout_snackbar.xml:18
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at res/layout/design_layout_snackbar_include.xml:18
+# Referenced at res/layout/mtrl_layout_snackbar_include.xml:18
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
+
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\fallbacktabbardonotuse.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\rootlayout.xml:1
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\res\layout\tabbar.xml:1
+-keep class com.google.android.material.tabs.TabLayout { <init>(...); }
+
+# Referenced at E:\i3s\SmartSchoolsV2\SmartSchoolsV2\SmartSchoolsV2.Android\obj\Release\120\lp\89\jl\res\layout\rootlayout.xml:1
+-keep class crc64720bb2db43a66fe9.FormsViewPager { <init>(...); }
+

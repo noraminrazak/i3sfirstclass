@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls;assembly=SmartSchoolsV2"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="SmartSchoolsV2.Views.StaffLeaveClubPage"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs;assembly=SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitle" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <ScrollView BackgroundColor="Transparent">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <BoxView HeightRequest="20" />
+                    <Label
+                        Grid.Row="1" Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.StaffNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid>
+                        <customs:CustomEntry Keyboard="Default" x:Name="txtFullName" Placeholder="{x:Static resource:AppResources.SearchHereText}"
+            Margin="20,0,20,10"
+            BackgroundColor="Transparent"/>
+                        <ImageButton VerticalOptions="Center"
+                     Margin="0,0,70,25" BackgroundColor="Transparent"
+                     HeightRequest="20" IsVisible="false"
+                     HorizontalOptions="End"
+                     Source="close_blue">
+                        </ImageButton>
+                        <ImageButton VerticalOptions="Center"
+                     Margin="0,0,30,25" BackgroundColor="Transparent"
+                     HeightRequest="30" Clicked="OnSearchClicked"
+                     HorizontalOptions="End"
+                     Source="search">
+                        </ImageButton>
+                    </Grid>
+                    <Label 
+                        Margin="22,-15,20,0"
+                        HorizontalTextAlignment="Center"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.PleaseEnterMoreCharText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <ListView x:Name="lvStaff"
+                          HasUnevenRows="true" SeparatorVisibility="Default" IsVisible="false" 
+                          IsPullToRefreshEnabled="False" Margin="0,0,0,30" CachingStrategy="RecycleElement"
+				          IsRefreshing="{Binding IsBusy, Mode=TwoWay}" ItemSelected="OnStaffSelected"
+                          sk:Skeleton.IsParent="True"
+	                      sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                      sk:Skeleton.Animation="{sk:DefaultAnimation Fade}" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Padding="20,15,20,15" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <plugin:CircleImage Source="{Binding photo_url}" Aspect="AspectFill" Grid.RowSpan="2"
+													        x:Name="userImage" BorderColor="#ffa700" Grid.Column="0" IsVisible="{Binding image_visible}" 
+                                                            VerticalOptions="Center" Scale="1.0" HorizontalOptions="Center">
+                                                <plugin:CircleImage.WidthRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double"
+												      iOS="55"
+												      Android="55"/>
+                                                </plugin:CircleImage.WidthRequest>
+                                                <plugin:CircleImage.HeightRequest>
+                                                    <OnPlatform x:TypeArguments="x:Double"
+												      iOS="55"
+												      Android="55"/>
+                                                </plugin:CircleImage.HeightRequest>
+                                            </plugin:CircleImage>
+                                            <StackLayout x:Name="userInitial" IsVisible="{Binding initial_visible}" Grid.Column="0" Grid.RowSpan="2">
+                                                <controls:InitialsView  
+                                            Name="{Binding Text, Source={x:Reference lblFullName}}" >
+                                                    <controls:InitialsView.WidthRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="Android, iOS">55</On>
+                                                            <!--<On Platform="WinPhone">75</On>-->
+                                                        </OnPlatform>
+                                                    </controls:InitialsView.WidthRequest>
+                                                    <controls:InitialsView.HeightRequest>
+                                                        <OnPlatform x:TypeArguments="x:Double">
+                                                            <On Platform="Android, iOS">55</On>
+                                                            <!--<On Platform="WinPhone">75</On>-->
+                                                        </OnPlatform>
+                                                    </controls:InitialsView.HeightRequest>
+                                                </controls:InitialsView>
+                                            </StackLayout>
+                                            <Label Text="{Binding full_name}" Grid.Column="1" TextColor="Black" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="lblFullName" FontSize="Small"
+												HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0,5,0,0"></Label>
+                                            <Grid Grid.Row="1" Grid.Column="1">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding staff_type}" Grid.Row="0" Grid.Column="0" FontFamily="{StaticResource RobotoRegular}"
+													FontSize="Small" TextColor="Gray" VerticalOptions="StartAndExpand" 
+													HorizontalOptions="StartAndExpand" />
+                                            </Grid>
+                                            <Image Grid.RowSpan="2" Grid.Column="2" Source="ic_right_arrow.png" Aspect="AspectFit" 
+                                                   HeightRequest="15" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

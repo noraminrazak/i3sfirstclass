@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.SearchListPage1"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitleView" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False" >
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <SearchBar x:Name="searchBar" Margin="10"
+                   CancelButtonColor="#ff0266" HeightRequest="{OnPlatform iOS=40, Android=55, UWP=55}"
+                   PlaceholderColor="Gainsboro"
+                   TextColor="Black"
+                   TextTransform="None"
+                   HorizontalTextAlignment="Start"
+                   FontSize="Medium"
+                   FontFamily="{StaticResource RobotoRegular}" 
+                   TextChanged="SearchBar_TextChanged" />
+                <ListView x:Name="lvSearch"
+                          HasUnevenRows="true" SeparatorVisibility="Default" IsVisible="true" 
+                          IsPullToRefreshEnabled="False" Margin="0,0,0,30" CachingStrategy="RecycleElement"
+				          IsRefreshing="{Binding IsBusy1, Mode=TwoWay}" ItemSelected="OnSearchSelected"
+                          sk:Skeleton.IsParent="True"
+	                      sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                      sk:Skeleton.Animation="{sk:DefaultAnimation Fade}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20,15,20,15" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                                    <Label Text="{Binding search_name}" TextColor="Black" FontFamily="{StaticResource RobotoRegular}"
+												HorizontalTextAlignment="Start" FontSize="Medium" sk:Skeleton.IsBusy="{Binding IsBusy1}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

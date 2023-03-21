@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:effects="clr-namespace:SmartSchoolsV2.Effects;assembly=SmartSchoolsV2"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             x:Class="SmartSchoolsV2.Views.FeedbackPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.ReportIssueText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <ScrollView>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <BoxView HeightRequest="20" />
+                    <!--<Label Margin="22,0,20,0"
+                                    HorizontalOptions="Start"
+                                    TextColor="Gray" FontSize="Small"
+                                    VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.FeedbackTypeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <customs:CustomEntry Keyboard="Text" Grid.Row="8"
+                                    x:Name="txtProblemType" Placeholder="{x:Static resource:AppResources.PleaseSelectText}" Focused="StartCall"
+                                    Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                    BackgroundColor="Transparent" >
+                </customs:CustomEntry>-->
+                    <Label  Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.SubjectText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry
+                            x:Name="txtSubject"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+                        <customs:CustomEntry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeSentence</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEntry.Keyboard>
+                    </customs:CustomEntry>
+                    <Label
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.DescriptionText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEditor Grid.Row="14" Margin="20,0,20,10" AutoSize="TextChanges" x:Name="txtDescription"
+                            FontFamily="{StaticResource RobotoRegular}" FontSize="Default" >
+                        <customs:CustomEditor.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeSentence</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEditor.Keyboard>
+                    </customs:CustomEditor>
+                    <!-- attachment -->
+                    <Grid Margin="20,0,20,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="45" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <ListView Grid.Row="0" x:Name="lvAttachment" HasUnevenRows="True" SeparatorVisibility="Default" IsVisible="false"
+					        IsPullToRefreshEnabled="False"  CachingStrategy="RecycleElement" RowHeight="45"
+				            RefreshCommand="{Binding RefreshCommand}" 
+				            IsRefreshing="{Binding IsBusy, Mode=TwoWay}" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Padding="20,10,20,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding file_name}" Grid.Column="0" TextColor="#0080ff" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												    HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Small"
+												    HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+                                                <ImageButton Grid.Row="0" Grid.Column="1" Source="close_btn" HorizontalOptions="End" VerticalOptions="Start" CommandParameter="{Binding .}"
+                                            HeightRequest="30" WidthRequest="30" IsVisible="true" x:Name="btnRemove" Clicked="OnRemoveClicked"/>
+                                            </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button  Grid.Row="1"  Text="{x:Static resource:AppResources.AddAttachmentText}"
+                                Clicked="OnAddAttachmentClicked" x:Name="btnAddAttachment"/>
+                    </Grid>
+                    <Button FontSize="Body" TextTransform="None"
+                            x:Name="btnSubmit" Clicked="OnSubmitClicked"
+                        Margin="20,20,20,50" VerticalOptions="End"
+                        BackgroundColor="#ff0266"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.SubmitText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="White" />
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

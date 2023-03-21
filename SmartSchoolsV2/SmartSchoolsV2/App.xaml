@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication
+    x:Class="SmartSchoolsV2.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:c="clr-namespace:SmartSchoolsV2.Customs;assembly=SmartSchoolsV2"
+    xmlns:converters="clr-namespace:SmartSchoolsV2.Converters;assembly=SmartSchoolsV2"
+    xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms">
+    <Application.Resources>
+        <ResourceDictionary>
+            <c:ItemTappedEventArgsConverter x:Key="ItemTappedConverter" />
+            <!--  Fonts  -->
+            <OnPlatform x:Key="RobotoBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Roboto-Bold.ttf#Roboto Bold" />
+                <On Platform="iOS" Value="Roboto-Bold" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="RobotoMedium" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Roboto-Medium.ttf#Roboto Medium" />
+                <On Platform="iOS" Value="Roboto-Medium" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="RobotoRegular" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Roboto-Regular.ttf#Roboto Regular" />
+                <On Platform="iOS" Value="Roboto-Regular" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="RobotoItalic" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Roboto-Italic.ttf#Roboto Italic" />
+                <On Platform="iOS" Value="Roboto-Italic" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeSolid" x:TypeArguments="x:String">
+                <On Platform="Android" Value="font-awesome-6-free-solid.otf#Font Awesome 6 Free Solid" />
+                <On Platform="iOS" Value="Font Awesome 6 Free Solid" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesomeRegular" x:TypeArguments="x:String">
+                <On Platform="Android" Value="font-awesome-5-free-regular.otf#Font Awesome 5 Free Regular" />
+                <On Platform="iOS" Value="Font Awesome 5 Free Regular" />
+            </OnPlatform>
+
+            <Style x:Key="daysLabelStyle" TargetType="Label">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="LineBreakMode" Value="WordWrap" />
+                <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="5,2" />
+            </Style>
+
+            <Color x:Key="PrimaryColor">#ea80fc</Color>
+            <Color x:Key="PrimaryLightColor">#ffb2ff</Color>
+            <Color x:Key="PrimaryDarkColor">#b64fc8</Color>
+            <Color x:Key="SecondaryColor">#aa00ff</Color>
+            <Color x:Key="SecondaryLightColor">#e254ff</Color>
+            <Color x:Key="SecondaryDarkColor">#7200ca</Color>
+            <Color x:Key="PrimaryTextColor">#000000</Color>
+            <Color x:Key="SecondaryTextColor">#ffffff</Color>
+
+            <converters:BoolToPositionMessage x:Key="BoolToPositionMessage" />
+            <converters:BoolToColorMessage x:Key="BoolToColorMessage" />
+            <converters:NullToBoolConverter x:Key="NullToBoolConverter" />
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

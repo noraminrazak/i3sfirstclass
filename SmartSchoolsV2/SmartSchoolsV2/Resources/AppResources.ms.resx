@@ -1,0 +1,1822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AbsentText" xml:space="preserve">
+    <value>Tidak Hadir</value>
+  </data>
+  <data name="AccountClosureText" xml:space="preserve">
+    <value>Penutupan akaun i-3s</value>
+  </data>
+  <data name="AccountStatus" xml:space="preserve">
+    <value>Status akaun</value>
+  </data>
+  <data name="AccountStatusText" xml:space="preserve">
+    <value>Status Akaun</value>
+  </data>
+  <data name="AddAttachmentText" xml:space="preserve">
+    <value>Tambah lampiran +</value>
+  </data>
+  <data name="AddNewMemberText" xml:space="preserve">
+    <value>Tambah Ahli Baru</value>
+  </data>
+  <data name="AddNutritionText" xml:space="preserve">
+    <value>Tambah Nutrisi</value>
+  </data>
+  <data name="AddOrderDetailText" xml:space="preserve">
+    <value>Tambahkan Perincian Pesanan</value>
+  </data>
+  <data name="AddressRequiredText" xml:space="preserve">
+    <value>Alamat diperlukan.</value>
+  </data>
+  <data name="AddStudentText" xml:space="preserve">
+    <value>Tambah Pelajar</value>
+  </data>
+  <data name="AddToCartText" xml:space="preserve">
+    <value>Tambah ke troli</value>
+  </data>
+  <data name="AllText" xml:space="preserve">
+    <value>Semua</value>
+  </data>
+  <data name="AlreadyHaveAccountText" xml:space="preserve">
+    <value>Sudah mempunyai akaun? </value>
+  </data>
+  <data name="AmountLessThanTopupText" xml:space="preserve">
+    <value>Jumlah yang dimasukkan kurang daripada jumlah tambah nilai minimum.</value>
+  </data>
+  <data name="AmountLessThanTransferText" xml:space="preserve">
+    <value>Jumlah yang dimasukkan kurang daripada jumlah pemindahan minimum.</value>
+  </data>
+  <data name="AmountText" xml:space="preserve">
+    <value>Jumlah</value>
+  </data>
+  <data name="AssistantHeadText" xml:space="preserve">
+    <value>Penolong Kanan</value>
+  </data>
+  <data name="AttendanceReportText" xml:space="preserve">
+    <value>Laporan Kehadiran</value>
+  </data>
+  <data name="AttendanceText" xml:space="preserve">
+    <value>Kehadiran</value>
+  </data>
+  <data name="AverageCompositionText" xml:space="preserve">
+    <value>Purata Komposisi</value>
+  </data>
+  <data name="BackdateNotAllowedText" xml:space="preserve">
+    <value>Tarikh ke belakang tidak dibenarkan untuk pesanan dalam talian</value>
+  </data>
+  <data name="BackgroundText" xml:space="preserve">
+    <value>Latar Belakang</value>
+  </data>
+  <data name="BadRequestText" xml:space="preserve">
+    <value>400 - Ralat permintaan</value>
+  </data>
+  <data name="BalanceText" xml:space="preserve">
+    <value>Baki</value>
+  </data>
+  <data name="BgColorText" xml:space="preserve">
+    <value>Warna Latar Belakang</value>
+  </data>
+  <data name="BlackText" xml:space="preserve">
+    <value>Hitam</value>
+  </data>
+  <data name="BlueText" xml:space="preserve">
+    <value>Biru</value>
+  </data>
+  <data name="BookstoreText" xml:space="preserve">
+    <value>Kedai Buku</value>
+  </data>
+  <data name="BrownText" xml:space="preserve">
+    <value>Coklat</value>
+  </data>
+  <data name="BulletinText" xml:space="preserve">
+    <value>Buletin</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Batal</value>
+  </data>
+  <data name="CannotSendMessageNowText" xml:space="preserve">
+    <value>Anda tidak dapat menghantar mesej buat masa ini. Waktu pemesejan adalah antara jam 7 pagi hingga 7 malam sahaja.</value>
+  </data>
+  <data name="CanteenText" xml:space="preserve">
+    <value>Kantin</value>
+  </data>
+  <data name="CantTopupAccStatusText" xml:space="preserve">
+    <value>Tambah nilai anda tidak dapat diteruskan. Sila semak status akaun anda pada menu Pusat bantuan untuk mendapatkan maklumat lanjut.</value>
+  </data>
+  <data name="CantTopupKYCStatusText" xml:space="preserve">
+    <value>Tambah nilai anda tidak dapat diteruskan. Sila semak status akaun (Status KYC) anda pada menu Pusat bantuan untuk mendapatkan maklumat lanjut.</value>
+  </data>
+  <data name="CardDailyLimitRequiredText" xml:space="preserve">
+    <value>Jumlah had harian kad diperlukan.</value>
+  </data>
+  <data name="CardDailyLimitText" xml:space="preserve">
+    <value>Had harian kad</value>
+  </data>
+  <data name="CardNoRequiredText" xml:space="preserve">
+    <value>Nombor kad diperlukan.</value>
+  </data>
+  <data name="CardNotAssignedText" xml:space="preserve">
+    <value>Kad belum diberikan.</value>
+  </data>
+  <data name="CardNumberText" xml:space="preserve">
+    <value>Nombor Kad</value>
+  </data>
+  <data name="CardPINNotMatchText" xml:space="preserve">
+    <value>PIN kad tidak sepadan.</value>
+  </data>
+  <data name="CardPINRequiredText" xml:space="preserve">
+    <value>PIN kad diperlukan.</value>
+  </data>
+  <data name="CardReason3Text" xml:space="preserve">
+    <value>Kad hilang atau dicuri.</value>
+  </data>
+  <data name="CardReason4Text" xml:space="preserve">
+    <value>Kad rosak.</value>
+  </data>
+  <data name="CardReason6Text" xml:space="preserve">
+    <value>Untuk mengembalikan kad sementara dan mengaktifkan kad gantian.</value>
+  </data>
+  <data name="CardReplacementText" xml:space="preserve">
+    <value>Penggantian kad</value>
+  </data>
+  <data name="CardStatus2Text" xml:space="preserve">
+    <value>Kad anda akan dinyahaktifkan dengan serta-merta. Sila buat penggantian kad setelah anda melapor kehilangan kad untuk memastikan akaun anda aktif. Baki akaun anda akan diselaraskan dengan kad gantian sementara atau baru anda.</value>
+  </data>
+  <data name="CardStatus5Text" xml:space="preserve">
+    <value>Teruskan dengan penggantian kad.</value>
+  </data>
+  <data name="CardStatusText" xml:space="preserve">
+    <value>Status Kad</value>
+  </data>
+  <data name="CategoryDescText" xml:space="preserve">
+    <value>Penerangan Kategori</value>
+  </data>
+  <data name="CategoryNameRequired" xml:space="preserve">
+    <value>Nama kategori diperlukan.</value>
+  </data>
+  <data name="CategoryNameText" xml:space="preserve">
+    <value>Nama Kategori</value>
+  </data>
+  <data name="ChangeCardPINText" xml:space="preserve">
+    <value>Tukar PIN kad</value>
+  </data>
+  <data name="ChangePasswordText" xml:space="preserve">
+    <value>Tukar kata laluan</value>
+  </data>
+  <data name="ChannelText" xml:space="preserve">
+    <value>Saluran </value>
+  </data>
+  <data name="CheckInternetText" xml:space="preserve">
+    <value>Sila periksa sambungan internet anda.</value>
+  </data>
+  <data name="CheckoutText" xml:space="preserve">
+    <value>Pembayaran</value>
+  </data>
+  <data name="CityRequiredText" xml:space="preserve">
+    <value>Negeri diperlukan.</value>
+  </data>
+  <data name="CityText" xml:space="preserve">
+    <value>Bandar</value>
+  </data>
+  <data name="ClassInfoText" xml:space="preserve">
+    <value>Maklumat Kelas</value>
+  </data>
+  <data name="ClassNameRequired" xml:space="preserve">
+    <value>Nama kelas diperlukan.</value>
+  </data>
+  <data name="ClassNameText" xml:space="preserve">
+    <value>Nama Kelas</value>
+  </data>
+  <data name="ClassNotSpecifiedText" xml:space="preserve">
+    <value>Kelas belum ditentukan</value>
+  </data>
+  <data name="ClassTeacherExistText" xml:space="preserve">
+    <value> adalah guru kelas semasa untuk </value>
+  </data>
+  <data name="ClassTeacherText" xml:space="preserve">
+    <value>Class Teacher</value>
+  </data>
+  <data name="ClassText" xml:space="preserve">
+    <value>Kelas</value>
+  </data>
+  <data name="ClearText" xml:space="preserve">
+    <value>Padam</value>
+  </data>
+  <data name="ClickToOpenBrowserText" xml:space="preserve">
+    <value>Klik pada butang di bawah untuk membuka halaman keputusan pada laman web.</value>
+  </data>
+  <data name="ClickToStartMessageText" xml:space="preserve">
+    <value>Klik pada butang kiri bawah untuk memulakan pemesejan.</value>
+  </data>
+  <data name="CloseText" xml:space="preserve">
+    <value>Tutup</value>
+  </data>
+  <data name="ClubText" xml:space="preserve">
+    <value>Kelab</value>
+  </data>
+  <data name="ColorPickerTitleBgText" xml:space="preserve">
+    <value>Pilih Warna Later Belakang</value>
+  </data>
+  <data name="ColorPickerTitleTextText" xml:space="preserve">
+    <value>Pilih Warna Tulisan</value>
+  </data>
+  <data name="CompanyNameText" xml:space="preserve">
+    <value>Nama Syarikat</value>
+  </data>
+  <data name="ComplaintFormText" xml:space="preserve">
+    <value>Borang aduan</value>
+  </data>
+  <data name="ComplyBNMText" xml:space="preserve">
+    <value>Mematuhi peraturan Bank Negara Malaysia, anda dikehendaki melengkapkan proses Ketekunan Wajar Pelanggan untuk mengaktifkan akaun eWallet anda.</value>
+  </data>
+  <data name="ConfirmCardPINText" xml:space="preserve">
+    <value>Sahkan PIN kad</value>
+  </data>
+  <data name="ConfirmDeleteText" xml:space="preserve">
+    <value>Sahkan padam</value>
+  </data>
+  <data name="ConfirmNewPasswordRequiredText" xml:space="preserve">
+    <value>Sahkan kata laluan baru diperlukan.</value>
+  </data>
+  <data name="ConfirmNewPasswordText" xml:space="preserve">
+    <value>Sahkan kata laluan baru</value>
+  </data>
+  <data name="ConfirmPasswordText" xml:space="preserve">
+    <value>Sahkan Kata Laluan</value>
+  </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>Ya, Pasti</value>
+  </data>
+  <data name="ContactText" xml:space="preserve">
+    <value>Kenalan</value>
+  </data>
+  <data name="ContinueButtonText" xml:space="preserve">
+    <value>Teruskan</value>
+  </data>
+  <data name="ContinueOrderText" xml:space="preserve">
+    <value>Teruskan pesanan</value>
+  </data>
+  <data name="CooperativeText" xml:space="preserve">
+    <value>Koperasi</value>
+  </data>
+  <data name="CountryCodeText" xml:space="preserve">
+    <value>Kod</value>
+  </data>
+  <data name="CountryRequiredText" xml:space="preserve">
+    <value>Negara diperlukan.</value>
+  </data>
+  <data name="CountryText" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+  <data name="CreateAttendanceText" xml:space="preserve">
+    <value>Cipta Kehadiran</value>
+  </data>
+  <data name="CreateNewClubText" xml:space="preserve">
+    <value>Cipta kelab baru</value>
+  </data>
+  <data name="CreatePasswordHere" xml:space="preserve">
+    <value>Cipta Kata Laluan</value>
+  </data>
+  <data name="CurrentOrderDiscardText" xml:space="preserve">
+    <value>Pesanan semasa anda akan dibuang daripada troli anda. Klik 'Ya' jika anda ingin meneruskan pesanan ini.</value>
+  </data>
+  <data name="CustDueDiligenceText" xml:space="preserve">
+    <value>Ketekunan wajar pelanggan</value>
+  </data>
+  <data name="DailyLimitText" xml:space="preserve">
+    <value>Had harian : </value>
+  </data>
+  <data name="DailySpendingMessageText" xml:space="preserve">
+    <value>Kad anda akan mempunyai had harian sebanyak RM 200.00. Jika amaun pilihan anda ialah RM 0.00</value>
+  </data>
+  <data name="DateOfBirthText" xml:space="preserve">
+    <value>Tarikh Lahir</value>
+  </data>
+  <data name="DateSalesMethodText" xml:space="preserve">
+    <value>Tarikh / Kaedah Jualan</value>
+  </data>
+  <data name="DateText" xml:space="preserve">
+    <value>Tarikh</value>
+  </data>
+  <data name="DateTimeText" xml:space="preserve">
+    <value>Tarikh / Masa</value>
+  </data>
+  <data name="DeleteConfirmText" xml:space="preserve">
+    <value>Sila sahkan permintaan untuk memadam akaun anda. Setelah setuju, akaun e-wallet anda juga akan dipadamkan daripada sistem i-3s sebelum 7 hari bekerja. Kami akan menghubungi anda melalui emel mengenai langkah-langkah untuk mendapatkan kembali wang credit yang tidak terpakai. </value>
+  </data>
+  <data name="DeleteMyAccountText" xml:space="preserve">
+    <value>Padamkan akaun saya</value>
+  </data>
+  <data name="DeleteText" xml:space="preserve">
+    <value>Padam</value>
+  </data>
+  <data name="DeliveredText" xml:space="preserve">
+    <value>Dihantar</value>
+  </data>
+  <data name="DeliveryBtnText" xml:space="preserve">
+    <value>Penghantaran</value>
+  </data>
+  <data name="DeliveryDateRequiredText" xml:space="preserve">
+    <value>Tarikh pesanan diperlukan</value>
+  </data>
+  <data name="DeliveryDateText" xml:space="preserve">
+    <value>Tarikh Pesanan</value>
+  </data>
+  <data name="DeliveryDetailText" xml:space="preserve">
+    <value>Butiran Pesanan</value>
+  </data>
+  <data name="DeliveryLocationRequiredText" xml:space="preserve">
+    <value>Lokasi penghantaran diperlukan.</value>
+  </data>
+  <data name="DeliveryLocationText" xml:space="preserve">
+    <value>Lokasi Penghantaran (dalam sekolah)</value>
+  </data>
+  <data name="DeliveryOnText" xml:space="preserve">
+    <value>Penghantaran pada hari </value>
+  </data>
+  <data name="DepositFromOthersBankText1" xml:space="preserve">
+    <value>Deposit daripada akaun bank atau syarikat orang lain</value>
+  </data>
+  <data name="DepositFromOthersBankText2" xml:space="preserve">
+    <value>dan mungkin mengambil masa sehingga</value>
+  </data>
+  <data name="DepositFromOthersBankText3" xml:space="preserve">
+    <value>untuk dikembalikan. Bayaran admin RM5 untuk mengembalikan ke akaun bank pengirim.</value>
+  </data>
+  <data name="DepositFromOwnBankText" xml:space="preserve">
+    <value>Deposit dari akaun bank anda sendiri sahaja</value>
+  </data>
+  <data name="DescriptionRequiredText" xml:space="preserve">
+    <value>Keterangan diperlukan.</value>
+  </data>
+  <data name="DescriptionText" xml:space="preserve">
+    <value>Keterangan</value>
+  </data>
+  <data name="DetailText" xml:space="preserve">
+    <value>Perincian</value>
+  </data>
+  <data name="DidNotReceivedOTPText" xml:space="preserve">
+    <value>Tidak menerima OTP?</value>
+  </data>
+  <data name="DisplayDateFromText" xml:space="preserve">
+    <value>Tarikh Paparan dari</value>
+  </data>
+  <data name="DisplayDateGreaterText" xml:space="preserve">
+    <value>Tarikh Paparan Sehingga Hendaklah lebih besar daripada Tarikh Paparan Dari</value>
+  </data>
+  <data name="DisplayDateToRequiredText" xml:space="preserve">
+    <value>Tarik paparan sehingga diperlukan.</value>
+  </data>
+  <data name="DisplayDateToText" xml:space="preserve">
+    <value>Tarikh Paparan Sehingga</value>
+  </data>
+  <data name="DOBRequiredText" xml:space="preserve">
+    <value>Tarikh lahir diperlukan.</value>
+  </data>
+  <data name="DocumentVerifyMessageText" xml:space="preserve">
+    <value>Sila teruskan dengan pengesahan pelanggan baru untuk mengaktifkan akaun eDompet anda bagi tujuan tambah nilai dan pemindahan dana.</value>
+  </data>
+  <data name="DocumentVerifyText" xml:space="preserve">
+    <value>Pengesahan dokumen</value>
+  </data>
+  <data name="DoneText" xml:space="preserve">
+    <value>Selesai</value>
+  </data>
+  <data name="DontHaveAccountText" xml:space="preserve">
+    <value>Tidak mempunyai akaun? </value>
+  </data>
+  <data name="DownloadOrderText" xml:space="preserve">
+    <value>Muat Turun Pesanan</value>
+  </data>
+  <data name="DownloadStaffAttendanceForText" xml:space="preserve">
+    <value>Muat turun laporan kehadiran kakitangan untuk sesi shift_code bagi bulan MMM_yyyy</value>
+  </data>
+  <data name="DownloadStudentAttendanceForText" xml:space="preserve">
+    <value>Muat turun laporan kehadiran pelajar untuk kelas class_name bagi bulan MMM_yyyy</value>
+  </data>
+  <data name="DownloadText" xml:space="preserve">
+    <value>Muat turun</value>
+  </data>
+  <data name="DoYouReallyWantStudentText" xml:space="preserve">
+    <value>Adakah anda pasti untuk </value>
+  </data>
+  <data name="DoYouReallyWantText" xml:space="preserve">
+    <value>Adakah anda pasti mahukan </value>
+  </data>
+  <data name="DoYouReallyWantToAddText" xml:space="preserve">
+    <value>Adakah anda pasti untuk memasukkan </value>
+  </data>
+  <data name="DoYouReallyWantToCreateText" xml:space="preserve">
+    <value>Adakah anda pasti mahu mencipta kehadiran untuk  </value>
+  </data>
+  <data name="DoYouReallyWantToDeleteText" xml:space="preserve">
+    <value>Adakah anda pasti untuk memadam </value>
+  </data>
+  <data name="DoYouReallyWantToEnrollText" xml:space="preserve">
+    <value>Adakah anda pasti mahu mendaftar </value>
+  </data>
+  <data name="DoYouReallyWantToHandoverText" xml:space="preserve">
+    <value>Adakah anda pasti untuk menyerahkan kelab ini kepada </value>
+  </data>
+  <data name="DoYouReallyWantToJoinChannelText" xml:space="preserve">
+    <value>Adakah anda mahu menyertai saluran ini?</value>
+  </data>
+  <data name="DoYouReallyWantToJoinText" xml:space="preserve">
+    <value>Adakah anda pasti untuk menyertai </value>
+  </data>
+  <data name="DoYouReallyWantToLeaveText" xml:space="preserve">
+    <value>Adakah anda pasti untuk meninggalkan </value>
+  </data>
+  <data name="DoYouReallyWantToRemoveOrderText" xml:space="preserve">
+    <value>Adakah anda pasti untuk mengeluarkan pesanan anda </value>
+  </data>
+  <data name="DoYouReallyWantToRemoveText" xml:space="preserve">
+    <value>Adakah anda pasti untuk mengeluarkan </value>
+  </data>
+  <data name="EditBulletinText" xml:space="preserve">
+    <value>Edit Buletin</value>
+  </data>
+  <data name="EditNutritionText" xml:space="preserve">
+    <value>Edit Nutrisi</value>
+  </data>
+  <data name="EditProductCategoryText" xml:space="preserve">
+    <value>Edit Kategori Produk</value>
+  </data>
+  <data name="EditProductText" xml:space="preserve">
+    <value>Edit Produk</value>
+  </data>
+  <data name="EditProfileText" xml:space="preserve">
+    <value>Edit profil</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EmailRequiredText" xml:space="preserve">
+    <value>E-mel diperlukan</value>
+  </data>
+  <data name="EmailText" xml:space="preserve">
+    <value>E-mel</value>
+  </data>
+  <data name="EmployerNameRequiredText" xml:space="preserve">
+    <value>Nama majikan diperlukan.</value>
+  </data>
+  <data name="EmployerNameText" xml:space="preserve">
+    <value>Nama Majikan</value>
+  </data>
+  <data name="EnrollmentConfirmText" xml:space="preserve">
+    <value>Pengesahan pendaftaran</value>
+  </data>
+  <data name="EnrollStudentClassText" xml:space="preserve">
+    <value>Daftar pelajar ke dalam kelas</value>
+  </data>
+  <data name="EnterAddressText" xml:space="preserve">
+    <value>Masukkan alamat disini</value>
+  </data>
+  <data name="EnterAverageCompositionText" xml:space="preserve">
+    <value>Masukkan purata komposisi disini</value>
+  </data>
+  <data name="EnterCardDailyLimitText" xml:space="preserve">
+    <value>Masukkan jumlah had harian kad</value>
+  </data>
+  <data name="EnterCardNumberText" xml:space="preserve">
+    <value>Masukkan nombor kad disini</value>
+  </data>
+  <data name="EnterCardStatusText" xml:space="preserve">
+    <value>Masukkan status kad disini</value>
+  </data>
+  <data name="EnterCategoryDescHereText" xml:space="preserve">
+    <value>Masukkan keterangan kategori di sini</value>
+  </data>
+  <data name="EnterCategoryNameHereText" xml:space="preserve">
+    <value>Masukkan nama kategori di sini</value>
+  </data>
+  <data name="EnterCityText" xml:space="preserve">
+    <value>Masukkan bandar disini</value>
+  </data>
+  <data name="EnterConfirmNewPasswordText" xml:space="preserve">
+    <value>Masukkan semula kata laluan baru di sini</value>
+  </data>
+  <data name="EnterDeliveryLocationText" xml:space="preserve">
+    <value>Masukkan lokasi penghantaran</value>
+  </data>
+  <data name="EnteredAmountCannotLessText" xml:space="preserve">
+    <value>Jumlah yang dimasukkan tidak boleh kurang dari 0.</value>
+  </data>
+  <data name="EnteredAmountMoreThanText" xml:space="preserve">
+    <value>Jumlah yang dimasukkan melebihi had harian maksimum.</value>
+  </data>
+  <data name="EnterEmailText" xml:space="preserve">
+    <value>Masukkan e-mel disini</value>
+  </data>
+  <data name="EnterEmployerName" xml:space="preserve">
+    <value>Masukkan nama majikan disini</value>
+  </data>
+  <data name="EnterFullNameText" xml:space="preserve">
+    <value>Masukkan nama penuh disini</value>
+  </data>
+  <data name="EnterIDNoText" xml:space="preserve">
+    <value>Masukkan nombor kad pengenalan disini</value>
+  </data>
+  <data name="EnterIngredientText" xml:space="preserve">
+    <value>Masukkan bahan disini</value>
+  </data>
+  <data name="EnterMessageHereText" xml:space="preserve">
+    <value>Masukkan mesej di sini</value>
+  </data>
+  <data name="EnterMobileNoText" xml:space="preserve">
+    <value>Masukkan nombor telefon disini</value>
+  </data>
+  <data name="EnterMotherNameText" xml:space="preserve">
+    <value>Masukkan nama ibu disini</value>
+  </data>
+  <data name="EnterNewCardNumberText" xml:space="preserve">
+    <value>Masukkan nombor kad baru disini</value>
+  </data>
+  <data name="EnterNewPasswordText" xml:space="preserve">
+    <value>Masukkan kata laluan baru di sini</value>
+  </data>
+  <data name="EnterNumberOnlyText" xml:space="preserve">
+    <value>Sila masukkan nombor sahaja.</value>
+  </data>
+  <data name="EnterNutritionText" xml:space="preserve">
+    <value>Masukkan pemakanan di sini</value>
+  </data>
+  <data name="EnterPasportNoText" xml:space="preserve">
+    <value>Masukkan nombor pasport di sini</value>
+  </data>
+  <data name="EnterPerServingText" xml:space="preserve">
+    <value>Masukkan setiap sajian disini</value>
+  </data>
+  <data name="EnterPostcodeHere" xml:space="preserve">
+    <value>Masukkan poskod di sini</value>
+  </data>
+  <data name="EnterProductCategoryHereText" xml:space="preserve">
+    <value>Masukkan kategori produk di sini</value>
+  </data>
+  <data name="EnterProductCodeText" xml:space="preserve">
+    <value>Masukkan kod makanan disini</value>
+  </data>
+  <data name="EnterProductDescHereText" xml:space="preserve">
+    <value>Masukkan keterangan produk di sini</value>
+  </data>
+  <data name="EnterProductDescText" xml:space="preserve">
+    <value>Masukkan keterangan produk di sini</value>
+  </data>
+  <data name="EnterProductNameText" xml:space="preserve">
+    <value>Enter product name here</value>
+  </data>
+  <data name="EnterProductSKUText" xml:space="preserve">
+    <value>Masukkan nama produk di sini</value>
+  </data>
+  <data name="EnterProvinceText" xml:space="preserve">
+    <value>Masukkan wilayah disini</value>
+  </data>
+  <data name="EnterServingSizeText" xml:space="preserve">
+    <value>Masukkan saiz hidangan di sini</value>
+  </data>
+  <data name="ErrorUploadImageText" xml:space="preserve">
+    <value>Ralat berlaku semasa memuat naik. Sila cuba lagi.</value>
+  </data>
+  <data name="ErrorWhileSavingFileText" xml:space="preserve">
+    <value>Ralat semasa menyimpan fail.</value>
+  </data>
+  <data name="EveryDayText" xml:space="preserve">
+    <value>Setiap hari</value>
+  </data>
+  <data name="EWalletFunctionText" xml:space="preserve">
+    <value>Fungsi eDompet tidak tersedia buat masa ini. Kami akan memaklumkan kepada anda mengenai sebarang maklumat terkini.</value>
+  </data>
+  <data name="eWalletText" xml:space="preserve">
+    <value>eDompet</value>
+  </data>
+  <data name="FAQText" xml:space="preserve">
+    <value>Soalan Lazim</value>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>Maklum Balas</value>
+  </data>
+  <data name="FeedbackTypeRequiredText" xml:space="preserve">
+    <value>Jenis Maklum Balas diperlukan.</value>
+  </data>
+  <data name="FeedbackTypeText" xml:space="preserve">
+    <value>Jenis Maklum Balas</value>
+  </data>
+  <data name="FileSaveSuccessText" xml:space="preserve">
+    <value>Fail berjaya disimpan.</value>
+  </data>
+  <data name="ForbiddenText" xml:space="preserve">
+    <value>403 - Dilarang</value>
+  </data>
+  <data name="ForgotPasswordText" xml:space="preserve">
+    <value>Lupa Kata Laluan</value>
+  </data>
+  <data name="ForText" xml:space="preserve">
+    <value>Untuk</value>
+  </data>
+  <data name="FourteenBizDaysText" xml:space="preserve">
+    <value> 14 hari bekerja </value>
+  </data>
+  <data name="FridayText" xml:space="preserve">
+    <value>Jumaat</value>
+  </data>
+  <data name="FullNameRequiredText" xml:space="preserve">
+    <value>Nama penuh diperlukan.</value>
+  </data>
+  <data name="FullNameText" xml:space="preserve">
+    <value>Nama Penuh (Seperti dalam MyKad / Pasport)</value>
+  </data>
+  <data name="GreenText" xml:space="preserve">
+    <value>Hijau</value>
+  </data>
+  <data name="GreyText" xml:space="preserve">
+    <value>Kelabu</value>
+  </data>
+  <data name="GuardianInfoText" xml:space="preserve">
+    <value>Maklumat Penjaga</value>
+  </data>
+  <data name="HalfdayText" xml:space="preserve">
+    <value>Separuh Hari</value>
+  </data>
+  <data name="HandoverText_" xml:space="preserve">
+    <value> Serahkan </value>
+  </data>
+  <data name="HeadmasterText" xml:space="preserve">
+    <value>Guru Besar</value>
+  </data>
+  <data name="HelpCenterText" xml:space="preserve">
+    <value>Pusat bantuan</value>
+  </data>
+  <data name="HomeAddressText" xml:space="preserve">
+    <value>Alamat Rumah</value>
+  </data>
+  <data name="i3seWalletText" xml:space="preserve">
+    <value>i3s eDompet</value>
+  </data>
+  <data name="ICNoText" xml:space="preserve">
+    <value>Nombor Kad Pengenalan</value>
+  </data>
+  <data name="IDDocTypeText" xml:space="preserve">
+    <value>Jenis Dokumen Pengenalan</value>
+  </data>
+  <data name="IDImageRequiredText" xml:space="preserve">
+    <value>Gambar IC diperlukan.</value>
+  </data>
+  <data name="IDNoText" xml:space="preserve">
+    <value>Nombor MyKad / Pasport</value>
+  </data>
+  <data name="IDTypeRequiredText" xml:space="preserve">
+    <value>Jenis identiti diperlukan.</value>
+  </data>
+  <data name="IDTypeText" xml:space="preserve">
+    <value>Jenis Pengenalan</value>
+  </data>
+  <data name="IngredientText" xml:space="preserve">
+    <value>Bahan</value>
+  </data>
+  <data name="InternalServerErrorText" xml:space="preserve">
+    <value>500 - Ralat pelayan dalaman</value>
+  </data>
+  <data name="InvalidImageText" xml:space="preserve">
+    <value>Imej tidak sah. Sila cuba lagi.</value>
+  </data>
+  <data name="ItemsText" xml:space="preserve">
+    <value>Barang</value>
+  </data>
+  <data name="IWillDepositFromMyOwnAccText" xml:space="preserve">
+    <value>Saya akan deposit dari akaun bank saya sendiri.</value>
+  </data>
+  <data name="JoinClassAsText" xml:space="preserve">
+    <value>Sertai kelas sebagai?</value>
+  </data>
+  <data name="JoinClassText" xml:space="preserve">
+    <value>Sertai kelas?</value>
+  </data>
+  <data name="JoinClubText" xml:space="preserve">
+    <value>Sertai kelab</value>
+  </data>
+  <data name="JoinExistingText" xml:space="preserve">
+    <value>Sertai kelab sedia ada</value>
+  </data>
+  <data name="KYCStatusText" xml:space="preserve">
+    <value>Status KYC</value>
+  </data>
+  <data name="Last4DigitRequiredText" xml:space="preserve">
+    <value>4 digit terakhir diperlukan.</value>
+  </data>
+  <data name="LateInText" xml:space="preserve">
+    <value>Lewat</value>
+  </data>
+  <data name="LeaveClassMenutext" xml:space="preserve">
+    <value>Tinggalkan kelas</value>
+  </data>
+  <data name="LeaveClassText" xml:space="preserve">
+    <value>Tinggalkan kelas?</value>
+  </data>
+  <data name="LeaveClubMenuText" xml:space="preserve">
+    <value>Tinggalkan kelab</value>
+  </data>
+  <data name="LeaveClubText" xml:space="preserve">
+    <value>Tinggalkan kelab?</value>
+  </data>
+  <data name="LeaveReviewText" xml:space="preserve">
+    <value>Tinggalkan ulasan</value>
+  </data>
+  <data name="LoginButtonText" xml:space="preserve">
+    <value>Daftar Masuk</value>
+  </data>
+  <data name="LoginText" xml:space="preserve">
+    <value>Daftar Masuk</value>
+  </data>
+  <data name="LoginToChannelNowText" xml:space="preserve">
+    <value> Masuk ke saluran sekarang?</value>
+  </data>
+  <data name="LogoutMessageText" xml:space="preserve">
+    <value>Anda pasti untuk daftar keluar?</value>
+  </data>
+  <data name="LogoutText" xml:space="preserve">
+    <value>Daftar keluar</value>
+  </data>
+  <data name="MarketingFlagText" xml:space="preserve">
+    <value>Saya ingin menerima e-mel pemasaran.</value>
+  </data>
+  <data name="MemberText" xml:space="preserve">
+    <value> Ahli</value>
+  </data>
+  <data name="MerchantDetailText" xml:space="preserve">
+    <value>Butiran Pengusaha</value>
+  </data>
+  <data name="MerchantNameText" xml:space="preserve">
+    <value>Nama Pengusaha</value>
+  </data>
+  <data name="MerchantText" xml:space="preserve">
+    <value>Pengusaha</value>
+  </data>
+  <data name="MerchantTypeRequiredText" xml:space="preserve">
+    <value>Jenis pengusaha diperlukan.</value>
+  </data>
+  <data name="MerchantTypeText" xml:space="preserve">
+    <value>Jenis Pengusaha</value>
+  </data>
+  <data name="MessageRequiredText" xml:space="preserve">
+    <value>Mesej diperlukan.</value>
+  </data>
+  <data name="MessageText" xml:space="preserve">
+    <value>Mesej</value>
+  </data>
+  <data name="MinimumTopupText" xml:space="preserve">
+    <value>Amaun tambah nilai minimum ialah RM 20.00</value>
+  </data>
+  <data name="MinimumTransferText" xml:space="preserve">
+    <value>Amaun pemindahan minimum ialah RM 1.00</value>
+  </data>
+  <data name="MobileNoRequiredText" xml:space="preserve">
+    <value>Nombor telefon diperlukan.</value>
+  </data>
+  <data name="MobileNoText" xml:space="preserve">
+    <value>Nombor Telefon</value>
+  </data>
+  <data name="MondayText" xml:space="preserve">
+    <value>Isnin</value>
+  </data>
+  <data name="MotherNameRequiredText" xml:space="preserve">
+    <value>Nama ibu diperlukan.</value>
+  </data>
+  <data name="MotherNameText" xml:space="preserve">
+    <value>Nama Ibu</value>
+  </data>
+  <data name="MPayIdText" xml:space="preserve">
+    <value>MPay ID</value>
+  </data>
+  <data name="MyCardText" xml:space="preserve">
+    <value>Kad sendiri</value>
+  </data>
+  <data name="MyKadPasportNoRequiredText" xml:space="preserve">
+    <value>Nombor MyKad / Pasport diperlukan.</value>
+  </data>
+  <data name="MyKadText" xml:space="preserve">
+    <value>MyKad</value>
+  </data>
+  <data name="MyTicketsText" xml:space="preserve">
+    <value>Tiket saya</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="NationalityRequiredText" xml:space="preserve">
+    <value>Kewarganegaraan diperlukan.</value>
+  </data>
+  <data name="NationalityText" xml:space="preserve">
+    <value>Kewarganegaraan</value>
+  </data>
+  <data name="NewBulletinText" xml:space="preserve">
+    <value>Buletin Baru</value>
+  </data>
+  <data name="NewCardNoRequiredText" xml:space="preserve">
+    <value>Nombor kad gantian / baru diperlukan</value>
+  </data>
+  <data name="NewCardNoText" xml:space="preserve">
+    <value>Nombor Kad Baru</value>
+  </data>
+  <data name="NewCardPINText" xml:space="preserve">
+    <value>Tukar PIN kad</value>
+  </data>
+  <data name="NewClubNameRequired" xml:space="preserve">
+    <value>Nama kelab baru diperlukan</value>
+  </data>
+  <data name="NewCustVerifyText" xml:space="preserve">
+    <value>Pengesahan pelanggan baru</value>
+  </data>
+  <data name="NewPasswordRequiredText" xml:space="preserve">
+    <value>Kata laluan baru diperlukan.</value>
+  </data>
+  <data name="NewPasswordText" xml:space="preserve">
+    <value>Kata Laluan Baru</value>
+  </data>
+  <data name="NewProductCategoryText" xml:space="preserve">
+    <value>Kategori Produk Baru</value>
+  </data>
+  <data name="NewProductText" xml:space="preserve">
+    <value>Produk Baru</value>
+  </data>
+  <data name="NextButtonText" xml:space="preserve">
+    <value>Seterusnya</value>
+  </data>
+  <data name="NoCameraText" xml:space="preserve">
+    <value>Tidak ada kamera yang tersedia.</value>
+  </data>
+  <data name="NoLimitText" xml:space="preserve">
+    <value>TIADA HAD</value>
+  </data>
+  <data name="NoRecordForSelectedDateText" xml:space="preserve">
+    <value>Tiada rekod untuk tarikh yang dipilih</value>
+  </data>
+  <data name="NoRecordFoundText" xml:space="preserve">
+    <value>Tiada rekod ditemui</value>
+  </data>
+  <data name="NotAllowedText" xml:space="preserve">
+    <value> tidak dibenarkan </value>
+  </data>
+  <data name="NotFoundText" xml:space="preserve">
+    <value>404 - Tidak ditemui</value>
+  </data>
+  <data name="NotifyText" xml:space="preserve">
+    <value>Notifikasi</value>
+  </data>
+  <data name="NutritionText" xml:space="preserve">
+    <value>Nutrisi</value>
+  </data>
+  <data name="OccupationRequiredText" xml:space="preserve">
+    <value>Pekerjaan diperlukan.</value>
+  </data>
+  <data name="OccupationText" xml:space="preserve">
+    <value>Pekerjaan</value>
+  </data>
+  <data name="OnlineBankingText" xml:space="preserve">
+    <value>Perbankan dalam Talian</value>
+  </data>
+  <data name="OnlineOrderText" xml:space="preserve">
+    <value>Pesanan dalam talian</value>
+  </data>
+  <data name="OpenBrowserText" xml:space="preserve">
+    <value>Buka Laman Web</value>
+  </data>
+  <data name="OpenText" xml:space="preserve">
+    <value>Buka</value>
+  </data>
+  <data name="OperatorTypeRequiredText" xml:space="preserve">
+    <value>Jenis pengusaha diperlukan.</value>
+  </data>
+  <data name="OperatorTypeText" xml:space="preserve">
+    <value>Jenis Pengusaha</value>
+  </data>
+  <data name="OrangeText" xml:space="preserve">
+    <value>Jingga</value>
+  </data>
+  <data name="OrderForText" xml:space="preserve">
+    <value>Pesanan untuk </value>
+  </data>
+  <data name="OrderForWeekendText" xml:space="preserve">
+    <value>Adakah anda pasti mahu membuat pesanan untuk hujung minggu?</value>
+  </data>
+  <data name="OrderHistoryText" xml:space="preserve">
+    <value>Sejarah Pesanan</value>
+  </data>
+  <data name="OrderMustBefore7Text" xml:space="preserve">
+    <value>Pesanan dalam talian mesti dibuat sebelum jam 7:00 pagi pada tarikh yang sama</value>
+  </data>
+  <data name="OrderNoText" xml:space="preserve">
+    <value>Pesanan #</value>
+  </data>
+  <data name="OrderReceivedText" xml:space="preserve">
+    <value>Pesanan diterima</value>
+  </data>
+  <data name="OrderReportText" xml:space="preserve">
+    <value>Laporan Pesanan</value>
+  </data>
+  <data name="OrderStatusDeliveredText" xml:space="preserve">
+    <value>Status Pesanan : Dihantar</value>
+  </data>
+  <data name="OrderStatusPreparingText" xml:space="preserve">
+    <value>Status Pesanan : Menyiapkan</value>
+  </data>
+  <data name="OrderTimingAlreadyPastText" xml:space="preserve">
+    <value>Masa yang anda pilih sudah berlalu.</value>
+  </data>
+  <data name="OrderTimingRequiredText" xml:space="preserve">
+    <value>Masa pesanan diperlukan.</value>
+  </data>
+  <data name="OrderTimingText" xml:space="preserve">
+    <value>Masa Pesanan</value>
+  </data>
+  <data name="OrText" xml:space="preserve">
+    <value> atau </value>
+  </data>
+  <data name="OTPRequiredText" xml:space="preserve">
+    <value>OTP diperlukan.</value>
+  </data>
+  <data name="OutingText" xml:space="preserve">
+    <value>Keluar Sekolah</value>
+  </data>
+  <data name="ParentFullNameText" xml:space="preserve">
+    <value>Nama Penuh Ibu Bapa / Penjaga (Seperti dalam MyKad / Pasport)</value>
+  </data>
+  <data name="ParentNameText" xml:space="preserve">
+    <value>Nama Ibu / Bapa</value>
+  </data>
+  <data name="ParentText" xml:space="preserve">
+    <value>Ibu bapa</value>
+  </data>
+  <data name="PasportNoText" xml:space="preserve">
+    <value>Nombor Pasport</value>
+  </data>
+  <data name="PassportText" xml:space="preserve">
+    <value>Pasport</value>
+  </data>
+  <data name="PasswordIncorrectText" xml:space="preserve">
+    <value>Kata laluan tidak tepat.</value>
+  </data>
+  <data name="PasswordMatchText" xml:space="preserve">
+    <value>Kata laluan sepadan</value>
+  </data>
+  <data name="PasswordNotMatchText" xml:space="preserve">
+    <value>Kata laluan tidak sepadan.</value>
+  </data>
+  <data name="PasswordRequiredText" xml:space="preserve">
+    <value>Kata Laluan diperlukan.</value>
+  </data>
+  <data name="PasswordRuleMetText" xml:space="preserve">
+    <value>Peraturan kata laluan perlu dipenuhi.</value>
+  </data>
+  <data name="PasswordRuleText" xml:space="preserve">
+    <value>Gunakan sekurang-kurangnya 8 aksara dengan campuran huruf besar dan kecil beserta nombor tanpa aksara khas di dalamnya</value>
+  </data>
+  <data name="PasswordText" xml:space="preserve">
+    <value>Kata Laluan</value>
+  </data>
+  <data name="PaymentByText" xml:space="preserve">
+    <value>Pembayaran Oleh</value>
+  </data>
+  <data name="PaymentFromText" xml:space="preserve">
+    <value>Pembayaran dari</value>
+  </data>
+  <data name="PaymentMethodText" xml:space="preserve">
+    <value>Kaedah Pembayaran</value>
+  </data>
+  <data name="PaymentModeText" xml:space="preserve">
+    <value>Mod Pembayaran : </value>
+  </data>
+  <data name="PaymentText" xml:space="preserve">
+    <value>Pembayaran</value>
+  </data>
+  <data name="PaymentToText" xml:space="preserve">
+    <value>Bayaran kepada </value>
+  </data>
+  <data name="PayoutText" xml:space="preserve">
+    <value>Pembayaran</value>
+  </data>
+  <data name="PendingText" xml:space="preserve">
+    <value>Belum Selesai</value>
+  </data>
+  <data name="PermissionGalleryText" xml:space="preserve">
+    <value>Kebenaran tidak diberikan ke galeri.</value>
+  </data>
+  <data name="PerServingText" xml:space="preserve">
+    <value>Setiap Sajian</value>
+  </data>
+  <data name="PhoneDialerNotSupportText" xml:space="preserve">
+    <value>Pendail telefon tidak disokong pada peranti ini.</value>
+  </data>
+  <data name="PickAndUploadText" xml:space="preserve">
+    <value>Pilih dan muat naik</value>
+  </data>
+  <data name="PinkText" xml:space="preserve">
+    <value>Merah Jambu</value>
+  </data>
+  <data name="PlaceOrderText" xml:space="preserve">
+    <value>Bayar Pesanan</value>
+  </data>
+  <data name="PleaseAddSomethingText" xml:space="preserve">
+    <value>Klik di sini untuk memulakan pesanan</value>
+  </data>
+  <data name="PleaseAgreeText" xml:space="preserve">
+    <value>Sila tandakan pada kotak dan bersetuju untuk meneruskan.</value>
+  </data>
+  <data name="PleaseCompleteKYCText" xml:space="preserve">
+    <value>Sila lengkapkan proses pengesahan dokumen anda sebelum memasukan kredit ke dalam akaun.</value>
+  </data>
+  <data name="PleaseConfirmCardPINText" xml:space="preserve">
+    <value>Sila sahkan nombor PIN kad anda</value>
+  </data>
+  <data name="PleaseContactSupportText" xml:space="preserve">
+    <value>Sila hubungi pusat khidmat pelanggan MP@y di 1-700-81-6729 (MPAY) untuk bantuan lanjut.</value>
+  </data>
+  <data name="PleaseContactText" xml:space="preserve">
+    <value>Sila hubungi kami di </value>
+  </data>
+  <data name="PleaseContactText2" xml:space="preserve">
+    <value> untuk penutupan akaun anda, dan nyatakan info seperti berikut:</value>
+  </data>
+  <data name="PleaseContactText3" xml:space="preserve">
+    <value>1. Nama penuh</value>
+  </data>
+  <data name="PleaseContactText4" xml:space="preserve">
+    <value>2. Nombor IC/paspot</value>
+  </data>
+  <data name="PleaseContactText5" xml:space="preserve">
+    <value>3. Nama bank dan nombor akaun</value>
+  </data>
+  <data name="PleaseEnterCardPINText" xml:space="preserve">
+    <value>Sila masukkan nombor PIN kad anda</value>
+  </data>
+  <data name="PleaseEnterLast4DigitText" xml:space="preserve">
+    <value>Sila masukkan 4 digit terakhir Nombor Pengenalan / Pasport Pelajar</value>
+  </data>
+  <data name="PleaseEnterMoreCharText" xml:space="preserve">
+    <value>Sila masukkan lebih daripada 2 aksara</value>
+  </data>
+  <data name="PleaseEnterNewClubNameText" xml:space="preserve">
+    <value>Sila masukkan nama kelab baru di bawah</value>
+  </data>
+  <data name="PleaseEnterNoOnlytext" xml:space="preserve">
+    <value>Sila masukkan nombor sahaja.</value>
+  </data>
+  <data name="PleaseEnterOTPText" xml:space="preserve">
+    <value>Sila masukkan OTP yang dihantar ke nombor telefon bimbit anda</value>
+  </data>
+  <data name="PleaseSelectDifferClassText" xml:space="preserve">
+    <value>Sila pilih kelas yang berbeza untuk dikemas kini.</value>
+  </data>
+  <data name="PleaseSelectDifferShiftText" xml:space="preserve">
+    <value>Sila pilih waktu bekerja yang berbeza untuk dikemas kini.</value>
+  </data>
+  <data name="PleaseSelectLanguageText" xml:space="preserve">
+    <value>Sila pilih bahasa anda</value>
+  </data>
+  <data name="PleaseSelectPaymentMethodText" xml:space="preserve">
+    <value>Sila pilih kaedah pembayaran anda dahulu.</value>
+  </data>
+  <data name="PleaseSelectText" xml:space="preserve">
+    <value>Sila pilih</value>
+  </data>
+  <data name="PleaseUpdateText" xml:space="preserve">
+    <value>Versi baharu aplikasi tersedia. Sila klik di bawah untuk mengemas kini kepada versi terkini.</value>
+  </data>
+  <data name="PostcodeRequiredText" xml:space="preserve">
+    <value>Poskod diperlukan.</value>
+  </data>
+  <data name="PostcodeText" xml:space="preserve">
+    <value>Poskod</value>
+  </data>
+  <data name="POSTerminalMenuColorText" xml:space="preserve">
+    <value>Warna Menu Terminal POS</value>
+  </data>
+  <data name="POSText" xml:space="preserve">
+    <value>POS</value>
+  </data>
+  <data name="PreferredAmountText" xml:space="preserve">
+    <value>Masukkan amaun pilihan anda</value>
+  </data>
+  <data name="PreparingText" xml:space="preserve">
+    <value>Sedang disiapkan</value>
+  </data>
+  <data name="PresentText" xml:space="preserve">
+    <value>Hadir</value>
+  </data>
+  <data name="ProductCodeText" xml:space="preserve">
+    <value>Kod Makanan</value>
+  </data>
+  <data name="ProductDescText" xml:space="preserve">
+    <value>Keterangan Produk</value>
+  </data>
+  <data name="ProductNameRequiredText" xml:space="preserve">
+    <value>Nama produk diperlukan.</value>
+  </data>
+  <data name="ProductNameText" xml:space="preserve">
+    <value>Nama Produk</value>
+  </data>
+  <data name="ProductSKURequiredText" xml:space="preserve">
+    <value>SKU produk diperlukan.</value>
+  </data>
+  <data name="ProductSKUText" xml:space="preserve">
+    <value>Kod Barang</value>
+  </data>
+  <data name="ProductStockKeepingUnitText" xml:space="preserve">
+    <value>Unit penyimpanan stok produk (SKU)</value>
+  </data>
+  <data name="ProductText" xml:space="preserve">
+    <value>Produk</value>
+  </data>
+  <data name="ProvidedDayRequiredText" xml:space="preserve">
+    <value>Disediakan pada hari diperlukan.</value>
+  </data>
+  <data name="ProvidedDayText" xml:space="preserve">
+    <value>Disediakan pada hari</value>
+  </data>
+  <data name="PurchaseText" xml:space="preserve">
+    <value>Belian</value>
+  </data>
+  <data name="PurpleText" xml:space="preserve">
+    <value>Ungu</value>
+  </data>
+  <data name="QuantityText" xml:space="preserve">
+    <value>Kuantiti</value>
+  </data>
+  <data name="RaceText" xml:space="preserve">
+    <value>Bangsa</value>
+  </data>
+  <data name="ReceiptText" xml:space="preserve">
+    <value>Resit</value>
+  </data>
+  <data name="ReceivedFromEWallet" xml:space="preserve">
+    <value>Diterima daripda eDompet</value>
+  </data>
+  <data name="ReceivedFromText" xml:space="preserve">
+    <value>Diterima daripada </value>
+  </data>
+  <data name="RecordText" xml:space="preserve">
+    <value> rekod ditemui</value>
+  </data>
+  <data name="RedeemByText" xml:space="preserve">
+    <value>Ditebus oleh</value>
+  </data>
+  <data name="RedeemFromText" xml:space="preserve">
+    <value>Ditebus daripda </value>
+  </data>
+  <data name="RedeemText" xml:space="preserve">
+    <value>Penebusan</value>
+  </data>
+  <data name="RedText" xml:space="preserve">
+    <value>Merah</value>
+  </data>
+  <data name="ReferenceNoText" xml:space="preserve">
+    <value>Nombor Rujukan</value>
+  </data>
+  <data name="RegisterAgreeText" xml:space="preserve">
+    <value>Dengan mendaftar akaun, saya mengaku telah membaca dan bersetuju dengan </value>
+  </data>
+  <data name="RegisterButtonText" xml:space="preserve">
+    <value>Daftar</value>
+  </data>
+  <data name="RegisterNotAvailableText" xml:space="preserve">
+    <value>Pendaftaran masih belum dibuka buat masa ini.</value>
+  </data>
+  <data name="RegisterNowText" xml:space="preserve">
+    <value>Daftar Sekarang</value>
+  </data>
+  <data name="RegisterOnlyText" xml:space="preserve">
+    <value>Pendaftaran</value>
+  </data>
+  <data name="RegisterParentText" xml:space="preserve">
+    <value>Pendaftaran (Ibu Bapa / Penjaga sahaja)</value>
+  </data>
+  <data name="RegisterText" xml:space="preserve">
+    <value>Pendaftaran (Kakitangan sahaja)</value>
+  </data>
+  <data name="RememberMeText" xml:space="preserve">
+    <value>Ingat nama</value>
+  </data>
+  <data name="RemoveStaffMenuText" xml:space="preserve">
+    <value>Keluarkan Kakitangan</value>
+  </data>
+  <data name="RemoveStudentMenuText" xml:space="preserve">
+    <value>Keluarkan Pelajar</value>
+  </data>
+  <data name="ReplaceCardText" xml:space="preserve">
+    <value>Ganti Kad</value>
+  </data>
+  <data name="ReplacementForText" xml:space="preserve">
+    <value>Gantian untuk?</value>
+  </data>
+  <data name="ReportByRequiredText" xml:space="preserve">
+    <value>Laporan untuk diperlukan.</value>
+  </data>
+  <data name="ReportByText" xml:space="preserve">
+    <value>Laporan untuk</value>
+  </data>
+  <data name="ReportIssueText" xml:space="preserve">
+    <value>Laporkan isu</value>
+  </data>
+  <data name="ReportLostCardText" xml:space="preserve">
+    <value>Melapor kehilangan kad</value>
+  </data>
+  <data name="ReportLostForText" xml:space="preserve">
+    <value>Melapor kehilangan untuk?</value>
+  </data>
+  <data name="RequestNewPasswordText" xml:space="preserve">
+    <value>Minta Kata Laluan Baru</value>
+  </data>
+  <data name="RequestTimeoutText" xml:space="preserve">
+    <value>408 - Permintaan tamat tempoh</value>
+  </data>
+  <data name="RequiredText" xml:space="preserve">
+    <value>Diperlukan</value>
+  </data>
+  <data name="ResendOTPText" xml:space="preserve">
+    <value> Hantar semula OTP</value>
+  </data>
+  <data name="ResubmitDocumentText" xml:space="preserve">
+    <value>Penyerahan semula dokumen</value>
+  </data>
+  <data name="ResubmitText" xml:space="preserve">
+    <value>Serahkan semula</value>
+  </data>
+  <data name="ResultText" xml:space="preserve">
+    <value>Keputusan</value>
+  </data>
+  <data name="SalesText" xml:space="preserve">
+    <value>Jualan</value>
+  </data>
+  <data name="SaturdayText" xml:space="preserve">
+    <value>Sabtu</value>
+  </data>
+  <data name="SaveButtonText" xml:space="preserve">
+    <value>Simpan</value>
+  </data>
+  <data name="SchoolAdminText" xml:space="preserve">
+    <value>Pentadbir Sekolah</value>
+  </data>
+  <data name="SchoolNameRequiredText" xml:space="preserve">
+    <value>Nama sekolah diperlukan.</value>
+  </data>
+  <data name="SchoolNameText" xml:space="preserve">
+    <value>Nama Sekolah</value>
+  </data>
+  <data name="Schooltext" xml:space="preserve">
+    <value>Sekolah</value>
+  </data>
+  <data name="SearchHereText" xml:space="preserve">
+    <value>Cari disini...</value>
+  </data>
+  <data name="SelectCityText" xml:space="preserve">
+    <value>Pilih bandar</value>
+  </data>
+  <data name="SelectClassNameText" xml:space="preserve">
+    <value>Pilih nama kelas</value>
+  </data>
+  <data name="SelectClubText" xml:space="preserve">
+    <value>Pilih kelab</value>
+  </data>
+  <data name="SelectCompanyNameText" xml:space="preserve">
+    <value>Pilih nama syarikat</value>
+  </data>
+  <data name="SelectCountryCodeText" xml:space="preserve">
+    <value>Pilih kod negara</value>
+  </data>
+  <data name="SelectCountryText" xml:space="preserve">
+    <value>Pilih negara</value>
+  </data>
+  <data name="SelectDateFromText" xml:space="preserve">
+    <value>Pilih tarikh dari</value>
+  </data>
+  <data name="SelectDateToText" xml:space="preserve">
+    <value>Pilih tarikh sehingga</value>
+  </data>
+  <data name="SelectDeliveryDateText" xml:space="preserve">
+    <value>Pilih tarikh pesanan</value>
+  </data>
+  <data name="SelectDOBText" xml:space="preserve">
+    <value>Pilih tarikh lahir</value>
+  </data>
+  <data name="SelectFeedbackTypeText" xml:space="preserve">
+    <value>Pilih Jenis Maklum Balas</value>
+  </data>
+  <data name="SelectIDDocTypeText" xml:space="preserve">
+    <value>Pilih jenis dokumen pengenalan</value>
+  </data>
+  <data name="SelectIDTypeText" xml:space="preserve">
+    <value>Pilih jenis pengenalan</value>
+  </data>
+  <data name="SelectLanguageText" xml:space="preserve">
+    <value>Pilih bahasa anda</value>
+  </data>
+  <data name="SelectMerchantTypeText" xml:space="preserve">
+    <value>Pilih jenis pengusaha</value>
+  </data>
+  <data name="SelectNationalityText" xml:space="preserve">
+    <value>Pilih kewarganegaraan</value>
+  </data>
+  <data name="SelectOccupationText" xml:space="preserve">
+    <value>Pilih pekerjaan</value>
+  </data>
+  <data name="SelectOperatorTypeText" xml:space="preserve">
+    <value>Pilih jenis pengusaha</value>
+  </data>
+  <data name="SelectOrderTimingText" xml:space="preserve">
+    <value>Pilih masa pesanan</value>
+  </data>
+  <data name="SelectProductCategoryText" xml:space="preserve">
+    <value>Pilih kategori produk</value>
+  </data>
+  <data name="SelectRaceText" xml:space="preserve">
+    <value>Pilih bangsa</value>
+  </data>
+  <data name="SelectReasonForAbsentText" xml:space="preserve">
+    <value>Pilih alasan untuk tidak hadir</value>
+  </data>
+  <data name="SelectReasonForReplacementOptionText" xml:space="preserve">
+    <value>Sila pilih alasan anda untuk penggantian kad dari pilihan di bawah:</value>
+  </data>
+  <data name="SelectReasonForReplacementText" xml:space="preserve">
+    <value>Sila pilih sebab penggantian kad.</value>
+  </data>
+  <data name="SelectSchoolText" xml:space="preserve">
+    <value>Pilih sekolah</value>
+  </data>
+  <data name="SelectStaffText" xml:space="preserve">
+    <value>Pilih kakitangan</value>
+  </data>
+  <data name="SelectStateText" xml:space="preserve">
+    <value>Pilih negeri</value>
+  </data>
+  <data name="SelectStudentText" xml:space="preserve">
+    <value>Pilih pelajar</value>
+  </data>
+  <data name="SelectUserRoleText" xml:space="preserve">
+    <value>Pilih peranan pengguna</value>
+  </data>
+  <data name="SelectWorkingShiftText" xml:space="preserve">
+    <value>Pilih waktu bekerja</value>
+  </data>
+  <data name="SelectYourRoleText" xml:space="preserve">
+    <value>Pilih peranan anda</value>
+  </data>
+  <data name="SelfieImageRequiredText" xml:space="preserve">
+    <value>Gambar IC &amp; swafoto diperlukan.</value>
+  </data>
+  <data name="SendReportButtonText" xml:space="preserve">
+    <value>Hantar Laporan</value>
+  </data>
+  <data name="ServiceChargeText" xml:space="preserve">
+    <value>Caj Perkhidmatan @ </value>
+  </data>
+  <data name="ServiceMethodRequiredText" xml:space="preserve">
+    <value>Kaedah perkhidmatan diperlukan.</value>
+  </data>
+  <data name="ServiceUnavailableText" xml:space="preserve">
+    <value>503 - Perminataan tidak tersedia</value>
+  </data>
+  <data name="ServingSizeText" xml:space="preserve">
+    <value>Saiz Hidangan</value>
+  </data>
+  <data name="SessionExpiredMessageText" xml:space="preserve">
+    <value>Sesi anda telah tamat. Sila daftar masuk semula.</value>
+  </data>
+  <data name="SessionExpiredText" xml:space="preserve">
+    <value>Sesi Tamat Tempoh</value>
+  </data>
+  <data name="SetDailyLimitText" xml:space="preserve">
+    <value>Tetapkan Had Harian</value>
+  </data>
+  <data name="SettlementText" xml:space="preserve">
+    <value>Penyelesaian</value>
+  </data>
+  <data name="ShoppingCartText" xml:space="preserve">
+    <value>Troli</value>
+  </data>
+  <data name="ShowingText" xml:space="preserve">
+    <value>Menemukan </value>
+  </data>
+  <data name="SoldByText" xml:space="preserve">
+    <value>Dijual oleh </value>
+  </data>
+  <data name="SomethingWrongText" xml:space="preserve">
+    <value>Ada yang tidak kena. Sila cuba semula.</value>
+  </data>
+  <data name="SorryText" xml:space="preserve">
+    <value>Maaf</value>
+  </data>
+  <data name="SpaceStaffText" xml:space="preserve">
+    <value> Kakitangan</value>
+  </data>
+  <data name="SpaceStudentText" xml:space="preserve">
+    <value> Pelajar</value>
+  </data>
+  <data name="SpecialMenuText" xml:space="preserve">
+    <value>Menu Kakitangan</value>
+  </data>
+  <data name="StaffNameRequiredText" xml:space="preserve">
+    <value>Nama kakitangan diperlukan.</value>
+  </data>
+  <data name="StaffNameText" xml:space="preserve">
+    <value>Nama Kakitangan</value>
+  </data>
+  <data name="StaffProfileText" xml:space="preserve">
+    <value>Profil Kakitangan</value>
+  </data>
+  <data name="StaffText" xml:space="preserve">
+    <value>Kakitangan</value>
+  </data>
+  <data name="StateRequiredText" xml:space="preserve">
+    <value>Negeri diperlukan.</value>
+  </data>
+  <data name="StateText" xml:space="preserve">
+    <value>Negeri</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="StatusUpdateText" xml:space="preserve">
+    <value>Kemas kini  Status</value>
+  </data>
+  <data name="StoreText" xml:space="preserve">
+    <value>Kedai</value>
+  </data>
+  <data name="StreetAddressText" xml:space="preserve">
+    <value>Alamat Jalan</value>
+  </data>
+  <data name="StudentCardText" xml:space="preserve">
+    <value>Kad pelajar</value>
+  </data>
+  <data name="StudentNameRequiredText" xml:space="preserve">
+    <value>Nama pelajar diperlukan.</value>
+  </data>
+  <data name="StudentNameText" xml:space="preserve">
+    <value>Nama Pelajar</value>
+  </data>
+  <data name="StudentProfileText" xml:space="preserve">
+    <value>Profil Pelajar</value>
+  </data>
+  <data name="StudentText" xml:space="preserve">
+    <value>Pelajar</value>
+  </data>
+  <data name="SubjectRequiredText" xml:space="preserve">
+    <value>Subjek diperlukan.</value>
+  </data>
+  <data name="SubjectTeacherText" xml:space="preserve">
+    <value>Subject Teacher</value>
+  </data>
+  <data name="SubjectText" xml:space="preserve">
+    <value>Subjek</value>
+  </data>
+  <data name="SubmitText" xml:space="preserve">
+    <value>Hantar</value>
+  </data>
+  <data name="SubmitTicketText" xml:space="preserve">
+    <value>Hantar tiket</value>
+  </data>
+  <data name="SubTotalDotNoSpaceText" xml:space="preserve">
+    <value>Jumlah Kecil :</value>
+  </data>
+  <data name="SubtotalDotText" xml:space="preserve">
+    <value>Jumlah Kecil : </value>
+  </data>
+  <data name="SubtotalText" xml:space="preserve">
+    <value>Jumlah Kecil</value>
+  </data>
+  <data name="SuccessOrderCannotDeleteText" xml:space="preserve">
+    <value>Pesanan yang berjaya tidak boleh dipadamkan untuk rekod.</value>
+  </data>
+  <data name="SundayText" xml:space="preserve">
+    <value>Ahad</value>
+  </data>
+  <data name="SwitchRoleText" xml:space="preserve">
+    <value>Tukar peranan</value>
+  </data>
+  <data name="TakeAwayBtnText" xml:space="preserve">
+    <value>Ambil Sendiri</value>
+  </data>
+  <data name="TakeIDUploadText" xml:space="preserve">
+    <value>Ambil gambar IC anda</value>
+  </data>
+  <data name="TakePhotoUploadText" xml:space="preserve">
+    <value>Ambil gambar dan muat naik</value>
+  </data>
+  <data name="TakeSelfieUploadText" xml:space="preserve">
+    <value>Ambil gambar IC &amp; swafoto anda</value>
+  </data>
+  <data name="TeacherText" xml:space="preserve">
+    <value>Guru</value>
+  </data>
+  <data name="TeacherWardenText" xml:space="preserve">
+    <value>Guru / Pengawal</value>
+  </data>
+  <data name="TermsConditionsText" xml:space="preserve">
+    <value>Terma &amp; Syarat</value>
+  </data>
+  <data name="TextColorText" xml:space="preserve">
+    <value>Warna Teks</value>
+  </data>
+  <data name="TextText" xml:space="preserve">
+    <value>Tulisan</value>
+  </data>
+  <data name="ThankYouText" xml:space="preserve">
+    <value>Terima Kasih</value>
+  </data>
+  <data name="ThursdayText" xml:space="preserve">
+    <value>Khamis</value>
+  </data>
+  <data name="ToLeaveText" xml:space="preserve">
+    <value> meninggalkan </value>
+  </data>
+  <data name="TopupButtonText" xml:space="preserve">
+    <value>Tambah Nilai eDompet</value>
+  </data>
+  <data name="TopupEWalletText" xml:space="preserve">
+    <value>Tambah nilai eDompet</value>
+  </data>
+  <data name="TopupModeText" xml:space="preserve">
+    <value>Tambah nilai melalui FPX</value>
+  </data>
+  <data name="TopupText" xml:space="preserve">
+    <value>Tambah Nilai</value>
+  </data>
+  <data name="TopupToText" xml:space="preserve">
+    <value>Tambah nilai kepada </value>
+  </data>
+  <data name="TotalAmountText" xml:space="preserve">
+    <value>Jumlah Keseluruhan</value>
+  </data>
+  <data name="TotalDotText" xml:space="preserve">
+    <value>Jumlah : </value>
+  </data>
+  <data name="TotalForText" xml:space="preserve">
+    <value>Jumlah untuk </value>
+  </data>
+  <data name="TotalText" xml:space="preserve">
+    <value>Jumlah</value>
+  </data>
+  <data name="TransactionTypeText" xml:space="preserve">
+    <value>Jenis Transaksi</value>
+  </data>
+  <data name="TransferEWalletText" xml:space="preserve">
+    <value>Pindahkan eDompet</value>
+  </data>
+  <data name="TransferText" xml:space="preserve">
+    <value>Pemindahan</value>
+  </data>
+  <data name="TransferToEWallet" xml:space="preserve">
+    <value>Pemindahan ke eDompet</value>
+  </data>
+  <data name="TransferToText" xml:space="preserve">
+    <value>Pemindahan kepada </value>
+  </data>
+  <data name="TransHistoryText" xml:space="preserve">
+    <value>Sejarah Transaksi</value>
+  </data>
+  <data name="TuesdayText" xml:space="preserve">
+    <value>Selasa</value>
+  </data>
+  <data name="TurdyText" xml:space="preserve">
+    <value>Lewat</value>
+  </data>
+  <data name="UnauthorizedText" xml:space="preserve">
+    <value>401 - Tanpa kebenaran</value>
+  </data>
+  <data name="UnderDevelopmentText" xml:space="preserve">
+    <value>Dalam pembangunan. Sila kembali lagi segera!</value>
+  </data>
+  <data name="UnitPriceRequiredText" xml:space="preserve">
+    <value>Harga seunit diperlukan.</value>
+  </data>
+  <data name="UnitPriceText" xml:space="preserve">
+    <value>Harga Seunit</value>
+  </data>
+  <data name="UpdateAvailableText" xml:space="preserve">
+    <value>Kemaskini Tersedia</value>
+  </data>
+  <data name="UpdateButtonText" xml:space="preserve">
+    <value>Kemaskini</value>
+  </data>
+  <data name="UploadFailedtext" xml:space="preserve">
+    <value>Muat naik gagal!</value>
+  </data>
+  <data name="UploadIDImageText" xml:space="preserve">
+    <value>Muat naik gambar MyKad / Pasport anda. Sila gunakan mod landskap untuk memastikan maklumat pada MyKad / Paspot anda jelas dan boleh dilihat. (Saiz fail maksimum : 1.5MB)</value>
+  </data>
+  <data name="UploadingText" xml:space="preserve">
+    <value>Memuat naik...</value>
+  </data>
+  <data name="UploadSelfieImageText" xml:space="preserve">
+    <value>Muat naik gambar swafoto diri anda memegang MyKad / Pasport. Sila gunakan mod landskap untuk memastikan maklumat pada MyKad / Paspot anda jelas dan boleh dilihat. (Saiz fail maksimum : 1.5MB)</value>
+  </data>
+  <data name="UsernameInfoText" xml:space="preserve">
+    <value>Sila masukkan Nama Pengguna (nombor MyKad / Pasport) dan klik Seterusnya.</value>
+  </data>
+  <data name="UsernameRequiredText" xml:space="preserve">
+    <value>Nama pengguna diperlukan.</value>
+  </data>
+  <data name="UsernameText" xml:space="preserve">
+    <value>Nama Pengguna</value>
+  </data>
+  <data name="UserRaceRequiredText" xml:space="preserve">
+    <value>Bangsa diperlukan.</value>
+  </data>
+  <data name="UserRoleRequiredText" xml:space="preserve">
+    <value>Peranan pengguna diperlukan.</value>
+  </data>
+  <data name="UserRoleText" xml:space="preserve">
+    <value>Peranan pengguna</value>
+  </data>
+  <data name="VerificationFailedText" xml:space="preserve">
+    <value>Pengesahan gagal! Sila cuba semula.</value>
+  </data>
+  <data name="VerificationSuccessText" xml:space="preserve">
+    <value>Pengesahan berjaya! Satu langkah lagi.
+Sila tunggu...</value>
+  </data>
+  <data name="VerifyAccountText" xml:space="preserve">
+    <value>Sahkan Akaun</value>
+  </data>
+  <data name="VerifyStudentText" xml:space="preserve">
+    <value>Sahkan Pelajar</value>
+  </data>
+  <data name="WednesdayText" xml:space="preserve">
+    <value>Rabu</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Selamat Datang</value>
+  </data>
+  <data name="WhiteText" xml:space="preserve">
+    <value>Putih</value>
+  </data>
+  <data name="WorkingSessionNotSpecifiedText" xml:space="preserve">
+    <value>Sesi kerja belum ditentukan</value>
+  </data>
+  <data name="WorkingShiftRequiredText" xml:space="preserve">
+    <value>Waktu bekerja diperlukan.</value>
+  </data>
+  <data name="WorkingShiftText" xml:space="preserve">
+    <value>Waktu Bekerja</value>
+  </data>
+  <data name="YellowText" xml:space="preserve">
+    <value>Kuning</value>
+  </data>
+  <data name="YesterdayText" xml:space="preserve">
+    <value>Semalam</value>
+  </data>
+  <data name="YesText" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+  <data name="YouHaveBeenLogoutText" xml:space="preserve">
+    <value>Anda telah didaftar keluar daripada sesi semasa anda. Percubaan daftar masuk berbilang peranti telah dikesan. Sila tukar kata laluan anda untuk memastikan akaun anda selamat.</value>
+  </data>
+  <data name="YourCartIsEmptyText" xml:space="preserve">
+    <value>Malangnya, Troli Anda Kosong</value>
+  </data>
+  <data name="_FromText_" xml:space="preserve">
+    <value> daripada </value>
+  </data>
+  <data name="_NameIsRequiredText" xml:space="preserve">
+    <value> nama diperlukan.</value>
+  </data>
+  <data name="_OrderTextComma_" xml:space="preserve">
+    <value> Pesanan, </value>
+  </data>
+  <data name="_OrderText_" xml:space="preserve">
+    <value> Pesanan</value>
+  </data>
+  <data name="_ProductText" xml:space="preserve">
+    <value> Produk</value>
+  </data>
+  <data name="_RedeemText" xml:space="preserve">
+    <value> Penebusan</value>
+  </data>
+  <data name="_SalesText" xml:space="preserve">
+    <value> Jualan</value>
+  </data>
+  <data name="_ToJoinText_" xml:space="preserve">
+    <value> untuk sertai </value>
+  </data>
+  <data name="_ToThisClassText" xml:space="preserve">
+    <value> ke dalam kelas ini?</value>
+  </data>
+  <data name="_ToThisClubText" xml:space="preserve">
+    <value> ke dalam kelab ini?</value>
+  </data>
+</root>

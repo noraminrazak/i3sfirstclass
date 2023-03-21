@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs" 
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+                 xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Popup.ColorPickerPopupPage"
+             CloseWhenBackgroundIsClicked="False">
+    <pages:PopupPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+                <Setter Property="TextColor" Value="#7dbbe6"/>
+            </Style>
+        </ResourceDictionary>
+    </pages:PopupPage.Resources>
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+      PositionIn="Bottom"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="700"
+      EasingIn="BounceOut"/>
+    </pages:PopupPage.Animation>
+    <Frame HasShadow="False" IsClippedToBounds="True" Padding="0" VerticalOptions="Center"
+                x:Name="FrameContainer" BackgroundColor="White" Margin="20">
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Title" FontSize="Medium" TextColor="Black" x:Name="lblHeader" FontFamily="{StaticResource RobotoRegular}" Margin="20,20,20,0"/>
+            <ListView x:Name="listView" RowHeight="60" SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Tapped="ViewCell_Tapped">
+                            <StackLayout Margin="20,10,20,10">
+                                <Grid HorizontalOptions="Fill">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Text="{Binding color_name}" TextColor="Black" FontSize="Medium" 
+                                                   VerticalOptions="Center" HorizontalOptions="FillAndExpand" FontFamily="{StaticResource RobotoRegular}"/>
+                                    <Frame Grid.Column="1" IsClippedToBounds="true" HasShadow="False" Padding="0">
+                                        <customs:ExtendedBoxView x:Name="bvTextColor" BackgroundColor="{Binding color}" 
+                                                    BorderRadius="4" WidthRequest="50" HeightRequest="40" HorizontalOptions="End">
+                                        </customs:ExtendedBoxView>
+                                    </Frame>
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                        <!--<TextCell Text="{Binding company_name}" Detail="{Binding registration_number}" TextColor="Black"></TextCell>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

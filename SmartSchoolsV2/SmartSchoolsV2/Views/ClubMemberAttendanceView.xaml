@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSchoolsV2.Views.ClubMemberAttendanceView"
+             xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+             BackgroundColor="White" 
+             x:Name="advancedCalendarPage" >
+    <ContentView.Content>
+        <ScrollView>
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <controls:Calendar DateClicked="OnDateClicked"
+							LeftArrowClicked="OnLeftArrowClicked" 
+							RightArrowClicked="OnRightArrowClicked"
+							x:Name="calendar"
+                            BorderWidth="1"
+                            OuterBorderWidth="1"
+                            DatesFontFamily="{StaticResource RobotoRegular}"
+							DatesFontSize="16"
+                            Margin="20,40,20,0"
+							DatesBackgroundColor="White"
+							SelectedBorderWidth="2" 
+                            SelectedBorderColor="DarkCyan"
+							DisabledBorderColor="Black"
+							MultiSelectDates = "false"
+							ShowNumberOfWeek="false"
+							StartDay="Sunday"
+                            TitleLeftArrowFontFamily="{StaticResource FontAwesomeSolid}"
+                            TitleLeftArrowText="&#xf137;"
+                            TitleLeftArrowFontSize="24"
+                            TitleRightArrowFontFamily="{StaticResource FontAwesomeSolid}"
+                            TitleRightArrowText="&#xf138;"
+                            TitleRightArrowFontSize="24"
+                            TitleLabelFontSize="18"
+                            TitleLabelFontAttributes="None"
+                            TitleLabelFontFamily="{StaticResource RobotoMedium}"
+							TitleLabelTextColor="Black"
+							TitleLeftArrowTextColor="Black"
+							TitleRightArrowTextColor="Black"
+                            WeekdaysFontFamily="{StaticResource RobotoRegular}"
+                            WeekdaysFontSize="16"
+							WeekdaysTextColor="#0080ff"
+							EnableTitleMonthYearView="False"
+							SelectedDate="{Binding Date}"
+							SpecialDates="{Binding Attendances}"
+							DateCommand="{Binding DateChosen}" >
+                    </controls:Calendar>
+                    <Label Margin="20,0,20,0" x:Name="lblDate" FontSize="Body" TextColor="#0080ff" FontFamily="{StaticResource RobotoRegular}"/>
+                    <Label Margin="20,0,20,0" x:Name="lblAttendance" FontSize="Body" TextColor="Black" FontFamily="{StaticResource RobotoRegular}"/>
+                    <Label Margin="20,0,20,20" x:Name="lblReason" FontSize="Small" TextColor="Gray" FontFamily="{StaticResource RobotoRegular}"/>
+                </StackLayout>
+            </AbsoluteLayout>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>

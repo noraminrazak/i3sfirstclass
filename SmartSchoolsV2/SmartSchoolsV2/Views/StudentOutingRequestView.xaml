@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSchoolsV2.Views.StudentOutingRequestView"
+             BackgroundColor="White" >
+    <ContentView.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All">
+                <CollectionView x:Name="cvOuting" IsGrouped="True" ItemsSource="{Binding Outings}" Margin="0,35,0,0"
+                        SelectionChanged="OnCollectionViewSelectionChanged" SelectionMode="Single"
+                                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding outing_month}"
+                                       BackgroundColor="Gainsboro" Padding="10,5,0,5"
+                                       FontSize="Body" FontFamily="{StaticResource RobotoRegular}"
+                                       FontAttributes="Bold" TextColor="Black"/>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView>
+                        <!--<SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Cancel"
+                                   BackgroundColor="Red" Invoked="Cancel_Invoked" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>-->
+                        <Grid Padding="20,15,20,15" ColumnSpacing="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                                    <Grid Grid.Row="0" Grid.Column="0" ColumnSpacing="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Row="0" LineBreakMode="TailTruncation" Grid.Column="0"
+                           Text="{Binding outing_type}" TextColor="#0080ff" VerticalOptions="Center"  HorizontalOptions="StartAndExpand"
+                           FontFamily="{StaticResource RobotoMedium}" FontSize="Body" />
+                                        <Image Grid.Row="0" Grid.Column="1" Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage" IsVisible="{Binding dot_visible}"
+                                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding outing_status}" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource RobotoRegular}"
+													FontSize="Body" TextColor="Black" VerticalOptions="Center" 
+													HorizontalOptions="StartAndExpand" />
+                                    </Grid>
+                                    <!--<Grid Grid.Row="1" Grid.Column="0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>-->
+                                        <Label Grid.Row="1" Text="{Binding outing_date}"  FontFamily="{StaticResource RobotoRegular}"
+													FontSize="Small" TextColor="Black" VerticalOptions="StartAndExpand" 
+													HorizontalOptions="StartAndExpand" />
+                                <!--<Image Grid.Row="0" Grid.Column="1" Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage" IsVisible="{Binding dot_visible}"
+                                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                                <Label Text="{Binding outing_status}" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource RobotoRegular}"
+													FontSize="Small" TextColor="Black" VerticalOptions="StartAndExpand" 
+													HorizontalOptions="StartAndExpand" />
+                            </Grid>-->
+                            <Image Grid.RowSpan="2" Grid.Column="1" Source="ic_right_arrow.png" Aspect="AspectFit" 
+                                                   HeightRequest="15" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="End"/>
+                        </Grid>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <ContentView>
+                    <StackLayout Margin="0,35,0,0">
+                        <Label Text="No records found"
+                           FontFamily="{StaticResource RobotoRegular}"
+                           FontSize="Small"
+                           HorizontalOptions="Fill"
+                           HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </ContentView>
+            </CollectionView.EmptyView>
+            </CollectionView>
+            </StackLayout>
+            <StackLayout Padding="12" Orientation="Vertical" x:Name="btnStack" BackgroundColor="Transparent"
+		         AbsoluteLayout.LayoutFlags="PositionProportional"
+		         AbsoluteLayout.LayoutBounds="1,1,-1,-1">
+                <Image Source="plus_btn.png" Aspect="AspectFit" HeightRequest="45" WidthRequest="45"
+						    VerticalOptions="CenterAndExpand" IsVisible="True"
+						    x:Name="btnNewOuting" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

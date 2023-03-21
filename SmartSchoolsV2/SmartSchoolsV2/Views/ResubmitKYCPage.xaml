@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             x:Class="SmartSchoolsV2.Views.ResubmitKYCPage"
+             BackgroundImageSource="bg2_1024x2048.jpg" 
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True" >
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitle" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <ScrollView>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Grid.Row="0"/>
+                        <!-- full name -->
+                        <Label  Grid.Row="1"
+                        Margin="22,0,20,10"
+                        HorizontalOptions="Start"
+                        TextColor="Black" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.ComplyBNMText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label  Grid.Row="2"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.FullNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Grid.Row="3" 
+                            x:Name="txtFullName" IsReadOnly="True"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+                            <customs:CustomEntry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>CapitalizeCharacter</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </customs:CustomEntry.Keyboard>
+                        </customs:CustomEntry>
+                        <!-- ID Number -->
+                        <Label  Grid.Row="4"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.IDNoText}" x:Name="lblIDNo"
+                                          FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <customs:CustomEntry Keyboard="Text" Grid.Row="5"
+                            x:Name="txtIDNo" IsReadOnly="True"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                        <!-- Selfie image upload -->
+                        <Label  Grid.Row="8"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.UploadSelfieImageText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Grid Grid.Row="9" Margin="20,0,20,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="45" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <ffimageloading:CachedImage x:Name="imageSelfie" Aspect="AspectFill" Grid.Row="0" IsVisible="true" Margin="20,0,20,0" CacheType="None"
+                                                                    HorizontalOptions="Fill" VerticalOptions="Fill" Scale="1.4" Grid.ColumnSpan="2" Source="image_Selfie.png"/>
+                            <Label Grid.Column="0" Grid.Row="1" x:Name="txtSelfieImage" IsVisible="False" Margin="10"/>
+                            <Frame x:Name="btnRemoveSelfie"
+                            Grid.Column="1" Grid.Row="1"
+                            Padding="0" IsVisible="False"
+                            BackgroundColor="White"
+                            CornerRadius="18"
+                            HasShadow="False"
+                            HeightRequest="36"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="36">
+                                <Label
+                                FontAttributes="Bold"
+                                FontFamily="{StaticResource FontAwesomeSolid}"
+                                FontSize="25"
+                                HorizontalOptions="CenterAndExpand"
+                                HorizontalTextAlignment="Center"
+                                InputTransparent="True"
+                                Text="&#xf057;"
+                                TextColor="Red"
+                                VerticalOptions="CenterAndExpand"
+                                VerticalTextAlignment="Center" />
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding RemoveSelfie}" />
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                            <Button  Grid.Row="2" Grid.ColumnSpan="2" Text="{x:Static resource:AppResources.TakeSelfieUploadText}"
+                                Clicked="OnButtonSelfieUploadClicked" x:Name="btnUploadSelfie"/>
+                        </Grid>
+                        <!-- ID image upload -->
+                        <Label  Grid.Row="6"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.UploadIDImageText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Grid Grid.Row="7" Margin="20,0,20,0" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="45" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <ffimageloading:CachedImage x:Name="imageID" Aspect="AspectFill" Grid.Row="0" IsVisible="true" Margin="20,0,20,0" CacheType="None"
+                                                                    HorizontalOptions="Fill" VerticalOptions="Fill" Scale="1.4" Grid.ColumnSpan="2" Source="image_IC.png"/>
+                            <Label Grid.Row="1" Grid.Column="0" x:Name="txtIDImage" IsVisible="False" Margin="10" />
+                            <Frame x:Name="btnRemoveID"
+                            Grid.Column="1" Grid.Row="1"
+                            Padding="0" IsVisible="False"
+                            BackgroundColor="White"
+                            CornerRadius="18"
+                            HasShadow="False"
+                            HeightRequest="36"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="36">
+                                <Label
+                                FontAttributes="Bold"
+                                FontFamily="{StaticResource FontAwesomeSolid}"
+                                FontSize="25"
+                                HorizontalOptions="CenterAndExpand"
+                                HorizontalTextAlignment="Center"
+                                InputTransparent="True"
+                                Text="&#xf057;"
+                                TextColor="Red"
+                                VerticalOptions="CenterAndExpand"
+                                VerticalTextAlignment="Center" />
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding RemoveID}" />
+                                </Frame.GestureRecognizers>
+                            </Frame>
+                            <Button Grid.Row="2" Grid.ColumnSpan="2" Text="{x:Static resource:AppResources.TakeIDUploadText}" 
+                                Clicked="OnButtonIDUploadClicked" x:Name="btnUploadID"/>
+                        </Grid>
+                        <!-- btn register -->
+                        <Button FontSize="Body" TextTransform="None"
+                                Margin="20,20,20,40" x:Name="btnNext2" Clicked="OnResubmitClicked"
+                                Grid.Row="10" 
+                                BackgroundColor="#ff0266"
+                                CornerRadius="15"
+                                Text="{x:Static resource:AppResources.SubmitText}" FontFamily="{StaticResource RobotoRegular}"
+                                TextColor="White" />
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

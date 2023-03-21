@@ -1,0 +1,1206 @@
+Function=SystemNative_ConvertErrorPlatformToPal
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=SystemNative_ConvertErrorPalToPlatform
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=SystemNative_StrErrorR
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=SystemNative_GetNonCryptographicallySecureRandomBytes
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetReadDirRBufferSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadLink
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_FStat2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Stat2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LStat2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Symlink
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ChMod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CopyFile
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEGid
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetEUid
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LChflags
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_LChflagsCanSetHiddenFlag
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Link
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_MkDir
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Rename
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_RmDir
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_UTime
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_UTimes
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_Unlink
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_OpenDir
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_ReadDirR
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_CloseDir
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_local_name
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_names
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_timezone_get_data
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=xamarin_log
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_locale_country_code
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/mscorlib.dll
+Function=SystemNative_GetDomainSocketSizes
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.Core.dll
+Function=NetSecurityNative_ReleaseGssBuffer
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMinorStatus
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DisplayMajorStatus
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportUserName
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ImportPrincipalName
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseName
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredSpNego
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitiateCredWithPassword
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_ReleaseCred
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContext
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_InitSecContextEx
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_AcceptSecContext
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_DeleteSecContext
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_GetUser
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_Wrap
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=NetSecurityNative_Unwrap
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+Function=xamarin_start_wwan
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.dll
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=BrotliDecoderCreateInstance
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompressStream
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDecompress
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderDestroyInstance
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliDecoderIsFinished
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCreateInstance
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderSetParameter
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompressStream
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderHasMoreOutput
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderDestroyInstance
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=BrotliEncoderCompress
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/System.IO.Compression.dll
+Function=xamarin_CGPoint__VNNormalizedFaceBoundingBoxPointForLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_CGPoint__VNImagePointForFaceLandmarkPoint_Vector2_CGRect_nuint_nuint_string
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_managed_ref
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_set_gchandle_with_flags_safe
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_1
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_5
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_6
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_7
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_8
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_localized_string_format_9
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_init_nsthread
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_os_log
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=UIApplicationMain
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_find_protocol_wrapper_type
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_release_block_on_main_thread
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix3_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSend_NVector3_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_NVector3_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSend_stret_NVector3_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__CGPoint_objc_msgSendSuper_stret_NVector3_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_CGPoint_NMatrix4_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_CGPoint_NMatrix4_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_stret_CGPoint_NMatrix4_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_CGPoint_NMatrix4_IntPtr_CGSize
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_IntPtr_CGSize_nfloat_nfloat
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_IntPtr_CGSize_nfloat_nfloat
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_IntPtr_CGSize_nfloat_nfloat
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_IntPtr_CGSize_nfloat_nfloat
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_NMatrix4_NVector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NMatrix4_NVector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix4_NVector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix4_NVector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_NVector3_NVector3_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NVector3_NVector3_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_CGPoint_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_CGPoint_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_stret_CGPoint_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_CGPoint_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4_NVector3_NVector3_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4_NVector3_NVector3_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4x3_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_UIntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_UIntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_IntPtr_UIntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_IntPtr_UIntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSend_IntPtr_UIntPtr_IntPtr_UIntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_IntPtr_objc_msgSendSuper_IntPtr_UIntPtr_IntPtr_UIntPtr_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix3_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Matrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Matrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2i_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2i_int_int_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2i_int_int_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2i_int_int_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2i_int_int_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_Vector2_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_Vector2_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSend_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSendSuper_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSend_stret_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKTriangle_objc_msgSendSuper_stret_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSend_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSendSuper_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3d
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3d
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2d_Vector2d_Vector2i_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2d_Vector2d_Vector2i_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSend_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__float_objc_msgSendSuper_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_float_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_float_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKBox_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKBox_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKBox_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_GKBox
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_GKBox
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKBox
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKBox
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_UIntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKQuad_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKQuad_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_GKQuad
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_GKQuad
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_GKQuad
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_GKQuad
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2_float_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2_float_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector2_Vector2_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector2_Vector2_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2_exception
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__GKQuad_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_IntPtr_Vector2_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_IntPtr_Vector2_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSAxisAlignedBoundingBox_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSAxisAlignedBoundingBox_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSAxisAlignedBoundingBox_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSAxisAlignedBoundingBox_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MPSImageHistogramInfo_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_ref_MPSImageHistogramInfo
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_ref_MPSImageHistogramInfo
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Quaternion_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Quaternion_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Quaterniond_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Quaterniond_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaterniond_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaterniond_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaterniond_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaterniond_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector2d_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NVector3d_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4d_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4d_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix4d_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix4d
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix4d
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NVector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NVector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_MDLAxisAlignedBoundingBox_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_MDLAxisAlignedBoundingBox_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Vector2i_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector2i_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector2i_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector2i_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_bool_IntPtr_Vector2i_IntPtr_UIntPtr_IntPtr_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_bool_IntPtr_Vector2i_IntPtr_UIntPtr_IntPtr_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_IntPtr_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_IntPtr_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_float_IntPtr_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_float_IntPtr_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_IntPtr_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_IntPtr_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UIntPtr_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UIntPtr_Vector2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UIntPtr_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UIntPtr_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UIntPtr_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UIntPtr_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UIntPtr_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UIntPtr_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_UIntPtr_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_UIntPtr_NMatrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_bool_bool_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_bool_bool_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_int_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_int_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector2i_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector2i_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_bool_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_int_UInt32_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_int_UInt32_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_Vector3i_IntPtr_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_Vector3i_IntPtr_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2_Vector2i_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2_Vector2i_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector3_UIntPtr_UIntPtr_IntPtr_bool_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector3_UIntPtr_UIntPtr_IntPtr_bool_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_UIntPtr_UIntPtr_IntPtr_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_UIntPtr_UIntPtr_IntPtr_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_Vector2_UIntPtr_UIntPtr_UIntPtr_IntPtr_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_Vector2_UIntPtr_UIntPtr_UIntPtr_IntPtr_bool_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSend_Vector2i_IntPtr_float_IntPtr_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSendSuper_Vector2i_IntPtr_float_IntPtr_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSend_Vector2i_IntPtr_IntPtr_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSendSuper_Vector2i_IntPtr_IntPtr_IntPtr_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_float_IntPtr_Vector2i_int_IntPtr_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_float_IntPtr_Vector2i_int_IntPtr_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i_float_float_float_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_Vector2i_float_float_float_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i_float_float_float_float_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_Vector2i_float_float_float_float_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_Vector2i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_IntPtr_Vector2i_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_IntPtr_Vector2i_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Matrix4_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Matrix4_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_NMatrix4_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_NMatrix4_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_stret_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector3_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector3_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Matrix4_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Matrix4_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_IntPtr_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_IntPtr_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSend_stret_IntPtr_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Matrix4_objc_msgSendSuper_stret_IntPtr_Double
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLVoxelIndexExtent2_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_MDLAxisAlignedBoundingBox_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_MDLAxisAlignedBoundingBox_float
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSend_Vector4i_bool_bool_bool_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__bool_objc_msgSendSuper_Vector4i_bool_bool_bool_bool
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_MDLVoxelIndexExtent2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_MDLVoxelIndexExtent2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSend_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSendSuper_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSend_stret_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector4i_objc_msgSendSuper_stret_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSend_stret_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__MDLAxisAlignedBoundingBox_objc_msgSendSuper_stret_Vector4i
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Quaternion_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Quaternion_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Quaternion_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Quaternion
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Quaternion
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector2d_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector2d_IntPtr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Vector2d
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Vector2d
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSend_stret_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__Vector3_objc_msgSendSuper_stret_Vector3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__Vector4_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__void_objc_msgSend_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_vector_float3__void_objc_msgSendSuper_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_Quaternion
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_Quaternion
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSend
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSendSuper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSend_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__NMatrix2_objc_msgSendSuper_stret
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSend_NMatrix2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__void_objc_msgSendSuper_NMatrix2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Vector4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Matrix2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Matrix2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix2
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Matrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Matrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_NMatrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_NMatrix3
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSend_IntPtr_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Function=xamarin_simd__IntPtr_objc_msgSendSuper_IntPtr_Matrix4
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Xamarin.iOS.dll
+Field=FirebaseAuthVersionNum
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorDomain
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoEmailKey
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoMultiFactorResolverKey
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoNameKey
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthErrorUserInfoUpdatedCredentialKey
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRAuthStateDidChangeNotification
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FirebaseAuthVersionStr
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuth
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeInfo
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeSettings
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRActionCodeURL
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAdditionalUserInfo
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthCredential
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthDataResult
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthSettings
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRAuthTokenResult
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIREmailAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIREmailPasswordAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIREmailAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRFacebookAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRFacebookAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRFacebookAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGameCenterAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGameCenterAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGameCenterAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGitHubAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGitHubAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGitHubAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGoogleAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRGoogleAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRGoogleAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneMultiFactorID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactor
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorAssertion
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorInfo
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorResolver
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMultiFactorSession
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROAuthCredential
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneAuthCredential
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRPhoneAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneMultiFactorAssertion
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneMultiFactorGenerator
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRPhoneMultiFactorInfo
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRTwitterAuthProviderID
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+Field=FIRTwitterAuthSignInMethod
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRTwitterAuthProvider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUser
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUserMetadata
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRUserProfileChangeRequest
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Auth.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRApp
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRConfiguration
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIROptions
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Core.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDatabaseReference
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDataSnapshot
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRMutableData
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDatabase
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRDatabaseQuery
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRServerValue
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRTransactionResult
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Database.dll
+Field=FIRStorageErrorDomain
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+Field=FIRStorageVersionString
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorage
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageMetadata
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageTaskSnapshot
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageDownloadTask
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageListResult
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageObservableTask
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageReference
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageTask
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_FIRStorageUploadTask
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/Firebase.Storage.dll
+ObjectiveCClass=OBJC_CLASS_$_MDToast
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDButton
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDCalendar
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDCalendarDateHeader
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDCalendarHeader
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDCollectionViewCell
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDDatePicker
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDDatePickerDialog
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDDeviceHelper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDMathHelper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDProgress
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDRippleLayer
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDSlider
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDSnackbar
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDSwitch
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDTabBar
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDTabBarViewController
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDTableViewCell
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDTextField
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_MDTimePickerDialog
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_UIColorHelper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_UIFontHelper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+ObjectiveCClass=OBJC_CLASS_$_UIViewHelper
+	/Users/noraminrazak/Desktop/i3s/SmartSchoolsV2/SmartSchoolsV2/SmartSchoolsV2.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 12 pro max-15.0/mtouch-cache/1-Link/MaterialControls.dll
+Function=mono_pmip
+Function=xamarin_dyn_objc_msgSend
+Function=xamarin_dyn_objc_msgSendSuper
+Function=xamarin_dyn_objc_msgSend_stret
+Function=xamarin_dyn_objc_msgSendSuper_stret

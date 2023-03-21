@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:webview="clr-namespace:Plugin.HybridWebView.Shared;assembly=Plugin.HybridWebView"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.PaymentPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.PaymentText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True" HasShadow="False">
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                <ProgressBar  Progress="0.2" IsVisible="false" HorizontalOptions="FillAndExpand" x:Name="activity_indicator" ProgressColor="#ffd612" />
+                <!--<Label x:Name="lblUrl" />-->
+                <webview:HybridWebViewControl HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                x:Name="WebContent" ContentType="Internet" Scale="1.0"
+                OnContentLoaded="FormsWebView_OnContentLoaded"
+                OnNavigationCompleted="FormsWebView_OnNavigationCompleted"
+                OnNavigationError="FormsWebView_OnNavigationError"
+                OnNavigationStarted="FormsWebView_OnNavigationStarted"
+                Source="{Binding Uri}" Margin="0,0,0,30"/>
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

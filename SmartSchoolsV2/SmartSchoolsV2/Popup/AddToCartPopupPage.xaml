@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls;assembly=SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             xmlns:effects="clr-namespace:SmartSchoolsV2.Effects" 
+             x:Class="SmartSchoolsV2.Popup.AddToCartPopupPage"
+             CloseWhenBackgroundIsClicked="False">
+    <pages:PopupPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+                <Setter Property="TextColor" Value="#7dbbe6"/>
+            </Style>
+        </ResourceDictionary>
+    </pages:PopupPage.Resources>
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+                  PositionIn="Center"
+                  PositionOut="Center"
+                  ScaleIn="1"
+                  ScaleOut="0.7"
+                  DurationIn="200"
+                  DurationOut="300"
+                  EasingIn="SinOut"
+                  EasingOut="SinIn"
+                  HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <Frame IsClippedToBounds="True" Padding="0" VerticalOptions="End"
+                x:Name="FrameContainer" BackgroundColor="White" HasShadow="False">
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                         sk:Skeleton.IsParent="True"
+	                    sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                <StackLayout  Orientation="Vertical" x:Name="btnStack" BackgroundColor="Transparent"
+		         AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Frame HasShadow="False"
+                    Padding="0,10,10,0"
+                    BackgroundColor="Transparent"
+                    CornerRadius="18"
+                    HeightRequest="36"
+                    HorizontalOptions="End"
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="36">
+                        <Label TextColor="Red"
+                        FontAttributes="None"
+                        FontFamily="{StaticResource FontAwesomeSolid}"
+                        FontSize="Title"
+                        HorizontalOptions="CenterAndExpand"
+                        HorizontalTextAlignment="Center"
+                        InputTransparent="True"
+                        Text="&#xf057;"
+                        VerticalOptions="CenterAndExpand"
+                        VerticalTextAlignment="Center" />
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnClose_Tapped"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </StackLayout>
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20,0,20,10"
+                  ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ffimageloading:CachedImage x:Name="productPhoto" Aspect="AspectFill" Grid.RowSpan="3" Grid.Column="0"
+                                HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="100" WidthRequest="100" />
+                <Label Grid.Column="1" TextColor="#0080ff" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="lblProductName" FontSize="Body"
+												HorizontalOptions="Start" VerticalOptions="Start" Margin="0,5,0,0"></Label>
+                <Label Grid.Row="1" Grid.Column="1" FontFamily="{StaticResource RobotoRegular}" HorizontalOptions="Start" VerticalOptions="Start"
+													FontSize="Medium" TextColor="Black" VerticalTextAlignment="Center" 
+													HorizontalTextAlignment="Start" x:Name="lblUnitPrice"/>
+                <Label Grid.Row="2" Grid.Column="1" FontFamily="{StaticResource RobotoItalic}" HorizontalOptions="Start" VerticalOptions="Start"
+													FontSize="Small" TextColor="Gray" VerticalTextAlignment="Start" 
+													HorizontalTextAlignment="Start" x:Name="lblDescriptipn" />
+                    <Label x:Name="lblInfo" Grid.Row="3" Grid.Column="0"
+                           FontFamily="{StaticResource FontAwesomeSolid}"
+                           Text="&#xf05a;" TextColor="Black"
+                           FontSize="Title"
+                VerticalOptions="Center"
+                HorizontalOptions="Start" 
+                effects:TooltipEffect.Position="Right"
+                effects:TooltipEffect.BackgroundColor="#0080ff"
+                effects:TooltipEffect.HasTooltip="True"/>
+                <Grid Grid.Row="3" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                    Text="{x:Static resource:AppResources.QuantityText}" FontFamily="{StaticResource RobotoRegular}" FontSize="Body" TextColor="Black" />
+                    <Label Grid.Column="1" HorizontalTextAlignment="End" VerticalTextAlignment="Center" x:Name="btnMinus"
+                    Text="&#xf146;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Black" />
+                    <Frame Grid.Column="2" BorderColor="Black" Padding="0" IsClippedToBounds="True" HasShadow="False">
+                        <Label Text="1"  FontFamily="{StaticResource RobotoRegular}" FontSize="Body" TextColor="Black" 
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="txtQty"/>
+                    </Frame>
+                    <Label Grid.Column="3" HorizontalTextAlignment="End" VerticalTextAlignment="Center" x:Name="btnPlus"
+                    Text="&#xf0fe;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Black" />
+                </Grid>
+            </Grid>
+                <StackLayout HorizontalOptions="Center"  Padding="20,10,20,20"  VerticalOptions="Center">
+                    <controls:ButtonWithActivityIndicator x:Name="ButtonWithSpinner" Text="{x:Static resource:AppResources.AddToCartText}" 
+                                                  Clicked="OnClicked" Grid.Row="4"
+                                                  ActivityIndicatorColor="Black" />
+                </StackLayout>
+            </StackLayout>
+
+        </AbsoluteLayout>
+    </Frame>
+</pages:PopupPage>

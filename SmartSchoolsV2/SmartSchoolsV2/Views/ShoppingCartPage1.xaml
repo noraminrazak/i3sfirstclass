@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="SmartSchoolsV2.Views.ShoppingCartPage1"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <!--<AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100">-->
+        <StackLayout>
+            <CollectionView ItemsSource="{Binding Carts}" x:Name="cvCarts" SelectionChanged="OnCollectionViewSelectionChanged" 
+                        SelectionMode="Multiple" IsGrouped="True">
+                <!--<CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>-->
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding pickup_date}"
+                                   BackgroundColor="Gainsboro" Padding="10,5,0,5"
+                                   FontSize="Small" FontFamily="{StaticResource RobotoMedium}"
+                                   FontAttributes="Bold" TextColor="Black"/>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Remove"
+                                   BackgroundColor="Red" Invoked="Delete_Invoked" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <Grid Padding="10,10,20,10" ColumnSpacing="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <!--<RowDefinition Height="Auto" />-->
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <ffimageloading:CachedImage x:Name="Image" Aspect="AspectFill" Grid.RowSpan="4" Grid.Column="0"
+                                                    HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80" WidthRequest="80"
+                                                    Source="{Binding product_photo_url}"/>
+                                <Label Grid.Column="1"  Grid.Row="0" LineBreakMode="TailTruncation"
+                           Text="{Binding product_name}" TextColor="#0080ff"
+                           FontFamily="{StaticResource RobotoMedium}" FontSize="Small" />
+                                <!--<Label Grid.Column="1"  Grid.Row="1" LineBreakMode="TailTruncation"
+                           Text="{Binding company_name}" TextColor="Gray"
+                           FontFamily="{StaticResource RobotoMedium}" FontSize="Micro" />-->
+                                <Label Grid.Column="1" Grid.Row="1"
+                           Text="{Binding recipient_name}" TextColor="Black" LineBreakMode="TailTruncation"
+                           FontFamily="{StaticResource RobotoRegular}" FontSize="Small" />
+                                <Grid Grid.Column="1" Grid.Row="2" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding school_name}" Grid.Row="0" Grid.Column="0" FontFamily="{StaticResource RobotoMedium}"
+													FontSize="Micro" TextColor="Black" VerticalOptions="Center" 
+													HorizontalOptions="StartAndExpand" />
+                                    <Image Grid.Row="0" Grid.Column="1" Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage" IsVisible="{Binding dot_visible}"
+                                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    <Label Text="{Binding class_name}" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource RobotoMedium}"
+													FontSize="Micro" TextColor="Black" VerticalOptions="Center" 
+													HorizontalOptions="StartAndExpand" />
+                                </Grid>
+                                <Label Grid.Column="1" Grid.Row="3"
+                           Text="{Binding str_unit_price}" TextColor="Black"
+                           FontFamily="{StaticResource RobotoMedium}" FontSize="Small" />
+                                <Grid Grid.Column="1" Grid.Row="4" Padding="0,10,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="40" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="btnMinus"
+                    Text="&#xf146;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Black" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnMinusTapped" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Frame Grid.Column="1" BorderColor="Black" Padding="0" IsClippedToBounds="True" HasShadow="False">
+                                        <Label Text="{Binding product_qty}"  FontFamily="{StaticResource RobotoRegular}" FontSize="Body" TextColor="Black" 
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="txtQty" />
+                                    </Frame>
+                                    <Label Grid.Column="2" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="btnPlus"
+                    Text="&#xf0fe;" FontFamily="{StaticResource FontAwesomeSolid}" FontSize="Title" TextColor="Black" >
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnPlusTapped" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Grid>
+                            </Grid>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.EmptyView>
+                    <ContentView>
+                        <StackLayout HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand" Orientation="Vertical">
+                            <Label Text="{x:Static resource:AppResources.YourCartIsEmptyText}"
+                           FontFamily="{StaticResource RobotoMedium}"
+                           FontSize="Small"
+                           TextColor="Black"
+                           HorizontalOptions="Fill"
+                           HorizontalTextAlignment="Center" />
+                            <Button Text="{x:Static resource:AppResources.PleaseAddSomethingText}"
+                           FontFamily="{StaticResource RobotoMedium}" BorderWidth="2" BorderColor="#ff0266"
+                           FontSize="Small" Clicked="OnStartOrderClicked" CornerRadius="15" BackgroundColor="Transparent"
+                           HorizontalOptions="Fill" TextColor="Black" />
+                        </StackLayout>
+                    </ContentView>
+                </CollectionView.EmptyView>
+            </CollectionView>
+            <StackLayout Margin="20,0,20,10" HorizontalOptions="FillAndExpand" VerticalOptions="End" x:Name="stackTotal" IsVisible="{Binding is_visible}">
+                <Grid ColumnSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <!--<StackLayout Grid.Column="0" Orientation="Vertical" VerticalOptions="Center">-->
+                        <StackLayout Orientation="Vertical" HorizontalOptions="End" VerticalOptions="Center">
+                            <Label Text="{x:Static resource:AppResources.SubtotalText}" TextColor="Black" FontSize="Body" FontFamily="{StaticResource RobotoRegular}"
+                           HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                            <Label Text="{Binding str_sub_total_amount}" TextColor="#F4364C" FontSize="Body" FontFamily="{StaticResource RobotoMedium}"
+                           HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                        </StackLayout>
+                        <!--<Label Text="{Binding str_total_point}" TextColor="#FFAD00" FontSize="Small" FontFamily="{StaticResource RobotoRegular}"
+                           HorizontalTextAlignment="End" VerticalTextAlignment="Center" />-->
+                    <!--</StackLayout>-->
+                    <Button Grid.Column="1" FontSize="Body" TextTransform="None"
+                             x:Name="btnCheckOut" Clicked="OnCheckOutClicked"
+                            BackgroundColor="#ff0266"
+                            CornerRadius="15"
+                            Text="{x:Static resource:AppResources.CheckoutText}" FontFamily="{StaticResource RobotoRegular}"
+                            TextColor="White" />
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+        <!--</Frame>
+            <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+        </AbsoluteLayout>-->
+        <!--<RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
+             Command="{Binding RefreshCommand}">-->
+    </ContentPage.Content>
+</ContentPage>

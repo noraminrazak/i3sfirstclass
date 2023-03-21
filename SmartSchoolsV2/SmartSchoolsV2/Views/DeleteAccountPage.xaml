@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.DeleteAccountPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.DeleteMyAccountText}" Grid.Column="0" TextColor="#ffd612" 
+                   FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <StackLayout Margin="20">
+                <Label Grid.Row="4" Margin="10"
+                    HorizontalOptions="Center"
+                    TextColor="Black" FontSize="Small"
+                    VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.PleaseContactText}" FontFamily="{StaticResource RobotoRegular}" FontSize="Body"/>
+                            <Span Text="cs@emerging.com.my" FontFamily="{StaticResource RobotoMedium}" 
+                                  TextDecorations="Underline" FontSize="Body">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapEmail}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text="{x:Static resource:AppResources.PleaseContactText2}" FontFamily="{StaticResource RobotoRegular}" FontSize="Body"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Margin="5" Text="{x:Static resource:AppResources.PleaseContactText3}" TextColor="Black" FontFamily="{StaticResource RobotoRegular}" 
+                                           FontSize="Body" HorizontalOptions="FillAndExpand"/>
+                <Label Margin="5" Text="{x:Static resource:AppResources.PleaseContactText4}" TextColor="Black" FontFamily="{StaticResource RobotoRegular}" 
+                                           FontSize="Body" HorizontalOptions="FillAndExpand"/>
+                <Label Margin="5" Text="{x:Static resource:AppResources.PleaseContactText5}" TextColor="Black" FontFamily="{StaticResource RobotoRegular}" 
+                                           FontSize="Body" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

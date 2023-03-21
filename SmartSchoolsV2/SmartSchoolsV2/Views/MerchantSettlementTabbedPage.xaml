@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSchoolsV2.Views.MerchantSettlementTabbedPage"             
+             xmlns:local="clr-namespace:SmartSchoolsV2.Views"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             SelectedTabColor="White"
+             UnselectedTabColor="Gray">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!--<ColumnDefinition Width="Auto"/>-->
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.SettlementText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <local:MerchantSettlementPendingPage Title="{x:Static resource:AppResources.PendingText}"/>
+    <local:MerchantSettlementPayoutPage Title="{x:Static resource:AppResources.PayoutText}"/>
+</TabbedPage>

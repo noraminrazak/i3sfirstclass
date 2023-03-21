@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.StudentResultView"
+             BackgroundColor="White" >
+  <ContentView.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" Margin="20">
+                <Label Text="{x:Static resource:AppResources.ClickToOpenBrowserText}" 
+                       HorizontalTextAlignment="Center"
+                       FontFamily="{StaticResource RobotoRegular}" FontSize="Small" TextColor="black" />
+                <Button FontSize="Body" TextTransform="None" Grid.Row="2"
+                        x:Name="btnOpenBrowser" Clicked="OnOpenBrowserClicked"
+                        Margin="20,20,20,10" BorderColor="#ff0266" BorderWidth="2"
+                        BackgroundColor="Transparent" CornerRadius="15"
+                        Text="{x:Static resource:AppResources.OpenBrowserText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="Black" />
+
+            </StackLayout>
+            <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

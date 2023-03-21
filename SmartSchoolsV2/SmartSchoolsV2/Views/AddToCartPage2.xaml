@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:effects="clr-namespace:Xamarin.KeyboardHelper;assembly=Xamarin.KeyboardHelper"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.AddToCartPage2"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.AddToCartText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+            <StackLayout Grid.Column="1" HorizontalOptions="EndAndExpand" Orientation="Horizontal" Padding="5">
+                <Grid>
+                    <Label FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf07a;" x:Name="imgCart" Padding="5" Margin="5,0,20,0"
+                           VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"/>
+                    <controls:BadgeView BadgeColor="#ff0266" VerticalOptions="Start" HorizontalOptions="End" x:Name="badgeCart" Margin="0,0,15,0" />
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <ScrollView>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <BoxView HeightRequest="20" />
+                    <controls:Accordion  Title="{x:Static resource:AppResources.DeliveryDetailText}" x:Name="accStudent" >
+                        <controls:Accordion.AccordionContentView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Grid Margin="20,0,20,5">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0" Text="{x:Static resource:AppResources.DateTimeText}" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="Start" VerticalOptions="Center" TextColor="Black"/>
+                                    <Label Grid.Row="0" Grid.Column="1" x:Name="lblPickupDate" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="End" VerticalOptions="Center" TextColor="Black"/>
+                                    <Label Grid.Row="1" Grid.Column="1" x:Name="lblPickupTime" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="End" VerticalOptions="Center" TextColor="Black"/>
+                                </Grid>
+                                <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" BackgroundColor="Gainsboro"/>
+                                <Grid Margin="20,5,20,10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" Grid.Row="0" Text="{x:Static resource:AppResources.ForText}" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="Start" VerticalOptions="Center" TextColor="Black"/>
+                                    <Label Grid.Column="1" Grid.Row="0" x:Name="lblFullName" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="End" VerticalOptions="Center" TextColor="Black"/>
+                                    <Label Grid.Column="1" Grid.Row="1" x:Name="lblSchoolName" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="End" VerticalOptions="Center" TextColor="Black"/>
+                                    <Label Grid.Column="1" Grid.Row="2" x:Name="lblClassName" FontFamily="{StaticResource RobotoRegular}" FontSize="Small"
+                               HorizontalOptions="End" VerticalOptions="Center" TextColor="Black"/>
+                                </Grid>
+                            </StackLayout>
+                        </controls:Accordion.AccordionContentView>
+                        <controls:Accordion.IndicatorView>
+                            <Label Text="&#xf0ab;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black"/>
+                        </controls:Accordion.IndicatorView>
+                    </controls:Accordion>
+                    <!--<BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" BackgroundColor="Gainsboro"/>
+                    <controls:Accordion  Title="{x:Static resource:AppResources.MerchantDetailText}" Margin="0,10,0,0" x:Name="accMerchant">
+                        <controls:Accordion.AccordionContentView >
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Label Margin="22,0,20,0"
+                                    HorizontalOptions="Start"
+                                    TextColor="Gray" FontSize="Small"
+                                    VerticalOptions="Center">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{x:Static resource:AppResources.MerchantTypeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <customs:CustomEntry Keyboard="Text" Grid.Row="8"
+                                    x:Name="txtCompanyName" Placeholder="{x:Static resource:AppResources.SelectMerchantTypeText}" Focused="StartCall"
+                                    Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                    BackgroundColor="Transparent" >
+                                </customs:CustomEntry>
+                            </StackLayout>
+                        </controls:Accordion.AccordionContentView>
+                        <controls:Accordion.IndicatorView>
+                            <Label Text="&#xf0ab;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="Black"/>
+                        </controls:Accordion.IndicatorView>
+                    </controls:Accordion>-->
+                    <!--<RefreshView IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
+             Command="{Binding RefreshCommand}">-->
+                        <CollectionView Margin="10,0,10,30" IsGrouped="True" ItemsSource="{Binding Products}" x:Name="cvProduct"
+                                    SelectionMode="Single" SelectionChanged="OnCollectionViewSelectionChanged" >
+                            <CollectionView.ItemsLayout>
+                                <GridItemsLayout Orientation="Vertical" Span="2"/>
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.GroupHeaderTemplate>
+                                <DataTemplate>
+                                    <Label Text="{Binding category_name}"
+                                   BackgroundColor="Gainsboro" Padding="10,5,0,5"
+                                   FontSize="Body" FontFamily="{StaticResource RobotoRegular}"
+                                   FontAttributes="Bold" TextColor="Black"/>
+                                </DataTemplate>
+                            </CollectionView.GroupHeaderTemplate>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Padding="5,10,5,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                        <Frame HasShadow="True" CornerRadius="10" IsClippedToBounds="True" Padding="0" 
+                                           HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="150" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+                                                <ffimageloading:CachedImage x:Name="Image" Aspect="AspectFill" Grid.Row="0"
+                                                                    HorizontalOptions="Fill" VerticalOptions="Fill" Scale="1.0"
+                                                                    Source="{Binding photo_url}" />
+                                                <Label Grid.Row="1"
+                                       Text="{Binding product_name}" TextColor="#0080ff"
+                                       FontFamily="{StaticResource RobotoMedium}"
+                                       LineBreakMode="TailTruncation" 
+                                           HorizontalOptions="Center"/>
+                                                <Label Grid.Row="2"
+                                       Text="{Binding str_unit_price}" Margin="0,0,0,5"
+                                       FontSize="Body" TextColor="Black"
+                                       FontFamily="{StaticResource RobotoRegular}"
+                                       HorizontalOptions="Center" />
+                                            </Grid>
+                                        </Frame>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    <!--</RefreshView>-->
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

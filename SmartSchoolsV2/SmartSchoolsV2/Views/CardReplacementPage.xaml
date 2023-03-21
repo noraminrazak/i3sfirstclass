@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:behavior="clr-namespace:SmartSchoolsV2.Behaviors"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.CardReplacementPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.CardReplacementText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,0,1,0.15" AbsoluteLayout.LayoutFlags="All"
+                     sk:Skeleton.IsParent="True"
+	                 sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                 sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+            <Grid HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <plugin:CircleImage Source="{Binding Image}" Aspect="AspectFill" IsVisible="False"
+                                  x:Name="userImg" sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                                  Grid.Column="0" Margin="20,15,10,10">
+                    <plugin:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">65</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.WidthRequest>
+                    <plugin:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">65</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.HeightRequest>
+                </plugin:CircleImage>
+                <StackLayout x:Name="userInitial" IsVisible="True" Grid.Column="0" Margin="20,15,10,10" BackgroundColor="Transparent">
+                    <controls:InitialsView  sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                                            sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                        sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                               Name="{Binding Text, Source={x:Reference lblFullName}}" >
+                        <controls:InitialsView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">65</On>
+                                <!--<On Platform="WinPhone">75</On>-->
+                            </OnPlatform>
+                        </controls:InitialsView.WidthRequest>
+                        <controls:InitialsView.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">65</On>
+                                <!--<On Platform="WinPhone">75</On>-->
+                            </OnPlatform>
+                        </controls:InitialsView.HeightRequest>
+                    </controls:InitialsView>
+                </StackLayout>
+                <!--</controls:CircleImage>-->
+                <StackLayout Grid.Column="1" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,20,0" >
+                    <Label Grid.Row="0" Grid.ColumnSpan="3" FontFamily="{StaticResource RobotoMedium}" TextColor="White" FontSize="Small"
+                       HorizontalTextAlignment="Start" VerticalOptions="Center" x:Name="lblFullName" 
+                           sk:Skeleton.IsBusy="{Binding IsBusy1}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}" 
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label FontFamily="{StaticResource RobotoRegular}" TextColor="White" 
+                           sk:Skeleton.IsBusy="{Binding IsBusy1}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="12" x:Name="lblWalletNumber"/>
+                        <Image Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage"
+                                                  VerticalOptions="Center" HorizontalOptions="Start"
+                           sk:Skeleton.IsBusy="{Binding IsBusy1}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"/>
+                        <Label FontFamily="{StaticResource RobotoRegular}" x:Name="lblAccountBalance" 
+                           sk:Skeleton.IsBusy="{Binding IsBusy1}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+													FontSize="12" TextColor="White" VerticalOptions="StartAndExpand" 
+													HorizontalOptions="StartAndExpand" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,0.85" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0" BackgroundColor="Transparent" HeightRequest="20"/>
+                <!-- card number -->
+                <Label  Grid.Row="1"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.CardNumberText}" FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <customs:CustomEntry Keyboard="Numeric" Grid.Row="2" 
+                            x:Name="txtCardNumber" IsReadOnly="True" Placeholder="{x:Static resource:AppResources.EnterCardNumberText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+
+                    <!--<customs:CustomEntry.Behaviors>
+                        <behavior:CardNumberMaskBehavior x:Name="CardNumberMask" />
+                        <behavior:EntryLengthValidator MaxLength="19"/>
+                    </customs:CustomEntry.Behaviors>-->
+                </customs:CustomEntry>
+                <!-- replacement option -->
+                <Label  Grid.Row="3"
+                        Margin="22,0,20,10"
+                        HorizontalTextAlignment="Start"
+                        TextColor="Black"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.SelectReasonForReplacementOptionText}" 
+                                  FontFamily="{StaticResource RobotoRegular}" FontSize="Body"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <input:RadioButtonGroupView Grid.Row="4" Margin="20,0,20,0" >
+                    <input:RadioButton Text="{x:Static resource:AppResources.CardReason3Text}" Value="3" FontFamily="{StaticResource RobotoRegular}" 
+                                       TextColor="Black" TextFontSize="Body" Padding="0,0,0,15" Clicked="OnRadio1Clicked"/>
+                    <input:RadioButton Text="{x:Static resource:AppResources.CardReason4Text}" FontFamily="{StaticResource RobotoRegular}" Value="4"
+                                       TextColor="Black" TextFontSize="Body" Padding="0,0,0,10" Clicked="OnRadio2Clicked"/>
+                    <input:RadioButton Text="{x:Static resource:AppResources.CardReason6Text}" Value="6"
+                                       FontFamily="{StaticResource RobotoRegular}" TextColor="Black" TextFontSize="Body" Padding="0,0,0,10" 
+                                       Clicked="OnRadio3Clicked"/>
+                </input:RadioButtonGroupView>
+                <!-- new card number -->
+                <Label  Grid.Row="5"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.NewCardNoText}" FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <customs:CustomEntry Keyboard="Numeric" Grid.Row="6" 
+                            x:Name="txtNewCardNumber" Placeholder="{x:Static resource:AppResources.EnterNewCardNumberText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+                    <customs:CustomEntry.Behaviors>
+                        <behavior:CardNumberMaskBehavior x:Name="NewCardNumberMask" />
+                        <behavior:EntryLengthValidator MaxLength="19"/>
+                    </customs:CustomEntry.Behaviors>
+                </customs:CustomEntry>
+                <Button FontSize="Body" TextTransform="None" Grid.Row="7"
+                        x:Name="btnReplace" Clicked="OnReplaceClicked"
+                        Margin="20,20,20,50"
+                        BackgroundColor="#ff0266"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.ReplaceCardText}" FontFamily="{StaticResource RobotoRegular}"
+                        TextColor="White" />
+            </Grid>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

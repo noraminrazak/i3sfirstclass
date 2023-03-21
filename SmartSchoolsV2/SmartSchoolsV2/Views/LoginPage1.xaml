@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="SmartSchoolsV2.Views.LoginPage1"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:SmartSchoolsV2"
+            xmlns:controls="clr-namespace:SmartSchoolsV2.Controls;assembly=SmartSchoolsV2"
+            xmlns:effects="clr-namespace:SmartSchoolsV2.Effects" 
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+            xmlns:prism="http://prismlibrary.com"
+            BackgroundImageSource="bg2_1024x2048.jpg"
+            prism:ViewModelLocator.AutowireViewModel="True">
+    <NavigationPage.TitleView>
+        <StackLayout Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" Padding="0,0,20,0" >
+            <ImageButton Clicked="OnSelectLanguageClicked" x:Name="flagLanguage" BackgroundColor="Transparent">
+                <ImageButton.WidthRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android, iOS">35</On>
+                    </OnPlatform>
+                </ImageButton.WidthRequest>
+                <ImageButton.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android, iOS">35</On>
+                    </OnPlatform>
+                </ImageButton.HeightRequest>
+            </ImageButton>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                     AbsoluteLayout.LayoutBounds="1,0,1,0.5" AbsoluteLayout.LayoutFlags="All">
+            <ffimageloading:CachedImage Source="ic_logo.png" Aspect="AspectFit" 
+               HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                BitmapOptimizations="True" HeightRequest="60" WidthRequest="190"/>
+        </StackLayout>
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0"/>
+                <controls:FloatingLabelInput Keyboard="Text"
+                    Grid.Row="1" Title="{x:Static resource:AppResources.UsernameText}" x:Name="txtUsername"
+                    Margin="20,20,20,10" ClearButtonVisibility="Never"
+                    BackgroundColor="Transparent"/>
+                <Button x:Name="btnInfo" Grid.Row="1"
+                 VerticalOptions="Center" FontSize="Large"
+                  FontFamily="{StaticResource FontAwesomeSolid}"
+                  BackgroundColor="Transparent"
+                Text="&#xf05a;"
+                HorizontalOptions="End"  
+                effects:TooltipEffect.Position="Left"
+                effects:TooltipEffect.BackgroundColor="Black"
+                effects:TooltipEffect.Text="{x:Static resource:AppResources.UsernameInfoText}" 
+                effects:TooltipEffect.HasTooltip="True">
+                </Button>
+                <!-- remember me -->
+                <StackLayout Grid.Row="2" Margin="20,0,20,0" Orientation="Horizontal" HorizontalOptions="End">
+                    <Label Text="{x:Static resource:AppResources.RememberMeText}" FontSize="Default" TextColor="Black"
+                                   HorizontalOptions="Start" VerticalOptions="Center" />
+                    <CheckBox x:Name="rememberChk" HorizontalOptions="Center" VerticalOptions="Center" CheckedChanged="CheckedChanged" />
+                </StackLayout>
+                <Button FontSize="Medium" TextTransform="None" Grid.Row="3"
+             x:Name="btnNext1" Clicked="OnNextClicked" 
+            Margin="20,20,20,10" BackgroundColor="#ff0266" CornerRadius="15"
+            Text="{x:Static resource:AppResources.NextButtonText}" FontFamily="{StaticResource RobotoRegular}"
+            TextColor="White" />
+                <Label Grid.Row="4" Margin="10"
+                    HorizontalOptions="Center"
+                    TextColor="Black" FontSize="Small"
+                    VerticalOptions="Start">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.DontHaveAccountText}" FontSize="Small" FontFamily="{StaticResource RobotoRegular}"/>
+                            <Span Text="{x:Static resource:AppResources.RegisterNowText}" FontSize="Small" FontFamily="{StaticResource RobotoMedium}" 
+                                  TextDecorations="Underline" >
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding TapRegister}" />
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </Grid>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}"
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.TransactionDetailPage"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.ReceiptText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                         sk:Skeleton.IsParent="True"
+	                    sk:Skeleton.IsBusy="{Binding IsBusy2}"
+	                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" x:Name="lblTxnRow0Col0" Text="{x:Static resource:AppResources.TransactionTypeText}" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,40,20,10" TextColor="Black"  HorizontalTextAlignment="Start"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                           sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="lblTxnRow0Col1" Text="[Type]" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,40,20,10" TextColor="Black" HorizontalTextAlignment="End"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="1" BackgroundColor="Gainsboro" HorizontalOptions="Fill"/>
+                    <Label Grid.Row="2" Grid.Column="0" x:Name="lblTxnRow1Col0" Text="[Method]" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="Start"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <Label Grid.Row="2" Grid.Column="1" x:Name="lblTxnRow1Col1" Text="[Reference Name]" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="End"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" HeightRequest="1" BackgroundColor="Gainsboro" HorizontalOptions="Fill"/>
+                    <Label Grid.Row="4" Grid.Column="0" x:Name="lblTxnRow2Col0" Text="{x:Static resource:AppResources.AmountText}" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="Start" 
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                   sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <Label Grid.Row="4" Grid.Column="1" x:Name="lblTxnRow2Col1" Text="RM 0.00" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="End"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <BoxView Grid.Row="5" Grid.ColumnSpan="2" HeightRequest="1" BackgroundColor="Gainsboro" HorizontalOptions="Fill" x:Name="bvTxnRow2"/>
+                    <Label Grid.Row="6" Grid.Column="0" x:Name="lblTxnRow3Col0" Text="{x:Static resource:AppResources.DateTimeText}" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="Start"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <Label Grid.Row="6" Grid.Column="1" x:Name="lblTxnRow3Col1" Text="dd/MM/yyyy HH:mm tt" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="End"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <BoxView Grid.Row="7" Grid.ColumnSpan="2" HeightRequest="1" BackgroundColor="Gainsboro" HorizontalOptions="Fill"/>
+                    <Label Grid.Row="8" Grid.Column="0" x:Name="lblTxnRow5Col0" Text="{x:Static resource:AppResources.ReferenceNoText}" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="Start"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <Label Grid.Row="8" Grid.Column="1" x:Name="lblTxnRow5Col1" Text="[Reference Number]" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="End"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <BoxView Grid.Row="9" Grid.ColumnSpan="2" HeightRequest="1" BackgroundColor="Gainsboro" HorizontalOptions="Fill"/>
+                    <Label Grid.Row="10" Grid.Column="0" x:Name="lblTxnRow4Col0" Text="{x:Static resource:AppResources.StatusText}" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="Start"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <Label Grid.Row="10" Grid.Column="1" x:Name="lblTxnRow4Col1" Text="[Status]" FontFamily="{StaticResource RobotoRegular}" 
+                       FontSize="Small" Margin="20,10,20,10" TextColor="Black" HorizontalTextAlignment="End"
+                       sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                       sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                          sk:Skeleton.BackgroundColor="Gainsboro"/>
+                    <!--<BoxView Grid.Row="11" Grid.ColumnSpan="2" HeightRequest="1" BackgroundColor="Gainsboro" HorizontalOptions="Fill"/>-->
+                </Grid>
+                <ListView x:Name="lvTxnDetail"
+                          HasUnevenRows="true" SeparatorVisibility="Default" IsVisible="false" 
+                          IsPullToRefreshEnabled="False" Margin="0,0,0,30" CachingStrategy="RecycleElement"
+				          IsRefreshing="{Binding IsBusy2, Mode=TwoWay}" >
+                    <ListView.Header>
+                        <StackLayout BackgroundColor="Gainsboro" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                            <Label x:Name="lblTxnRow6Col0" Text="{x:Static resource:AppResources.ItemsText}" FontFamily="{StaticResource RobotoMedium}" HorizontalOptions="FillAndExpand"
+                       FontSize="Small" Margin="20,5,20,5" TextColor="Black" HorizontalTextAlignment="Start"/>
+                            <Label x:Name="lblTxnRow6Col1" Text="{x:Static resource:AppResources.TotalText}" FontFamily="{StaticResource RobotoMedium}"  HorizontalOptions="FillAndExpand"
+                       FontSize="Small" Margin="20,5,20,5" TextColor="Black" HorizontalTextAlignment="End"/>
+                        </StackLayout>
+                    </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <!--<StackLayout Padding="20,10,20,10" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" >-->
+                                <Grid Padding="20,10,20,10" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="{Binding product_qty}" Grid.Column="0" TextColor="Black" Grid.Row="0" FontFamily="{StaticResource RobotoRegular}"
+												HorizontalTextAlignment="End" FontSize="Small"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                    <Label Text="{Binding product_name}" Grid.Column="1" Grid.Row="0" FontFamily="{StaticResource RobotoRegular}"
+												HorizontalTextAlignment="Start" FontSize="Small" TextColor="Black"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                    <Label Text="{Binding total_amount}" Grid.Row="0" FontSize="Small" HorizontalTextAlignment="End"
+                                                TextColor="Black" Grid.Column="2" FontFamily="{StaticResource RobotoRegular}" 
+                                                HorizontalOptions="FillAndExpand"></Label>
+                                    <Label Text="{Binding unit_price}" Grid.Row="1" FontSize="Small" HorizontalTextAlignment="Start"
+                                                TextColor="Gray" Grid.Column="1" FontFamily="{StaticResource RobotoRegular}" 
+                                                HorizontalOptions="FillAndExpand"></Label>
+                                </Grid>
+                            <!--</StackLayout>-->
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+                <StackLayout Margin="20,0,20,40" HorizontalOptions="FillAndExpand" VerticalOptions="End" x:Name="stackTotal" IsVisible="false">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                        <Label Text="{x:Static resource:AppResources.SubtotalDotText}" TextColor="Black" HorizontalTextAlignment="End"/>
+                        <Label x:Name="lblSubTotal" TextColor="Black" HorizontalTextAlignment="End"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                        <Label x:Name="lblTaxrate" TextColor="Black" HorizontalTextAlignment="End"/>
+                        <Label x:Name="lblTaxAmount" TextColor="Black" HorizontalTextAlignment="End"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="{x:Static resource:AppResources.TotalAmountText}" TextColor="Black" FontSize="Body" FontFamily="{StaticResource RobotoRegular}"
+                               HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                        <Label x:Name="lblTotal" TextColor="#F4364C" FontSize="Body" FontFamily="{StaticResource RobotoMedium}"
+                               HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

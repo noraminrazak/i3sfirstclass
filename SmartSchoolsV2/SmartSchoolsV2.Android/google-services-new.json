@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "754750697278",
+    "firebase_url": "https://i3sv2-1f5dd-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "i3sv2-1f5dd",
+    "storage_bucket": "i3sv2-1f5dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754750697278:android:02dd4a3d95f29e4536466f",
+        "android_client_info": {
+          "package_name": "com.emerging.smartschoolv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754750697278-2qa4innvpjhufj07rt7e6p737ur1dnk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiv4JZp2VufdtUcOWT_-jULOi-HdfKkys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754750697278-2qa4innvpjhufj07rt7e6p737ur1dnk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

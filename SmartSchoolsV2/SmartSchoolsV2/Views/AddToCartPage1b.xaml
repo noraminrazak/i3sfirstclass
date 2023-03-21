@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.AddToCartPage1b"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.AddOrderDetailText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <!--<ScrollView>-->
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                <BoxView HeightRequest="20" />
+                <!-- Delivery or pickup -->
+                <!--<Grid Margin="20,0,20,10" IsVisible="false">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" x:Name="btnDelivery" Text="{x:Static resource:AppResources.DeliveryBtnText}" TextTransform="None"
+                            CornerRadius="5" TextColor="Black" Clicked="OnDeliveryButtonClicked" />
+                    <Label Grid.Column="1" Text="{x:Static resource:AppResources.OrText}" FontFamily="{StaticResource RobotoRegular}" 
+                           TextColor="Gray" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Button Grid.Column="2" x:Name="btnTakeAway" Text="{x:Static resource:AppResources.TakeAwayBtnText}" TextTransform="None"
+                            CornerRadius="5" TextColor="Black" Clicked="OnTakeAwayButtonClicked" />
+                </Grid>-->
+                <!-- Operator Name -->
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" 
+                             x:Name="stackMerchant">
+                    <Label Margin="22,0,20,0"
+                                    HorizontalOptions="Start"
+                                    TextColor="Gray" FontSize="Small"
+                                    VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.OperatorTypeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <StackLayout Grid.Row="8">
+                        <customs:CustomEntry Keyboard="Text" IsReadOnly="True" InputTransparent="True"
+                                    x:Name="txtCompanyName" Placeholder="{x:Static resource:AppResources.SelectOperatorTypeText}"
+                                    Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                    BackgroundColor="Transparent" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="StartCall" >
+                            </TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </StackLayout>
+                <!-- Delivery Location -->
+                <!--<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"
+                    x:Name="stackLocation" IsVisible="false">
+                    <Label  Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.DeliveryLocationText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry
+                            x:Name="txtLocation" Placeholder="{x:Static resource:AppResources.EnterDeliveryLocationText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" >
+                        <customs:CustomEntry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEntry.Keyboard>
+                    </customs:CustomEntry>
+                </StackLayout>-->
+                <!-- Delivery Date -->
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"
+                    x:Name="stackTiming" IsVisible="false" >
+                    <Label  Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.DeliveryDateText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <!--<controls:NullableDatePicker NullableDate="{Binding MyDate}" x:Name="txtPickupDate" 
+                                Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default" />-->
+                    <customs:CustomEntry Keyboard="Text"
+                            x:Name="txtPickupDate" Focused="StartCall2" Placeholder="{x:Static resource:AppResources.SelectDeliveryDateText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                    <DatePicker x:Name="datePicker" IsVisible="false" DateSelected="OnDeliveryDateSelected" />
+                    <!-- Order Timing -->
+                    <Label  Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.OrderTimingText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry Keyboard="Text"
+                            x:Name="txtPickupTime" Focused="StartCall3" Placeholder="{x:Static resource:AppResources.SelectOrderTimingText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                    <TimePicker x:Name="timePicker" IsVisible="false" Format="T"
+                    PropertyChanged="OnTimePickerPropertyChanged" />
+                </StackLayout>
+                <Button FontSize="Medium" TextTransform="None" IsVisible="false"
+                             x:Name="btnNext1" Clicked="OnNextClicked" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand"
+                            Margin="20,20,20,40"
+                            BackgroundColor="#ff0266"
+                            CornerRadius="15"
+                            Text="{x:Static resource:AppResources.NextButtonText}" FontFamily="{StaticResource RobotoRegular}"
+                            TextColor="White" />
+            </StackLayout>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

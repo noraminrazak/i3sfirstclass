@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             x:Class="SmartSchoolsV2.Views.AccountStatusPage"
+            BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.AccountStatus}" Grid.Column="0" TextColor="#ffd612" 
+                   FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <!--<ScrollView>-->
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="10" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <BoxView Grid.Row="0"/>
+                        <!-- uid -->
+                        <!--<Label  Grid.Row="1"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontFamily="{StaticResource RobotoRegular}" Text="{x:Static resource:AppResources.MPayIdText}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label  Grid.Row="2"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Black" FontSize="Default"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontFamily="{StaticResource RobotoMedium}" x:Name="lblUid"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>-->
+                        <!-- kyc status -->
+                        <Label  Grid.Row="1"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontFamily="{StaticResource RobotoRegular}" Text="{x:Static resource:AppResources.KYCStatusText}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label  Grid.Row="2"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Black" 
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontFamily="{StaticResource RobotoMedium}" x:Name="lblKYCStatus" FontSize="Small"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label  Grid.Row="3" IsVisible="False"
+                            Margin="22,0,20,0" x:Name="lblMessage"
+                            HorizontalOptions="Start"
+                            TextColor="Red" 
+                            VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                <Span FontFamily="{StaticResource RobotoRegular}" x:Name="txtMessage" FontSize="Small" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    <BoxView Grid.Row="4"/>
+                        <!-- account status -->
+                        <Label  Grid.Row="5"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span FontFamily="{StaticResource RobotoRegular}" Text="{x:Static resource:AppResources.AccountStatus}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    <Label  Grid.Row="6"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Black" 
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span FontFamily="{StaticResource RobotoMedium}" x:Name="lblAccStatus" FontSize="Small"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+                <Button FontSize="Body" TextTransform="None" IsVisible="False"
+                                Margin="20,20,20,50" x:Name="btnContinue" Clicked="OnContinueClicked"
+                                BackgroundColor="#ff0266"
+                                CornerRadius="15"
+                                FontFamily="{StaticResource RobotoRegular}"
+                                TextColor="White" />
+                <Button FontSize="Body" TextTransform="None" IsVisible="False" Text="{x:Static resource:AppResources.DeleteMyAccountText}"
+                                Margin="20,20,20,50" x:Name="btnDelete" Clicked="OnDeleteClicked"
+                                BackgroundColor="red"
+                                CornerRadius="15"
+                                FontFamily="{StaticResource RobotoRegular}"
+                                TextColor="White" />
+            </StackLayout>
+            <!--</ScrollView>-->
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

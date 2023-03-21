@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="2.5.4" package="com.emerging.smartschool" android:installLocation="auto" android:versionCode="63">
+	<uses-sdk android:minSdkVersion="18" android:targetSdkVersion="31" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<permission android:name="${applicationId}.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+	<application android:label="i-3s First Class" android:hardwareAccelerated="true" android:networkSecurityConfig="@xml/network_security_config" android:allowBackup="true" android:largeHeap="true" android:icon="@drawable/icon_512" android:requestLegacyExternalStorage="true">
+		<provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+		</provider>
+		<provider android:name="android.support.v4.content.FileProvider" android:authorities="${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+		</provider>
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+		<receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:exported="true" android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+				<category android:name="${applicationId}" />
+			</intent-filter>
+		</receiver>
+		<!--<service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+			<intent-filter android:priority="-500">
+				<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+			</intent-filter>
+		</service>-->
+		<service android:name="crc64055b1f0e677d6f31.MyFirebaseIdService" android:exported="true">
+			<intent-filter>
+				<action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+			</intent-filter>
+		</service>
+		<service android:name="crc64055b1f0e677d6f31.MyFirebaseMessagingService" android:exported="true">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+		<service android:name="crc6494e14b9856016c30.PNFirebaseMessagingService" android:exported="true">
+			<intent-filter>
+				<action android:name="com.google.firebase.MESSAGING_EVENT" />
+			</intent-filter>
+		</service>
+		<meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/icon_60" />
+		<activity android:name=".MainActivity" android:exported="true">
+			<intent-filter>
+				<action android:name=".MainActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+	</application>
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="http" />
+		</intent>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="https" />
+		</intent>
+	</queries>
+</manifest>

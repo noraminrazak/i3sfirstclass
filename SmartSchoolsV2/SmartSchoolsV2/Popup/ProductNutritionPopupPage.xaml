@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Popup.ProductNutritionPopupPage"
+             CloseWhenBackgroundIsClicked="False">
+    <pages:PopupPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+                <Setter Property="TextColor" Value="#7dbbe6"/>
+            </Style>
+        </ResourceDictionary>
+    </pages:PopupPage.Resources>
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+      PositionIn="Left"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="200"
+      DurationOut="300"
+      EasingIn="SinOut"
+      EasingOut="SinIn"
+      HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <Frame HasShadow="False" IsClippedToBounds="True" Padding="0" VerticalOptions="Center"
+                x:Name="FrameContainer" BackgroundColor="White" Margin="20">
+        <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center">-->
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                         sk:Skeleton.IsParent="True"
+	                    sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" x:Name="lblHeader" FontSize="Medium" FontAttributes="Bold" Margin="20,20,20,0" TextColor="Black"/>
+                <StackLayout Grid.Row="1" Padding="20,15,20,0" HorizontalOptions="Fill" VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Label x:Name="lblComposition" Margin="10,0,0,0"
+                    HorizontalOptions="StartAndExpand"
+                    TextColor="Gray" FontSize="Small"
+                    VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.AverageCompositionText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label x:Name="lblPerServing"
+                        HorizontalOptions="End" Margin="0,0,10,0"
+                    TextColor="Gray" FontSize="Small"
+                    VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.PerServingText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Fill">
+                    <customs:CustomEntry Keyboard="Text"
+                        x:Name="txtComposition" HorizontalOptions="FillAndExpand"
+                        Margin="25,0,0,0" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                        BackgroundColor="Transparent" />
+                    <customs:CustomEntry Keyboard="Numeric"
+                        x:Name="txtPerServing" WidthRequest="100" HorizontalTextAlignment="End"
+                        Margin="0,0,25,0" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                        BackgroundColor="Transparent" />
+                </StackLayout>
+                <Grid Grid.Row="3" HorizontalOptions="EndAndExpand" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button FontSize="Small" TextTransform="None" 
+                        x:Name="btnClose" Clicked="OnCloseClicked"
+                        Margin="0,0,0,5" Grid.Column="0"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.CloseText}" FontFamily="{StaticResource RobotoMedium}"
+                        TextColor="#ff0266" />
+                    <Button FontSize="Small" TextTransform="None" 
+                        x:Name="btnSave" Clicked="OnSaveClicked"
+                        Margin="0,0,15,5" Grid.Column="1"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.SaveButtonText}" FontFamily="{StaticResource RobotoMedium}"
+                        TextColor="#ff0266" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

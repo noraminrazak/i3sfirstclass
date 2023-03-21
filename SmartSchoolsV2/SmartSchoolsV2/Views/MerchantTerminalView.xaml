@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="SmartSchoolsV2.Views.MerchantTerminalView"
+             BackgroundColor="White" >
+    <ContentView.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Grid Margin="20,45,10,0" ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="White"
+            CornerRadius="18"
+            HasShadow="False"
+            HeightRequest="36"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            WidthRequest="36">
+                        <Label
+                FontAttributes="Bold"
+                FontFamily="{StaticResource FontAwesomeSolid}"
+                FontSize="25"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                InputTransparent="True"
+                Text="&#xf137;"
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center" />
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding PrevDayCommand}" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                    <Label x:Name="lblDay"
+                        Grid.Column="0"
+                        FontFamily="{StaticResource RobotoMedium}"
+                        FontSize="Small"
+                        HorizontalOptions="Start"
+                        TextColor="Black"
+                        VerticalOptions="Center">
+                    </Label>
+                    <Frame
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="White"
+            CornerRadius="18"
+            HasShadow="False"
+            HeightRequest="36"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand"
+            WidthRequest="36">
+                        <Label
+                FontAttributes="Bold"
+                FontFamily="{StaticResource FontAwesomeSolid}"
+                FontSize="25"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                InputTransparent="True"
+                Text="&#xf138;"
+                TextColor="Black"
+                VerticalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center" />
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NextDayCommand}" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </Grid>
+                <ListView x:Name="lvTerminal" HasUnevenRows="true" SeparatorVisibility="Default" IsVisible="true"
+					    IsPullToRefreshEnabled="True" CachingStrategy="RecycleElement"
+				        RefreshCommand="{Binding RefreshCommand}" ItemSelected="OnTerminalSelected"
+				        IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20,15,20,15" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <plugin:CircleImage Source="ic_terminal" Aspect="AspectFill" Grid.RowSpan="2"
+													        x:Name="userImage" BorderColor="#ffa700" Grid.Column="0"
+                                                            VerticalOptions="Center" Scale="1.0" HorizontalOptions="Center">
+                                            <plugin:CircleImage.WidthRequest>
+                                                <OnPlatform x:TypeArguments="x:Double"
+												      iOS="55"
+												      Android="55"/>
+                                            </plugin:CircleImage.WidthRequest>
+                                            <plugin:CircleImage.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double"
+												      iOS="55"
+												      Android="55"/>
+                                            </plugin:CircleImage.HeightRequest>
+                                        </plugin:CircleImage>
+                                        <Label Text="{Binding tag_number}" Grid.Column="1" TextColor="#0080ff" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="Start" VerticalTextAlignment="Center" x:Name="lblFullName" FontSize="Small"
+												HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="0,5,0,0"></Label>
+                                        <Grid Grid.Row="1" Grid.Column="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding serial_number}" Grid.Row="0" Grid.Column="0" FontFamily="{StaticResource RobotoRegular}"
+													FontSize="Small" TextColor="Black" VerticalOptions="Center" 
+													HorizontalOptions="StartAndExpand" />
+                                            <Image Grid.Row="0" Grid.Column="1" Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage" IsVisible="{Binding dot_visible}"
+                                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding total_amount}" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource RobotoRegular}"
+													FontSize="Small" TextColor="Black" VerticalOptions="Center" 
+													HorizontalOptions="StartAndExpand" />
+                                        </Grid>
+                                        <Image Grid.RowSpan="2" Grid.Column="2" Source="ic_right_arrow.png" Aspect="AspectFit" 
+                                                   HeightRequest="15" WidthRequest="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Frame BackgroundColor="Black" CornerRadius="0" Padding="0" HasShadow="False">
+                    <Grid Margin="20,10,20,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Row="0" Grid.Column="0" x:Name="lblTotalFor" Text="Total for dd MMMM yyyy" TextColor="White" FontFamily="{StaticResource RobotoRegular}" />
+                        <Label Grid.Row="1" Grid.Column="0" x:Name="lblTotalAmount" Text="total_amount from total_txn Sale(s)" TextColor="White" FontFamily="{StaticResource RobotoRegular}" />
+                        <ImageButton Grid.RowSpan="2" Grid.Column="1" Source="ic_statement" BackgroundColor="Black" Clicked="OnStatementClicked"
+                                     HeightRequest="35" WidthRequest="35"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentView.Content>
+</ContentView>

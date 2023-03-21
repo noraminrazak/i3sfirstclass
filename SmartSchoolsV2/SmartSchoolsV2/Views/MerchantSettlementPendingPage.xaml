@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSchoolsV2.Views.MerchantSettlementPendingPage"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout BackgroundColor="White" Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" >
+                <ListView x:Name="lvSales" HasUnevenRows="true" SeparatorVisibility="Default" 
+					    IsPullToRefreshEnabled="False" CachingStrategy="RecycleElement"
+				        IsRefreshing="{Binding IsBusy, Mode=TwoWay}" ItemSelected="OnSalesSelected"
+                        sk:Skeleton.IsParent="True"
+	                    sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20,10,20,10" HorizontalOptions="Fill" VerticalOptions="FillAndExpand">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding receipt_date}" Grid.Column="0" TextColor="Black" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="Start"  x:Name="lblCreateBy" FontSize="Small" sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow" LineBreakMode="TailTruncation"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                        <Label Text="{Binding total_amount}" Grid.Column="1" TextColor="#F4364C" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												HorizontalTextAlignment="End" VerticalTextAlignment="Start" FontSize="Small" sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+												HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></Label>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

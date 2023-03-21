@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.TransactionDetailPage2"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitle" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+               IsClippedToBounds="True" HasShadow="False">
+            <StackLayout>
+                <CollectionView ItemsSource="{Binding Orders}" x:Name="cvOrders" Margin="0,30,0,0"
+                        SelectionMode="Multiple" IsGrouped="True">
+                    <CollectionView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding pickup_date}"
+                                   BackgroundColor="Gainsboro" Padding="10,5,0,5"
+                                   FontSize="Small" FontFamily="{StaticResource RobotoMedium}"
+                                   FontAttributes="Bold" TextColor="Black"/>
+                        </DataTemplate>
+                    </CollectionView.GroupHeaderTemplate>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView>
+                                <Grid Padding="10,10,20,10" ColumnSpacing="10" HorizontalOptions="Fill">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <!--<RowDefinition Height="Auto" />-->
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <ffimageloading:CachedImage x:Name="Image" Aspect="AspectFill" Grid.RowSpan="4" Grid.Column="0"
+                                                    HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="80" WidthRequest="80"
+                                                    Source="{Binding product_photo_url}"/>
+                                    <Label Grid.Column="1"  Grid.Row="0" LineBreakMode="TailTruncation"
+                           Text="{Binding product_name}" TextColor="#0080ff"
+                           FontFamily="{StaticResource RobotoMedium}" FontSize="Small" />
+                                    <!--<Label Grid.Column="1"  Grid.Row="1" LineBreakMode="TailTruncation"
+                           Text="{Binding company_name}" TextColor="Gray"
+                           FontFamily="{StaticResource RobotoRegular}" FontSize="Micro" />-->
+                                    <Label Grid.Column="1" Grid.Row="1"
+                           Text="{Binding full_name}" TextColor="Black" LineBreakMode="TailTruncation"
+                           FontFamily="{StaticResource RobotoRegular}" FontSize="Small" />
+                                    <Grid Grid.Column="1" Grid.Row="2" >
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding school_name}" Grid.Row="0" Grid.Column="0" FontFamily="{StaticResource RobotoMedium}"
+													FontSize="Micro" TextColor="Black" VerticalOptions="StartAndExpand" 
+													HorizontalOptions="StartAndExpand" />
+                                        <Image Grid.Row="0" Grid.Column="1" Source="ic_dot.png" Aspect="AspectFit" x:Name="dotImage" IsVisible="{Binding dot_visible}"
+                                                   VerticalOptions="Center" HorizontalOptions="Center"/>
+                                        <Label Text="{Binding class_name}" Grid.Row="0" Grid.Column="2" FontFamily="{StaticResource RobotoMedium}"
+													FontSize="Micro" TextColor="Black" VerticalOptions="StartAndExpand" 
+													HorizontalOptions="StartAndExpand" />
+                                    </Grid>
+                                    <StackLayout Grid.Column="1" Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                        <Label Text="{Binding str_unit_price}" TextColor="Black" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                                                FontFamily="{StaticResource RobotoMedium}" FontSize="Small" />
+                                        <Label Text="{Binding product_qty}" TextColor="Black" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                                                FontFamily="{StaticResource RobotoMedium}" FontSize="Small" />
+                                    </StackLayout>
+                                </Grid>
+                            </SwipeView>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <StackLayout Margin="20,0,20,40" HorizontalOptions="FillAndExpand" VerticalOptions="End" x:Name="stackTotal">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                        <Label Text="{x:Static resource:AppResources.SubtotalDotText}" TextColor="Black" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding str_sub_total_amount}" TextColor="Black" HorizontalTextAlignment="End"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                        <Label Text="{Binding str_tax_rate}" TextColor="Black" HorizontalTextAlignment="End"/>
+                        <Label Text="{Binding str_tax_amount}" TextColor="Black" HorizontalTextAlignment="End"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="{x:Static resource:AppResources.TotalAmountText}" TextColor="Black" FontSize="Body" FontFamily="{StaticResource RobotoRegular}"
+                               HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                        <Label Text="{Binding str_total_amount}" TextColor="#F4364C" FontSize="Body" FontFamily="{StaticResource RobotoMedium}"
+                               HorizontalTextAlignment="End" VerticalTextAlignment="Center" />
+                    </StackLayout>
+                    <Button FontSize="Medium" TextTransform="None"
+                                         x:Name="btnContinueOrder" Clicked="OnContinueClicked" Margin="0,10,0,0"
+                                        BackgroundColor="#ff0266" IsVisible="False"
+                                        CornerRadius="15"
+                                        Text="{x:Static resource:AppResources.ContinueButtonText}" FontFamily="{StaticResource RobotoRegular}"
+                                        TextColor="White" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

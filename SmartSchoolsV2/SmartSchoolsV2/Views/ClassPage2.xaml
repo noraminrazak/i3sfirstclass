@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:views="clr-namespace:SmartSchoolsV2.Views"
+             xmlns:plugin="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Views.ClassPage2"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="{x:Static resource:AppResources.LeaveClassMenutext}" Clicked="OnLeaveClassClicked"
+                 Order="Secondary"
+                 Priority="0" />
+        <ToolbarItem Text="{x:Static resource:AppResources.DownloadOrderText}" Clicked="OnDownloadOrderClicked"
+                 Order="Secondary"
+                 Priority="1" />
+    </ContentPage.ToolbarItems>
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.ClassText}" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                     AbsoluteLayout.LayoutBounds="1,0,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                     sk:Skeleton.IsParent="True"
+	                 sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                 sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <plugin:CircleImage Source="{Binding Image}" Aspect="AspectFill" IsVisible="False"
+                                  x:Name="userImg" sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                                  Grid.Column="0" Margin="20,15,10,10">
+                    <plugin:CircleImage.WidthRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">65</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.WidthRequest>
+                    <plugin:CircleImage.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="Android, iOS">65</On>
+                        </OnPlatform>
+                    </plugin:CircleImage.HeightRequest>
+                </plugin:CircleImage>
+                <StackLayout x:Name="userInitial" IsVisible="True" Grid.Column="0" Margin="20,15,10,10" BackgroundColor="Transparent">
+                    <controls:InitialsView  sk:Skeleton.IsBusy="{Binding IsBusy}" 
+                                            sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                        sk:Skeleton.BackgroundColor="LightGoldenrodYellow"
+                               Name="{Binding Text, Source={x:Reference lblClassName}}" >
+                        <controls:InitialsView.WidthRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">65</On>
+                                <!--<On Platform="WinPhone">75</On>-->
+                            </OnPlatform>
+                        </controls:InitialsView.WidthRequest>
+                        <controls:InitialsView.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="Android, iOS">65</On>
+                                <!--<On Platform="WinPhone">75</On>-->
+                            </OnPlatform>
+                        </controls:InitialsView.HeightRequest>
+                    </controls:InitialsView>
+                </StackLayout>
+                <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand" 
+                      VerticalOptions="Center" Margin="0,0,20,0" 
+                      Orientation="Vertical">
+                    <Label FontFamily="{StaticResource RobotoMedium}" TextColor="White" FontSize="Small"
+                       HorizontalTextAlignment="Start" VerticalOptions="End" x:Name="lblClassName" LineBreakMode="TailTruncation"
+                           sk:Skeleton.IsBusy="{Binding IsBusy}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}" 
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow"/>
+                    <Label FontFamily="{StaticResource RobotoRegular}" TextColor="White" 
+                           sk:Skeleton.IsBusy="{Binding IsBusy}" sk:Skeleton.Animation="{sk:DefaultAnimation Fade}"
+	                                            sk:Skeleton.BackgroundColor="LightGoldenrodYellow" LineBreakMode="TailTruncation"
+                       HorizontalTextAlignment="Start" VerticalOptions="Center" FontSize="12" x:Name="lblSchoolName"/>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+
+        <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,0.8" AbsoluteLayout.LayoutFlags="All"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <CarouselView x:Name="carouselView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                          PositionChanged="OnPositionChanged" IsSwipeEnabled="False">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type ContentView}">
+                        <views:ClassPostView />
+                        <views:ClassStudentView />
+                        <views:ClassAttendanceView />
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <ContentView Content="{Binding .}" BindingContext="{Binding ListView}" />
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+        <Frame CornerRadius="30" BackgroundColor="#fafafa" Padding="0" HasShadow="False" BorderColor="#5F625B"
+               AbsoluteLayout.LayoutBounds="0,0.17,1,0.1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="10,0,10,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <!--<RowDefinition Height="Auto" />-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Source="ic_classroom.png" HeightRequest="30" WidthRequest="30" x:Name="imgClass" 
+                       VerticalOptions="Center" HorizontalOptions="Center" Margin="0,5,0,0" />
+                <Image Grid.Row="0" Grid.Column="1" Source="ic_student_grey.png" HeightRequest="30" WidthRequest="30" x:Name="imgStudent" 
+                       VerticalOptions="Center" HorizontalOptions="Center" Margin="0,5,0,0" />
+                <Image Grid.Row="0" Grid.Column="2" Source="ic_schedule_grey.png" HeightRequest="30" WidthRequest="30" x:Name="imgCalendar" 
+                       VerticalOptions="Center" HorizontalOptions="Center" Margin="0,5,0,0" />
+                <!--<Label Grid.Row="1" Grid.Column="0" Text="Bulletin" TextColor="Orange" FontFamily="{StaticResource RobotoMedium}" VerticalOptions="Center"
+                       HorizontalTextAlignment="Center" FontSize="12" x:Name="lblClassPost"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="Student" TextColor="Gainsboro" FontFamily="{StaticResource RobotoMedium}" VerticalOptions="Center"
+                       HorizontalTextAlignment="Center" FontSize="12" x:Name="lblStudent"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="Attendance" TextColor="Gainsboro" FontFamily="{StaticResource RobotoMedium}" VerticalOptions="Center"
+                       HorizontalTextAlignment="Center" FontSize="12" x:Name="lblAttendance"/>-->
+            </Grid>
+        </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

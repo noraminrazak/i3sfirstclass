@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSchoolsV2.Views.SelectLanguagePage"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="bg2_1024x2048.jpg">
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical">
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Margin="0,0,0,10" Grid.Row="0" Grid.Column="0"
+            HorizontalOptions="Center" x:Name="lblWelcome"
+            TextColor="Black" FontSize="Large"
+            VerticalOptions="End">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{x:Static resource:AppResources.WelcomeText}" FontFamily="{StaticResource RobotoMedium}" FontSize="Large" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="0,10,0,10" Grid.Row="1" Grid.Column="0"
+            HorizontalOptions="Center"
+            TextColor="Black" FontSize="Medium"
+            VerticalOptions="End">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="{x:Static resource:AppResources.PleaseSelectLanguageText}" FontFamily="{StaticResource RobotoRegular}" FontSize="Body" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button FontSize="Medium" TextTransform="None"
+            Margin="20,10,20,10" x:Name="btnEnglish" Clicked="OnEnglishClicked"
+            Grid.Row="2" Grid.Column="0" ContentLayout="Left,20" ImageSource="uk_flag.png"
+            BackgroundColor="#ff0266" CornerRadius="15"
+            Text="English" FontFamily="{StaticResource RobotoRegular}"
+            TextColor="White" BorderWidth="2" BorderColor="Black"/>
+            <Button FontSize="Medium" TextTransform="None"
+            Margin="20,10,20,10" x:Name="btnMalay" Clicked="OnMalayClicked"
+            Grid.Row="3" Grid.Column="0" ContentLayout="Left,20" ImageSource="malaysia_flag.png"
+            BackgroundColor="#ff0266" CornerRadius="15"
+            Text="Bahasa Melayu" FontFamily="{StaticResource RobotoRegular}"
+            TextColor="White" BorderWidth="2" BorderColor="Black"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

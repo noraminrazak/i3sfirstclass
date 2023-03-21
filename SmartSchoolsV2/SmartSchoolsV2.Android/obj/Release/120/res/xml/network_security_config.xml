@@ -1,0 +1,1 @@
+<network-security-config><base-config cleartextTrafficPermitted="false" /><domain-config cleartextTrafficPermitted="false"><domain includeSubdomains="true">i-3s.com.my</domain></domain-config></network-security-config>

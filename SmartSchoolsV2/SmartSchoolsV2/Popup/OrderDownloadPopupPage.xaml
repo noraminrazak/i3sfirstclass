@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Popup.OrderDownloadPopupPage"
+             CloseWhenBackgroundIsClicked="False">
+    <pages:PopupPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+                <Setter Property="TextColor" Value="#7dbbe6"/>
+            </Style>
+        </ResourceDictionary>
+    </pages:PopupPage.Resources>
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+      PositionIn="Left"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="200"
+      DurationOut="300"
+      EasingIn="SinOut"
+      EasingOut="SinIn"
+      HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <Frame HasShadow="False" IsClippedToBounds="True" Padding="0" VerticalOptions="Center"
+                x:Name="FrameContainer" BackgroundColor="White" Margin="20">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                         sk:Skeleton.IsParent="True"
+	                    sk:Skeleton.IsBusy="{Binding IsBusy}"
+	                    sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Text="{x:Static resource:AppResources.OrderReportText}" FontSize="Medium" x:Name="lblTitle"
+                       FontFamily="{StaticResource RobotoBold}" Margin="20" TextColor="Black"/>
+                <!-- Delivery Date -->
+                <StackLayout Grid.Row="1">
+                    <customs:CustomEntry Keyboard="Text"
+                        x:Name="txtPickupDate" Focused="StartCall" Placeholder="{x:Static resource:AppResources.SelectDeliveryDateText}"
+                        Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                        BackgroundColor="Transparent" />
+                    <DatePicker x:Name="datePicker" IsVisible="false" DateSelected="OnDeliveryDateSelected" />
+                    <Label  Margin="22,0,20,0" IsVisible="false"
+                    HorizontalOptions="Start" x:Name="errMessage1"
+                    TextColor="Red" FontSize="Small"
+                    VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.DeliveryDateRequiredText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                <!-- report button -->
+                <StackLayout Grid.Row="2" Orientation="Vertical" x:Name="rbStack">
+                    <Label  Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.ReportByText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <input:RadioButtonGroupView Grid.Row="4" Margin="20,0,20,0" >
+                        <input:RadioButton Text="{x:Static resource:AppResources.ProductText}" Value="3" FontFamily="{StaticResource RobotoRegular}" 
+                                       TextColor="Black" TextFontSize="Body" Padding="0,0,0,15" Clicked="OnRadio1Clicked"/>
+                        <input:RadioButton Text="{x:Static resource:AppResources.ClassText}" FontFamily="{StaticResource RobotoRegular}" Value="4"
+                                       TextColor="Black" TextFontSize="Body" Padding="0,0,0,10" Clicked="OnRadio2Clicked"/>
+                        <input:RadioButton Text="{x:Static resource:AppResources.StaffText}" Value="6"
+                                       FontFamily="{StaticResource RobotoRegular}" TextColor="Black" TextFontSize="Body" Padding="0,0,0,10" 
+                                       Clicked="OnRadio3Clicked"/>
+                    </input:RadioButtonGroupView>
+                    <Label  Margin="22,0,20,0" IsVisible="false"
+                        HorizontalOptions="Start" x:Name="errMessage2"
+                        TextColor="Red" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.ReportByRequiredText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                <Grid Grid.Row="3" HorizontalOptions="EndAndExpand" ColumnSpacing="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button FontSize="Small" TextTransform="None" 
+                        x:Name="btnCancel" Clicked="OnCancelClicked"
+                        Margin="0,0,0,5" Grid.Column="0"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.CloseText}" FontFamily="{StaticResource RobotoMedium}"
+                        TextColor="#ff0266" />
+                    <Button FontSize="Small" TextTransform="None" 
+                        x:Name="btnJoin" Clicked="OnDownloadClicked"
+                        Margin="0,0,15,5" Grid.Column="1"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.DownloadText}" FontFamily="{StaticResource RobotoMedium}"
+                        TextColor="#ff0266" />
+                </Grid>
+            </Grid>
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

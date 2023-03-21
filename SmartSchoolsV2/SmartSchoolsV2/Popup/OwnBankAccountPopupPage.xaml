@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sk="clr-namespace:Xamarin.Forms.Skeleton;assembly=Xamarin.Forms.Skeleton"
+             xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             x:Class="SmartSchoolsV2.Popup.OwnBankAccountPopupPage"
+             CloseWhenBackgroundIsClicked="True">
+    <pages:PopupPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#9cdaf1"/>
+                <Setter Property="TextColor" Value="#7dbbe6"/>
+            </Style>
+        </ResourceDictionary>
+    </pages:PopupPage.Resources>
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+      PositionIn="Left"
+      PositionOut="Center"
+      ScaleIn="1"
+      ScaleOut="0.7"
+      DurationIn="200"
+      DurationOut="300"
+      EasingIn="SinOut"
+      EasingOut="SinIn"
+      HasBackgroundAnimation="True"/>
+    </pages:PopupPage.Animation>
+    <Frame HasShadow="False" IsClippedToBounds="True" Padding="0" VerticalOptions="Center"
+                x:Name="FrameContainer" BackgroundColor="White" Margin="20">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                sk:Skeleton.IsParent="True"
+	            sk:Skeleton.IsBusy="{Binding IsBusy}"
+	            sk:Skeleton.Animation="{sk:DefaultAnimation Fade}">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="{x:Static resource:AppResources.DepositFromOwnBankText}" FontSize="Medium" x:Name="lblTitle"
+                       FontFamily="{StaticResource RobotoBold}" Margin="20" TextColor="Black"/>
+                <Label Grid.Row="1" Grid.Column="0" Margin="20,0,20,20" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{x:Static resource:AppResources.DepositFromOthersBankText1}" TextColor="Black"
+                                    FontFamily="{StaticResource RobotoRegular}"/>
+                            <Span Text="{x:Static resource:AppResources.NotAllowedText}" TextColor="Black" 
+                                      FontFamily="{StaticResource RobotoBold}" FontAttributes="Bold" />
+                            <Span Text="{x:Static resource:AppResources.DepositFromOthersBankText2}" TextColor="Black"
+                                    FontFamily="{StaticResource RobotoRegular}"/>
+                            <Span Text="{x:Static resource:AppResources.FourteenBizDaysText}" TextColor="Black" 
+                                      FontFamily="{StaticResource RobotoBold}" FontAttributes="Bold" />
+                            <Span Text="{x:Static resource:AppResources.DepositFromOthersBankText3}" TextColor="Black"
+                                    FontFamily="{StaticResource RobotoRegular}"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <StackLayout Grid.Row="2" Grid.Column="0" Margin="20,0,20,0" Orientation="Horizontal">
+                    <CheckBox x:Name="bankChk" HorizontalOptions="Center" VerticalOptions="Center" CheckedChanged="CheckedChanged" IsChecked="False"/>
+                    <Label Text="{x:Static resource:AppResources.IWillDepositFromMyOwnAccText}" FontSize="Default" TextColor="Black"
+                                   HorizontalOptions="Center" VerticalOptions="Center" x:Name="lbliWill"/>
+                </StackLayout>
+                <Button Grid.Row="3" FontSize="Small" TextTransform="None" 
+                        x:Name="btnJoin" Clicked="OnContinueClicked" HorizontalOptions="EndAndExpand"
+                        Margin="0,0,15,5" Grid.Column="0"
+                        BackgroundColor="Transparent"
+                        CornerRadius="15"
+                        Text="{x:Static resource:AppResources.ContinueButtonText}" FontFamily="{StaticResource RobotoMedium}"
+                        TextColor="#ff0266" />
+            </Grid>
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SmartSchoolsV2"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:controls="clr-namespace:SmartSchoolsV2.Controls"
+             xmlns:customs="clr-namespace:SmartSchoolsV2.Customs"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources" 
+             x:Class="SmartSchoolsV2.Views.ProductDetailPage"
+             BackgroundImageSource="bg2_1024x2048.jpg" >
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblTitleView" Grid.Column="0" TextColor="#ffd612" FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+        </Grid>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Frame CornerRadius="30" BackgroundColor="White" Padding="0" Margin="0,0,0,-30"
+               AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All"
+           IsClippedToBounds="True"  HeightRequest="100" HasShadow="False">
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" Margin="20,20,20,0">
+                        <Frame CornerRadius="20"  x:Name="imgFrame"  HasShadow="False"
+                                    IsVisible="False" IsClippedToBounds="True" Padding="0">
+                            <ffimageloading:CachedImage x:Name="imagePhoto" Aspect="AspectFill" Scale="1.0" HeightRequest="300"
+                                                HorizontalOptions="Fill" VerticalOptions="Fill" DownsampleToViewSize="True"
+                                                WidthRequest="300" CacheType="None" >
+                            </ffimageloading:CachedImage>
+                        </Frame>
+                        <ImageButton Source="close_btn" HorizontalOptions="End" VerticalOptions="Start" Margin="0,-10,5,0"
+                                     HeightRequest="30" WidthRequest="30" IsVisible="false" x:Name="btnRemove" Clicked="OnRemoveClicked"/>
+                    </Grid>
+                    <Label Grid.Row="1" x:Name="lblFileSize" FontSize="Small" FontFamily="{StaticResource RobotoRegular}" HorizontalTextAlignment="Center" />
+                    <Grid Grid.Row="2" HorizontalOptions="Center" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <ImageButton Grid.Column="0" Source="btn_gallery" HeightRequest="45" WidthRequest="45" 
+                                         BackgroundColor="Transparent" Clicked="OnPickPhotoClicked"/>
+                        <ImageButton Grid.Column="1" Source="btn_photo" HeightRequest="45" WidthRequest="45" 
+                                         BackgroundColor="Transparent" Clicked="OnTakePhotoClicked"/>
+                    </Grid>
+                    <!--school name-->
+                    <Label  Grid.Row="3"
+                            Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.SchoolNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry Keyboard="Text" Grid.Row="4"
+                                x:Name="txtSchoolName" IsReadOnly="True"
+                                Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                BackgroundColor="Transparent" />
+                    <!--product category-->
+                    <Label Grid.Row="5"
+                            Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.CategoryNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <StackLayout Grid.Row="6">
+                        <customs:CustomEntry Keyboard="Text" IsReadOnly="True" 
+                                 Placeholder="{x:Static resource:AppResources.SelectProductCategoryText}" x:Name="txtCategoryName"
+                                Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                BackgroundColor="Transparent" InputTransparent="True" />
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer
+                                    Tapped="StartCall" >
+                            </TapGestureRecognizer>
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <!--product name-->
+                    <Label  Grid.Row="7"
+                            Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.ProductNameText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry Grid.Row="8" ClearButtonVisibility="WhileEditing"
+                                x:Name="txtProductName" Placeholder="{x:Static resource:AppResources.EnterProductNameText}"
+                                Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                BackgroundColor="Transparent" >
+                        <customs:CustomEntry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeWord</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEntry.Keyboard>
+                    </customs:CustomEntry>
+                    <!--unit price-->
+                    <Label Grid.Row="9" Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.UnitPriceText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Grid Grid.Row="10">
+                        <customs:CurrencyEntry Keyboard="Numeric" 
+                                 Placeholder="0" x:Name="txtUnitPrice"
+                                Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                BackgroundColor="Transparent"/>
+                        <Label Margin="20,0,10,10" Padding="2,0,0,14"
+                            HorizontalOptions="Start"
+                            TextColor="Black" FontSize="Large"
+                            VerticalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="RM" FontFamily="{StaticResource RobotoRegular}" FontSize="Default" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </Grid >
+                    <!--product sku-->
+                    <Label  Grid.Row="11"
+                            Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span x:Name="lblProductSKU" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry  Grid.Row="12"
+                                x:Name="txtProductSKU"
+                                Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                                BackgroundColor="Transparent" >
+                        <customs:CustomEntry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeCharacter</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEntry.Keyboard>
+                    </customs:CustomEntry>
+                    <!--product desc-->
+                    <Label  Grid.Row="13"
+                            Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.ProductDescText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEditor Grid.Row="14" Margin="20,0,20,10" AutoSize="TextChanges" x:Name="txtProductDesc"
+                                FontFamily="{StaticResource RobotoRegular}" FontSize="Default" Placeholder="{x:Static resource:AppResources.EnterProductDescHereText}">
+                        <customs:CustomEditor.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>CapitalizeSentence</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </customs:CustomEditor.Keyboard>
+                    </customs:CustomEditor>
+                    <!--product weight-->
+                    <Label  Grid.Row="15" x:Name="lblWeight"
+                            Margin="22,0,20,0"
+                            HorizontalOptions="Start"
+                            TextColor="Gray" FontSize="Small"
+                            VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.ServingSizeText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEntry Keyboard="Text" Grid.Row="16"
+                            x:Name="txtWeight" Placeholder="{x:Static resource:AppResources.EnterServingSizeText}"
+                            Margin="20,0,20,10" FontFamily="{StaticResource RobotoRegular}" FontSize="Default"
+                            BackgroundColor="Transparent" />
+                    <!--product ingredient-->
+                    <Label  Grid.Row="17" x:Name="lblIngredient"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="Start"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="{x:Static resource:AppResources.IngredientText}" FontFamily="{StaticResource RobotoRegular}"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <customs:CustomEditor Grid.Row="18" Margin="20,0,20,10" AutoSize="TextChanges" x:Name="txtIngredient"
+                            FontFamily="{StaticResource RobotoRegular}" FontSize="Default" Placeholder="{x:Static resource:AppResources.EnterIngredientText}"/>
+                    <!-- nutrition info -->
+                    <Grid Grid.Row="19" x:Name="gridNutrition">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackLayout  Grid.Row="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Label x:Name="lblNutrition"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="StartAndExpand"
+                        TextColor="Black" FontSize="Default"
+                        VerticalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{x:Static resource:AppResources.NutritionText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf067;" Margin="0,0,20,0" x:Name="btnAdd"
+                                   TextColor="#ff0266" VerticalOptions="Center" FontSize="Large" HorizontalOptions="End"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Label x:Name="lblComposition"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="StartAndExpand"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{x:Static resource:AppResources.AverageCompositionText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label x:Name="lblPerServing"
+                        Margin="22,0,20,0"
+                        HorizontalOptions="End"
+                        TextColor="Gray" FontSize="Small"
+                        VerticalOptions="Center">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{x:Static resource:AppResources.PerServingText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                        <ListView Grid.Row="2" x:Name="lvNutrition" HasUnevenRows="False" SeparatorVisibility="Default" IsVisible="true"
+					        IsPullToRefreshEnabled="True"  CachingStrategy="RecycleElement"
+				            RefreshCommand="{Binding RefreshCommand}" 
+				            IsRefreshing="{Binding IsBusy, Mode=TwoWay}" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <SwipeView>
+                                            <SwipeView.RightItems>
+                                                <SwipeItems Mode="Reveal" >
+                                                    <SwipeItem Text="{x:Static resource:AppResources.DeleteText}"
+                                                           CommandParameter="{Binding Source={x:Reference lvNutrition}, Path=BindingContext}"
+                                                            BackgroundColor="Red" 
+                                                            Invoked ="Delete_Invoked">
+                                                    </SwipeItem>
+                                                    <SwipeItem Text="{x:Static resource:AppResources.EditText}"
+                                                           CommandParameter="{Binding Source={x:Reference lvNutrition}, Path=BindingContext}"
+                                                        BackgroundColor="#0080ff" 
+                                                        Invoked ="Edit_Invoked">
+                                                    </SwipeItem>
+                                                </SwipeItems>
+                                            </SwipeView.RightItems>
+                                            <SwipeView.Content>
+                                                <StackLayout Padding="20,10,20,10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="Auto"/>
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                            <ColumnDefinition Width="*"/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Text="{Binding nutrition_name}" Grid.Column="0" TextColor="#0080ff" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												    HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Small"
+												    HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"></Label>
+                                                        <Label Text="{Binding per_serving}" Grid.Column="1" TextColor="#0080ff" Grid.Row="0" FontFamily="{StaticResource RobotoMedium}"
+												    HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="Small"
+												    HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"></Label>
+                                                    </Grid>
+                                                </StackLayout>
+                                            </SwipeView.Content>
+                                        </SwipeView>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                    <!-- special flag -->
+                    <Grid Grid.Row="20" Margin="25,0,20,10" x:Name="specialStack">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label x:Name="lblSpecial" Grid.Column="0"
+                        HorizontalOptions="Start" Grid.Row="0"
+                        TextColor="Black" FontSize="Default">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{x:Static resource:AppResources.SpecialMenuText}" FontFamily="{StaticResource RobotoRegular}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Switch Grid.Column="1" Grid.Row="0" HorizontalOptions="Start" x:Name="specialSwitch" Toggled="OnToggled"
+                                    OnColor="#ffcccc" ThumbColor="#ff0266"/>
+                    </Grid>
+                    <!-- available day -->
+                    <controls:Accordion2  Title="{x:Static resource:AppResources.ProvidedDayText}" x:Name="dayOfWeek" 
+                                             Grid.Row="21">
+                        <controls:Accordion2.AccordionContentView>
+                            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                                <Grid Margin="20,0,20,20">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <input:CheckBox Grid.Row="0" Text="{x:Static resource:AppResources.EveryDayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="EveryDayChecked" x:Name="Cb7" />
+                                    <input:CheckBox Grid.Row="1" Text="{x:Static resource:AppResources.SundayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="SundayChecked" x:Name="Cb0"/>
+                                    <input:CheckBox Grid.Row="2" Text="{x:Static resource:AppResources.MondayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="MondayChecked" x:Name="Cb1"/>
+                                    <input:CheckBox Grid.Row="3" Text="{x:Static resource:AppResources.TuesdayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="TuesdayChecked" x:Name="Cb2"/>
+                                    <input:CheckBox Grid.Row="4" Text="{x:Static resource:AppResources.WednesdayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="WednesdayChecked" x:Name="Cb3"/>
+                                    <input:CheckBox Grid.Row="5" Text="{x:Static resource:AppResources.ThursdayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="ThursdayChecked" x:Name="Cb4"/>
+                                    <input:CheckBox Grid.Row="6" Text="{x:Static resource:AppResources.FridayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="FridayChecked" x:Name="Cb5"/>
+                                    <input:CheckBox Grid.Row="7" Text="{x:Static resource:AppResources.SaturdayText}"  FontFamily="{StaticResource RobotoRegular}"
+                                                        Type="Check" CheckChanged="SaturdayChecked" x:Name="Cb6"/>
+                                </Grid>
+                            </StackLayout>
+                        </controls:Accordion2.AccordionContentView>
+                        <controls:Accordion2.IndicatorView>
+                            <Label Text="&#xf0ab;" FontSize="Title" FontFamily="{StaticResource FontAwesomeSolid}" TextColor="#ff0266"/>
+                        </controls:Accordion2.IndicatorView>
+                    </controls:Accordion2>
+                    <StackLayout Grid.Row="22" BackgroundColor="Gainsboro" VerticalOptions="FillAndExpand" Margin="0,-7,0,0"
+                                x:Name="stackHeader" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+                        <Label x:Name="lblTxnRow6Col0" Text="{x:Static resource:AppResources.POSTerminalMenuColorText}" FontFamily="{StaticResource RobotoMedium}" HorizontalOptions="FillAndExpand"
+                           FontSize="Small" Margin="20,5,20,5" TextColor="Black" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                    <Grid Grid.Row="23" Margin="25,10,20,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="{x:Static resource:AppResources.TextColorText}" FontFamily="{StaticResource RobotoRegular}" TextColor="Black" FontSize="Default" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                        <Frame Grid.Column="1" IsClippedToBounds="True" HasShadow="True" Padding="0">
+                            <customs:ExtendedBoxView   x:Name="bvTextColor" BorderRadius="4"
+                                                  BackgroundColor="#FFFFFFFF"  WidthRequest="50" HeightRequest="40" HorizontalOptions="End">
+                            </customs:ExtendedBoxView>
+                        </Frame>
+
+                    </Grid>
+                    <Grid Grid.Row="24" Margin="25,10,20,10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="{x:Static resource:AppResources.BgColorText}" FontFamily="{StaticResource RobotoRegular}" TextColor="Black" FontSize="Default" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+                        <Frame Grid.Column="1" IsClippedToBounds="True" HasShadow="True" Padding="0">
+                            <customs:ExtendedBoxView  x:Name="bvBgColor" BorderRadius="4"
+                               BackgroundColor="#FFFF8C00"  WidthRequest="50" HeightRequest="40" HorizontalOptions="End">
+                            </customs:ExtendedBoxView>
+                        </Frame>
+
+                    </Grid>
+                    <Button FontSize="Body" TextTransform="None" Grid.Row="25"
+                                x:Name="btnSave" Clicked="OnSaveClicked"
+                            Margin="20,20,20,50"
+                            BackgroundColor="#ff0266"
+                            CornerRadius="15"
+                            Text="{x:Static resource:AppResources.SaveButtonText}" FontFamily="{StaticResource RobotoRegular}"
+                            TextColor="White" />
+                    </Grid>
+                </ScrollView>
+            </Frame>
+        <local:SnackBar  IsClippedToBounds="True" FontFamily="{StaticResource RobotoRegular}"
+                         AbsoluteLayout.LayoutBounds="1,1,1,0.5" AbsoluteLayout.LayoutFlags="All"
+                         x:Name="SnackB" HeightRequest="50" FontSize="{OnPlatform iOS=12, Android=13, UWP=15}" 
+                             BackgroundColor="#323232" 
+                             TextColor="White"
+                             IsOpen="False"
+                             VerticalOptions="End"
+                             Message="I'm a snack bar... I love showing my self."
+                             ButtonTextColor="Orange"
+                             CloseButtonText="{x:Static resource:AppResources.CloseText}"/>
+    </AbsoluteLayout>
+</ContentPage>

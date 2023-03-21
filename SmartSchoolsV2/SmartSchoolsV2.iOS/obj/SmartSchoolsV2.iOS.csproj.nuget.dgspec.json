@@ -1,0 +1,351 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.iOS\\SmartSchoolsV2.iOS.csproj": {}
+  },
+  "projects": {
+    "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.iOS\\SmartSchoolsV2.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.iOS\\SmartSchoolsV2.iOS.csproj",
+        "projectName": "SmartSchoolsV2.iOS",
+        "projectPath": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.iOS\\SmartSchoolsV2.iOS.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.csproj": {
+                "projectPath": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "EasyTipView": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "IOSToolbarExtensions": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "JV.XamForms.Controls.Calendar": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Naxam.TopTabbedPage.Forms": {
+              "target": "Package",
+              "version": "[0.0.3.5, )"
+            },
+            "Plugin.FirebasePushNotification": {
+              "target": "Package",
+              "version": "[3.3.10, )"
+            },
+            "Plugin.HybridWebView": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "Plugin.StoreReview": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.0.0.9, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "XamEffects": {
+              "target": "Package",
+              "version": "[1.6.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.Firebase.iOS.Auth": {
+              "target": "Package",
+              "version": "[6.9.2, )"
+            },
+            "Xamarin.Firebase.iOS.CloudMessaging": {
+              "target": "Package",
+              "version": "[4.7.1, )"
+            },
+            "Xamarin.Firebase.iOS.Core": {
+              "target": "Package",
+              "version": "[6.10.4, )"
+            },
+            "Xamarin.Firebase.iOS.Database": {
+              "target": "Package",
+              "version": "[6.6.0, )"
+            },
+            "Xamarin.Firebase.iOS.InstanceID": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
+            "Xamarin.Firebase.iOS.Storage": {
+              "target": "Package",
+              "version": "[3.9.1, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1821, )"
+            },
+            "Xamarin.KeyboardHelper": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.csproj",
+        "projectName": "SmartSchoolsV2",
+        "projectPath": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "E:\\i3s\\SmartSchoolsV2\\SmartSchoolsV2\\SmartSchoolsV2\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Behaviors.Forms": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[4.0.8, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.6, )"
+            },
+            "JV.XamForms.Controls.Calendar": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "Naxam.TopTabbedPage.Forms": {
+              "target": "Package",
+              "version": "[0.0.3.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Plugin.FirebasePushNotification": {
+              "target": "Package",
+              "version": "[3.3.10, )"
+            },
+            "Plugin.HybridWebView": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "Plugin.StoreReview": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Plugin.XamarinAppRating": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "Prism.DryIoc.Forms": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "Prism.Forms": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "PusherClient.NetStandard": {
+              "target": "Package",
+              "version": "[0.5.1, )"
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.0.0.9, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Unity": {
+              "target": "Package",
+              "version": "[5.11.10, )"
+            },
+            "Xam.Plugin.Connectivity": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Xam.Plugins.Forms.ImageCircle": {
+              "target": "Package",
+              "version": "[3.0.0.5, )"
+            },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "XamEffects": {
+              "target": "Package",
+              "version": "[1.6.3, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            },
+            "Xamarin.FFImageLoading.Forms": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.FFImageLoading.Transformations": {
+              "target": "Package",
+              "version": "[2.4.11.982, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1821, )"
+            },
+            "Xamarin.Forms.Extended.InfiniteScrolling": {
+              "target": "Package",
+              "version": "[1.0.0-preview2, )"
+            },
+            "Xamarin.Forms.InputKit": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
+            },
+            "Xamarin.Forms.SaveOpenPDFPackage": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Xamarin.Forms.Skeleton": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Xamarin.KeyboardHelper": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

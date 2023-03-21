@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:SmartSchoolsV2.Views"
+             x:Class="SmartSchoolsV2.Views.ShoppingCartPage"
+             xmlns:resource="clr-namespace:SmartSchoolsV2.Resources"
+             SelectedTabColor="#ffd612"
+             UnselectedTabColor="Gray"
+             BarBackgroundColor="#5F625B">
+    <NavigationPage.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="{x:Static resource:AppResources.ShoppingCartText}" Grid.Column="0" TextColor="#ffd612"
+                   FontSize="Medium" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                   FontFamily="{StaticResource RobotoMedium}">
+            </Label>
+            <StackLayout Grid.Column="1" HorizontalOptions="EndAndExpand" Orientation="Horizontal" Margin="0,0,20,0">
+                <Grid>
+                    <Label FontFamily="{StaticResource FontAwesomeSolid}" Text="&#xf217;" x:Name="imgCartPlus" Padding="5" 
+                           VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" FontSize="Medium"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </NavigationPage.TitleView>
+    <views:ShoppingCartPage1 Title="{x:Static resource:AppResources.AllText}" IconImageSource="incart.png"/>
+    <views:ShoppingCartPage2 Title="{x:Static resource:AppResources.OrderHistoryText}" IconImageSource="history.png"/>
+</TabbedPage>
